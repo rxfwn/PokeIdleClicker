@@ -1,0 +1,5 @@
+{
+  "clickDamage": { "name": "Force de Sacha", "baseCost": 10, "costGrowth": 1.5, "effect": "+1 dégât par clic" },
+  "moneyBonus": { "name": "Chance du dresseur", "baseCost": 25, "costGrowth": 1.7, "effect": "+10% d'argent" },
+  "pokeball": { "name": "Pokéball", "baseCost": 20, "costGrowth": 1, "effect": "1 Pokéball (consommable)" }
+}

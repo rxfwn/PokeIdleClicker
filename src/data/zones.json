@@ -1,0 +1,16 @@
+{
+  "route1": {
+    "name": "Route 1",
+    "spawns": [
+      { "id": "rattata", "weight": 60 },
+      { "id": "pidgey", "weight": 40 }
+    ]
+  },
+  "forest": {
+    "name": "Forêt de Jade",
+    "spawns": [
+      { "id": "pidgey", "weight": 50 },
+      { "id": "gastly", "weight": 50 }
+    ]
+  }
+}
