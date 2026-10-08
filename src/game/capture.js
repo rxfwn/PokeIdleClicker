@@ -1,18 +1,36 @@
-import pokemon from "../data/pokemon.json";
-import { state, notify, MAX_TEAM } from "../core/state.js";
-import { spawnEnemy } from "./combat.js";
+import shop from "../data/shop.json" with { type: "json" };
+import { BALANCE, captureChance, expReward } from "../data/balance.js";
+import { state, notify } from "../core/state.js";
+import { modes } from "./modes/index.js";
+import { addPokemon, giveExp } from "./rewards.js";
 
-// Plus l'ennemi est blessé, plus la capture est facile.
-export function tryCapture() {
+// Un Pokémon sauvage se capture quand il est affaibli ; un légendaire seulement après sa défaite.
+export function canCapture(e = state.enemy) {
+  if (!e || !e.capturable) return false;
+  if (e.kind === "legend") return !!e.defeated;
+  return e.hp / e.maxHp <= BALANCE.capture.weakenedBelow;
+}
+
+// Retourne null (impossible) ou { ok } selon la réussite du lancer.
+export function tryCapture(ball = "pokeball") {
   const e = state.enemy;
-  if (!e || state.pokeballs <= 0) return false;
+  if (!canCapture(e) || state.pokeballs <= 0) return null;
   state.pokeballs -= 1;
-  const chance = pokemon[e.id].catchRate * (1.5 - e.hp / e.maxHp);
-  const success = Math.random() < Math.min(chance, 1);
-  if (success) {
-    (state.team.length < MAX_TEAM ? state.team : state.box).push(e.id);
-    spawnEnemy();
+  const chance = captureChance({ rarity: e.rarity, hpFraction: e.hp / e.maxHp, ballMult: shop.balls[ball].catchMult });
+  const ok = Math.random() < chance;
+  if (ok) {
+    addPokemon(e.id, e.level);
+    state.stats.captures += 1;
+    giveExp(expReward(e.level, e.kind === "legend" ? "boss" : "wild"));
+    if (e.kind === "legend") {
+      state.legends = state.legends.filter((l) => l.key !== e.legendKey);
+      state.legendFight = false;
+      modes[state.mode].spawn();
+    } else {
+      state.stats.kills += 1;
+      modes[state.mode].onClear(e); // une capture compte comme une victoire pour la progression
+    }
   }
   notify();
-  return success;
+  return { ok };
 }

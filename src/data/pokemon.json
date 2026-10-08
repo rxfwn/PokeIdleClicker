@@ -1,5 +1,0 @@
-{
-  "rattata": { "name": "Rattata", "hp": 20, "reward": 5, "catchRate": 0.6, "dps": 1, "sprite": "sprites/rattata.png" },
-  "pidgey": { "name": "Roucool", "hp": 25, "reward": 6, "catchRate": 0.55, "dps": 1, "sprite": "sprites/pidgey.png" },
-  "gastly": { "name": "Fantominus", "hp": 40, "reward": 12, "catchRate": 0.4, "dps": 3, "sprite": "sprites/gastly.png" }
-}

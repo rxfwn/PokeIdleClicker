@@ -1,0 +1,74 @@
+{
+  "normal": {
+    "label": "Normal",
+    "image": "types/normal.png"
+  },
+  "fighting": {
+    "label": "Combat",
+    "image": "types/fighting.png"
+  },
+  "flying": {
+    "label": "Vol",
+    "image": "types/flying.png"
+  },
+  "poison": {
+    "label": "Poison",
+    "image": "types/poison.png"
+  },
+  "ground": {
+    "label": "Sol",
+    "image": "types/ground.png"
+  },
+  "rock": {
+    "label": "Roche",
+    "image": "types/rock.png"
+  },
+  "bug": {
+    "label": "Insecte",
+    "image": "types/bug.png"
+  },
+  "ghost": {
+    "label": "Spectre",
+    "image": "types/ghost.png"
+  },
+  "steel": {
+    "label": "Acier",
+    "image": "types/steel.png"
+  },
+  "fire": {
+    "label": "Feu",
+    "image": "types/fire.png"
+  },
+  "water": {
+    "label": "Eau",
+    "image": "types/water.png"
+  },
+  "grass": {
+    "label": "Plante",
+    "image": "types/grass.png"
+  },
+  "electric": {
+    "label": "Électrik",
+    "image": "types/electric.png"
+  },
+  "psychic": {
+    "label": "Psy",
+    "image": "types/psychic.png"
+  },
+  "ice": {
+    "label": "Glace",
+    "image": "types/ice.png"
+  },
+  "dragon": {
+    "label": "Dragon",
+    "image": "types/dragon.png"
+  },
+  "dark": {
+    "label": "Ténèbres",
+    "image": "types/dark.png"
+  },
+  "fairy": {
+    "label": "Fée",
+    "image": "types/fairy.png"
+  }
+}

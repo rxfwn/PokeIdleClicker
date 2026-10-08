@@ -1,0 +1,10 @@
+Police du jeu : Determination
+
+Dépose ici le fichier de la police avec l'un de ces noms exacts :
+  determination.woff2   (idéal)
+  determination.woff
+  determination.ttf
+
+Tant qu'aucun fichier n'est présent, le jeu utilise Verdana à la place.
+Si la police est installée sur ton PC (nom "Determination Sans" ou "Determination Mono"),
+elle s'affiche déjà chez toi, mais pas chez tes amis ni sur Vercel : il faut déposer le fichier ici.

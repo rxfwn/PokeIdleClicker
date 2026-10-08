@@ -1,0 +1,2386 @@
+{
+  "generation": 1,
+  "region": "Kanto",
+  "structure": "Chaque zone a 5 paliers (2e chiffre) de 5 étapes (1er chiffre) : 1-1…5-1, 1-2…5-2, jusqu'à 5-5. L'étape 5 de chaque palier est un combat de boss : mini-boss pour les paliers 1 à 4 (étapes 5-1 à 5-4), champion d'arène pour le palier 5 (étape 5-5). Les Pokémon d'un palier n'apparaissent que dans ce palier.",
+  "raretes": {
+    "commun": 60,
+    "peu commun": 25,
+    "rare": 10,
+    "très rare": 4,
+    "légendaire": 1
+  },
+  "note_raretes": "Poids d'apparition relatifs dans un palier. 'légendaire' = Mew, apparition ultra rare.",
+  "sprites": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{id}.png",
+  "zones": [
+    {
+      "zone": 1,
+      "nom": "Route vers Argenta",
+      "niveaux_sauvages": {
+        "min": 2,
+        "max": 12
+      },
+      "champion_arene": {
+        "nom": "Pierre",
+        "type": "Roche",
+        "badge": "Badge Roche",
+        "equipe": [
+          {
+            "id": 74,
+            "nom": "Racaillou"
+          },
+          {
+            "id": 95,
+            "nom": "Onix"
+          }
+        ],
+        "niveau": 14
+      },
+      "paliers": [
+        {
+          "palier": 1,
+          "lieu": "Route 1",
+          "etapes": [
+            "1-1",
+            "2-1",
+            "3-1",
+            "4-1",
+            "5-1"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 16,
+              "nom": "Roucool",
+              "rarete": "commun"
+            },
+            {
+              "id": 19,
+              "nom": "Rattata",
+              "rarete": "commun"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-1",
+            "nom": "Rival Régis",
+            "equipe": [
+              {
+                "id": 7,
+                "nom": "Carapuce"
+              }
+            ]
+          }
+        },
+        {
+          "palier": 2,
+          "lieu": "Route 22",
+          "etapes": [
+            "1-2",
+            "2-2",
+            "3-2",
+            "4-2",
+            "5-2"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 21,
+              "nom": "Piafabec",
+              "rarete": "commun"
+            },
+            {
+              "id": 56,
+              "nom": "Férosinge",
+              "rarete": "commun"
+            },
+            {
+              "id": 29,
+              "nom": "Nidoran♀",
+              "rarete": "commun"
+            },
+            {
+              "id": 32,
+              "nom": "Nidoran♂",
+              "rarete": "commun"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-2",
+            "nom": "Gamin",
+            "equipe": [
+              {
+                "id": 19,
+                "nom": "Rattata"
+              },
+              {
+                "id": 16,
+                "nom": "Roucool"
+              }
+            ]
+          }
+        },
+        {
+          "palier": 3,
+          "lieu": "Route 2",
+          "etapes": [
+            "1-3",
+            "2-3",
+            "3-3",
+            "4-3",
+            "5-3"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 10,
+              "nom": "Chenipan",
+              "rarete": "commun"
+            },
+            {
+              "id": 13,
+              "nom": "Aspicot",
+              "rarete": "commun"
+            },
+            {
+              "id": 1,
+              "nom": "Bulbizarre",
+              "rarete": "rare"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-3",
+            "nom": "Scout",
+            "equipe": [
+              {
+                "id": 10,
+                "nom": "Chenipan"
+              },
+              {
+                "id": 13,
+                "nom": "Aspicot"
+              },
+              {
+                "id": 11,
+                "nom": "Chrysacier"
+              }
+            ]
+          }
+        },
+        {
+          "palier": 4,
+          "lieu": "Forêt de Jade",
+          "etapes": [
+            "1-4",
+            "2-4",
+            "3-4",
+            "4-4",
+            "5-4"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 11,
+              "nom": "Chrysacier",
+              "rarete": "commun"
+            },
+            {
+              "id": 14,
+              "nom": "Coconfort",
+              "rarete": "commun"
+            },
+            {
+              "id": 25,
+              "nom": "Pikachu",
+              "rarete": "peu commun"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-4",
+            "nom": "Scout aguerri",
+            "equipe": [
+              {
+                "id": 14,
+                "nom": "Coconfort"
+              },
+              {
+                "id": 11,
+                "nom": "Chrysacier"
+              },
+              {
+                "id": 25,
+                "nom": "Pikachu"
+              }
+            ]
+          }
+        },
+        {
+          "palier": 5,
+          "lieu": "Lisière d'Argenta",
+          "etapes": [
+            "1-5",
+            "2-5",
+            "3-5",
+            "4-5",
+            "5-5"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 74,
+              "nom": "Racaillou",
+              "rarete": "commun"
+            },
+            {
+              "id": 12,
+              "nom": "Papilusion",
+              "rarete": "commun"
+            },
+            {
+              "id": 15,
+              "nom": "Dardargnan",
+              "rarete": "commun"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-5",
+            "nom": "Pierre",
+            "note": "Champion de la zone, voir champion_arene"
+          }
+        }
+      ]
+    },
+    {
+      "zone": 2,
+      "nom": "Mont Sélénite",
+      "niveaux_sauvages": {
+        "min": 10,
+        "max": 20
+      },
+      "champion_arene": {
+        "nom": "Ondine",
+        "type": "Eau",
+        "badge": "Badge Cascade",
+        "equipe": [
+          {
+            "id": 120,
+            "nom": "Stari"
+          },
+          {
+            "id": 121,
+            "nom": "Staross"
+          }
+        ],
+        "niveau": 21
+      },
+      "paliers": [
+        {
+          "palier": 1,
+          "lieu": "Route 3",
+          "etapes": [
+            "1-1",
+            "2-1",
+            "3-1",
+            "4-1",
+            "5-1"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 27,
+              "nom": "Sabelette",
+              "rarete": "commun"
+            },
+            {
+              "id": 23,
+              "nom": "Abo",
+              "rarete": "commun"
+            },
+            {
+              "id": 4,
+              "nom": "Salamèche",
+              "rarete": "rare"
+            },
+            {
+              "id": 39,
+              "nom": "Rondoudou",
+              "rarete": "commun"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-1",
+            "nom": "Montagnard",
+            "equipe": [
+              {
+                "id": 74,
+                "nom": "Racaillou"
+              },
+              {
+                "id": 41,
+                "nom": "Nosferapti"
+              }
+            ]
+          }
+        },
+        {
+          "palier": 2,
+          "lieu": "Mont Sélénite",
+          "etapes": [
+            "1-2",
+            "2-2",
+            "3-2",
+            "4-2",
+            "5-2"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 41,
+              "nom": "Nosferapti",
+              "rarete": "commun"
+            },
+            {
+              "id": 46,
+              "nom": "Paras",
+              "rarete": "commun"
+            },
+            {
+              "id": 35,
+              "nom": "Mélofée",
+              "rarete": "commun"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-2",
+            "nom": "Sbire Rocket",
+            "equipe": [
+              {
+                "id": 19,
+                "nom": "Rattata"
+              },
+              {
+                "id": 23,
+                "nom": "Abo"
+              }
+            ]
+          }
+        },
+        {
+          "palier": 3,
+          "lieu": "Profondeurs du Mont Sélénite",
+          "etapes": [
+            "1-3",
+            "2-3",
+            "3-3",
+            "4-3",
+            "5-3"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 138,
+              "nom": "Amonita",
+              "rarete": "peu commun"
+            },
+            {
+              "id": 140,
+              "nom": "Kabuto",
+              "rarete": "peu commun"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-3",
+            "nom": "Scientifique",
+            "equipe": [
+              {
+                "id": 100,
+                "nom": "Voltorbe"
+              },
+              {
+                "id": 81,
+                "nom": "Magnéti"
+              }
+            ]
+          }
+        },
+        {
+          "palier": 4,
+          "lieu": "Route 4 et Pont Pépite",
+          "etapes": [
+            "1-4",
+            "2-4",
+            "3-4",
+            "4-4",
+            "5-4"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 30,
+              "nom": "Nidorina",
+              "rarete": "commun"
+            },
+            {
+              "id": 33,
+              "nom": "Nidorino",
+              "rarete": "commun"
+            },
+            {
+              "id": 43,
+              "nom": "Mystherbe",
+              "rarete": "commun"
+            },
+            {
+              "id": 69,
+              "nom": "Chétiflor",
+              "rarete": "commun"
+            },
+            {
+              "id": 63,
+              "nom": "Abra",
+              "rarete": "peu commun"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-4",
+            "nom": "Rival Régis",
+            "equipe": [
+              {
+                "id": 16,
+                "nom": "Roucool"
+              },
+              {
+                "id": 63,
+                "nom": "Abra"
+              },
+              {
+                "id": 7,
+                "nom": "Carapuce"
+              }
+            ]
+          }
+        },
+        {
+          "palier": 5,
+          "lieu": "Route 25 (Cap)",
+          "etapes": [
+            "1-5",
+            "2-5",
+            "3-5",
+            "4-5",
+            "5-5"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 54,
+              "nom": "Psykokwak",
+              "rarete": "commun"
+            },
+            {
+              "id": 17,
+              "nom": "Roucoups",
+              "rarete": "commun"
+            },
+            {
+              "id": 20,
+              "nom": "Rattatac",
+              "rarete": "commun"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-5",
+            "nom": "Ondine",
+            "note": "Champion de la zone, voir champion_arene"
+          }
+        }
+      ]
+    },
+    {
+      "zone": 3,
+      "nom": "Côte de Carmin",
+      "niveaux_sauvages": {
+        "min": 18,
+        "max": 26
+      },
+      "champion_arene": {
+        "nom": "Major Bob",
+        "type": "Électrik",
+        "badge": "Badge Foudre",
+        "equipe": [
+          {
+            "id": 100,
+            "nom": "Voltorbe"
+          },
+          {
+            "id": 25,
+            "nom": "Pikachu"
+          },
+          {
+            "id": 26,
+            "nom": "Raichu"
+          }
+        ],
+        "niveau": 28
+      },
+      "paliers": [
+        {
+          "palier": 1,
+          "lieu": "Route 5",
+          "etapes": [
+            "1-1",
+            "2-1",
+            "3-1",
+            "4-1",
+            "5-1"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 52,
+              "nom": "Miaouss",
+              "rarete": "commun"
+            },
+            {
+              "id": 44,
+              "nom": "Ortide",
+              "rarete": "commun"
+            },
+            {
+              "id": 70,
+              "nom": "Boustiflor",
+              "rarete": "commun"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-1",
+            "nom": "Pêcheur",
+            "equipe": [
+              {
+                "id": 129,
+                "nom": "Magicarpe"
+              },
+              {
+                "id": 118,
+                "nom": "Poissirène"
+              }
+            ]
+          }
+        },
+        {
+          "palier": 2,
+          "lieu": "Route 6",
+          "etapes": [
+            "1-2",
+            "2-2",
+            "3-2",
+            "4-2",
+            "5-2"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 60,
+              "nom": "Ptitard",
+              "rarete": "commun"
+            },
+            {
+              "id": 118,
+              "nom": "Poissirène",
+              "rarete": "commun"
+            },
+            {
+              "id": 129,
+              "nom": "Magicarpe",
+              "rarete": "commun"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-2",
+            "nom": "Marin",
+            "equipe": [
+              {
+                "id": 66,
+                "nom": "Machoc"
+              },
+              {
+                "id": 72,
+                "nom": "Tentacool"
+              }
+            ]
+          }
+        },
+        {
+          "palier": 3,
+          "lieu": "L'Océane",
+          "etapes": [
+            "1-3",
+            "2-3",
+            "3-3",
+            "4-3",
+            "5-3"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 72,
+              "nom": "Tentacool",
+              "rarete": "commun"
+            },
+            {
+              "id": 98,
+              "nom": "Kraby",
+              "rarete": "commun"
+            },
+            {
+              "id": 116,
+              "nom": "Hypotrempe",
+              "rarete": "commun"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-3",
+            "nom": "Rival Régis",
+            "equipe": [
+              {
+                "id": 17,
+                "nom": "Roucoups"
+              },
+              {
+                "id": 63,
+                "nom": "Abra"
+              },
+              {
+                "id": 8,
+                "nom": "Carabaffe"
+              }
+            ]
+          }
+        },
+        {
+          "palier": 4,
+          "lieu": "Grotte Taupiqueur",
+          "etapes": [
+            "1-4",
+            "2-4",
+            "3-4",
+            "4-4",
+            "5-4"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 50,
+              "nom": "Taupiqueur",
+              "rarete": "commun"
+            },
+            {
+              "id": 51,
+              "nom": "Triopikeur",
+              "rarete": "commun"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-4",
+            "nom": "Montagnard",
+            "equipe": [
+              {
+                "id": 50,
+                "nom": "Taupiqueur"
+              },
+              {
+                "id": 74,
+                "nom": "Racaillou"
+              }
+            ]
+          }
+        },
+        {
+          "palier": 5,
+          "lieu": "Port de Carmin",
+          "etapes": [
+            "1-5",
+            "2-5",
+            "3-5",
+            "4-5",
+            "5-5"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 7,
+              "nom": "Carapuce",
+              "rarete": "rare"
+            },
+            {
+              "id": 100,
+              "nom": "Voltorbe",
+              "rarete": "commun"
+            },
+            {
+              "id": 81,
+              "nom": "Magnéti",
+              "rarete": "commun"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-5",
+            "nom": "Major Bob",
+            "note": "Champion de la zone, voir champion_arene"
+          }
+        }
+      ]
+    },
+    {
+      "zone": 4,
+      "nom": "Chemin de Céladopole",
+      "niveaux_sauvages": {
+        "min": 24,
+        "max": 32
+      },
+      "champion_arene": {
+        "nom": "Érika",
+        "type": "Plante",
+        "badge": "Badge Prisme",
+        "equipe": [
+          {
+            "id": 71,
+            "nom": "Empiflor"
+          },
+          {
+            "id": 114,
+            "nom": "Saquedeneu"
+          },
+          {
+            "id": 45,
+            "nom": "Rafflesia"
+          }
+        ],
+        "niveau": 35
+      },
+      "paliers": [
+        {
+          "palier": 1,
+          "lieu": "Routes 9 et 10",
+          "etapes": [
+            "1-1",
+            "2-1",
+            "3-1",
+            "4-1",
+            "5-1"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 22,
+              "nom": "Rapasdepic",
+              "rarete": "commun"
+            },
+            {
+              "id": 24,
+              "nom": "Arbok",
+              "rarete": "commun"
+            },
+            {
+              "id": 28,
+              "nom": "Sablaireau",
+              "rarete": "commun"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-1",
+            "nom": "Pique-niqueuse",
+            "equipe": [
+              {
+                "id": 43,
+                "nom": "Mystherbe"
+              },
+              {
+                "id": 69,
+                "nom": "Chétiflor"
+              }
+            ]
+          }
+        },
+        {
+          "palier": 2,
+          "lieu": "Tunnel Roche",
+          "etapes": [
+            "1-2",
+            "2-2",
+            "3-2",
+            "4-2",
+            "5-2"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 66,
+              "nom": "Machoc",
+              "rarete": "commun"
+            },
+            {
+              "id": 75,
+              "nom": "Gravalanch",
+              "rarete": "commun"
+            },
+            {
+              "id": 95,
+              "nom": "Onix",
+              "rarete": "commun"
+            },
+            {
+              "id": 42,
+              "nom": "Nosferalto",
+              "rarete": "commun"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-2",
+            "nom": "Montagnard",
+            "equipe": [
+              {
+                "id": 74,
+                "nom": "Racaillou"
+              },
+              {
+                "id": 95,
+                "nom": "Onix"
+              },
+              {
+                "id": 66,
+                "nom": "Machoc"
+              }
+            ]
+          }
+        },
+        {
+          "palier": 3,
+          "lieu": "Routes 7 et 8",
+          "etapes": [
+            "1-3",
+            "2-3",
+            "3-3",
+            "4-3",
+            "5-3"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 58,
+              "nom": "Caninos",
+              "rarete": "commun"
+            },
+            {
+              "id": 37,
+              "nom": "Goupix",
+              "rarete": "commun"
+            },
+            {
+              "id": 53,
+              "nom": "Persian",
+              "rarete": "commun"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-3",
+            "nom": "Gentleman",
+            "equipe": [
+              {
+                "id": 58,
+                "nom": "Caninos"
+              },
+              {
+                "id": 52,
+                "nom": "Miaouss"
+              }
+            ]
+          }
+        },
+        {
+          "palier": 4,
+          "lieu": "Casino de Céladopole",
+          "etapes": [
+            "1-4",
+            "2-4",
+            "3-4",
+            "4-4",
+            "5-4"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 147,
+              "nom": "Minidraco",
+              "rarete": "rare"
+            },
+            {
+              "id": 123,
+              "nom": "Insécateur",
+              "rarete": "rare"
+            },
+            {
+              "id": 137,
+              "nom": "Porygon",
+              "rarete": "rare"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-4",
+            "nom": "Sbire Rocket",
+            "equipe": [
+              {
+                "id": 109,
+                "nom": "Smogo"
+              },
+              {
+                "id": 88,
+                "nom": "Tadmorv"
+              },
+              {
+                "id": 24,
+                "nom": "Arbok"
+              }
+            ]
+          }
+        },
+        {
+          "palier": 5,
+          "lieu": "Repaire Rocket",
+          "etapes": [
+            "1-5",
+            "2-5",
+            "3-5",
+            "4-5",
+            "5-5"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 109,
+              "nom": "Smogo",
+              "rarete": "commun"
+            },
+            {
+              "id": 88,
+              "nom": "Tadmorv",
+              "rarete": "commun"
+            },
+            {
+              "id": 133,
+              "nom": "Évoli",
+              "rarete": "rare"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-5",
+            "nom": "Érika",
+            "note": "Champion de la zone, voir champion_arene"
+          }
+        }
+      ]
+    },
+    {
+      "zone": 5,
+      "nom": "Lavanville et Parc Safari",
+      "niveaux_sauvages": {
+        "min": 30,
+        "max": 40
+      },
+      "champion_arene": {
+        "nom": "Koga",
+        "type": "Poison",
+        "badge": "Badge Âme",
+        "equipe": [
+          {
+            "id": 109,
+            "nom": "Smogo"
+          },
+          {
+            "id": 89,
+            "nom": "Grotadmorv"
+          },
+          {
+            "id": 110,
+            "nom": "Smogogo"
+          },
+          {
+            "id": 49,
+            "nom": "Aéromite"
+          }
+        ],
+        "niveau": 43
+      },
+      "paliers": [
+        {
+          "palier": 1,
+          "lieu": "Tour Pokémon",
+          "etapes": [
+            "1-1",
+            "2-1",
+            "3-1",
+            "4-1",
+            "5-1"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 92,
+              "nom": "Fantominus",
+              "rarete": "commun"
+            },
+            {
+              "id": 93,
+              "nom": "Spectrum",
+              "rarete": "commun"
+            },
+            {
+              "id": 104,
+              "nom": "Osselait",
+              "rarete": "commun"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-1",
+            "nom": "Exorciste",
+            "equipe": [
+              {
+                "id": 92,
+                "nom": "Fantominus"
+              },
+              {
+                "id": 93,
+                "nom": "Spectrum"
+              }
+            ]
+          }
+        },
+        {
+          "palier": 2,
+          "lieu": "Routes 12 et 13",
+          "etapes": [
+            "1-2",
+            "2-2",
+            "3-2",
+            "4-2",
+            "5-2"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 143,
+              "nom": "Ronflex",
+              "rarete": "rare"
+            },
+            {
+              "id": 48,
+              "nom": "Mimitoss",
+              "rarete": "commun"
+            },
+            {
+              "id": 83,
+              "nom": "Canarticho",
+              "rarete": "commun"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-2",
+            "nom": "Motard",
+            "equipe": [
+              {
+                "id": 109,
+                "nom": "Smogo"
+              },
+              {
+                "id": 88,
+                "nom": "Tadmorv"
+              }
+            ]
+          }
+        },
+        {
+          "palier": 3,
+          "lieu": "Piste Cyclable",
+          "etapes": [
+            "1-3",
+            "2-3",
+            "3-3",
+            "4-3",
+            "5-3"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 84,
+              "nom": "Doduo",
+              "rarete": "commun"
+            },
+            {
+              "id": 77,
+              "nom": "Ponyta",
+              "rarete": "commun"
+            },
+            {
+              "id": 40,
+              "nom": "Grodoudou",
+              "rarete": "commun"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-3",
+            "nom": "Ornithologue",
+            "equipe": [
+              {
+                "id": 84,
+                "nom": "Doduo"
+              },
+              {
+                "id": 22,
+                "nom": "Rapasdepic"
+              }
+            ]
+          }
+        },
+        {
+          "palier": 4,
+          "lieu": "Parc Safari (plaines)",
+          "etapes": [
+            "1-4",
+            "2-4",
+            "3-4",
+            "4-4",
+            "5-4"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 115,
+              "nom": "Kangourex",
+              "rarete": "peu commun"
+            },
+            {
+              "id": 128,
+              "nom": "Tauros",
+              "rarete": "peu commun"
+            },
+            {
+              "id": 111,
+              "nom": "Rhinocorne",
+              "rarete": "commun"
+            },
+            {
+              "id": 113,
+              "nom": "Leveinard",
+              "rarete": "rare"
+            },
+            {
+              "id": 102,
+              "nom": "Noeunoeuf",
+              "rarete": "commun"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-4",
+            "nom": "Gardien du Safari",
+            "equipe": [
+              {
+                "id": 115,
+                "nom": "Kangourex"
+              },
+              {
+                "id": 128,
+                "nom": "Tauros"
+              }
+            ]
+          }
+        },
+        {
+          "palier": 5,
+          "lieu": "Parc Safari (profondeurs)",
+          "etapes": [
+            "1-5",
+            "2-5",
+            "3-5",
+            "4-5",
+            "5-5"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 127,
+              "nom": "Scarabrute",
+              "rarete": "peu commun"
+            },
+            {
+              "id": 49,
+              "nom": "Aéromite",
+              "rarete": "commun"
+            },
+            {
+              "id": 148,
+              "nom": "Draco",
+              "rarete": "rare"
+            },
+            {
+              "id": 114,
+              "nom": "Saquedeneu",
+              "rarete": "commun"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-5",
+            "nom": "Koga",
+            "note": "Champion de la zone, voir champion_arene"
+          }
+        }
+      ]
+    },
+    {
+      "zone": 6,
+      "nom": "Safrania",
+      "niveaux_sauvages": {
+        "min": 36,
+        "max": 44
+      },
+      "champion_arene": {
+        "nom": "Morgane",
+        "type": "Psy",
+        "badge": "Badge Marais",
+        "equipe": [
+          {
+            "id": 64,
+            "nom": "Kadabra"
+          },
+          {
+            "id": 122,
+            "nom": "M. Mime"
+          },
+          {
+            "id": 49,
+            "nom": "Aéromite"
+          },
+          {
+            "id": 65,
+            "nom": "Alakazam"
+          }
+        ],
+        "niveau": 47
+      },
+      "paliers": [
+        {
+          "palier": 1,
+          "lieu": "Routes 11 et 12 (pêche)",
+          "etapes": [
+            "1-1",
+            "2-1",
+            "3-1",
+            "4-1",
+            "5-1"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 117,
+              "nom": "Hypocéan",
+              "rarete": "commun"
+            },
+            {
+              "id": 119,
+              "nom": "Poissoroy",
+              "rarete": "commun"
+            },
+            {
+              "id": 61,
+              "nom": "Têtarte",
+              "rarete": "commun"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-1",
+            "nom": "Pêcheur",
+            "equipe": [
+              {
+                "id": 117,
+                "nom": "Hypocéan"
+              },
+              {
+                "id": 119,
+                "nom": "Poissoroy"
+              }
+            ]
+          }
+        },
+        {
+          "palier": 2,
+          "lieu": "Dojo Karaté",
+          "etapes": [
+            "1-2",
+            "2-2",
+            "3-2",
+            "4-2",
+            "5-2"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 106,
+              "nom": "Kicklee",
+              "rarete": "peu commun"
+            },
+            {
+              "id": 107,
+              "nom": "Tygnon",
+              "rarete": "peu commun"
+            },
+            {
+              "id": 67,
+              "nom": "Machopeur",
+              "rarete": "commun"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-2",
+            "nom": "Maître Karatéka",
+            "equipe": [
+              {
+                "id": 106,
+                "nom": "Kicklee"
+              },
+              {
+                "id": 107,
+                "nom": "Tygnon"
+              }
+            ]
+          }
+        },
+        {
+          "palier": 3,
+          "lieu": "Sylphe SARL",
+          "etapes": [
+            "1-3",
+            "2-3",
+            "3-3",
+            "4-3",
+            "5-3"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 131,
+              "nom": "Lokhlass",
+              "rarete": "rare"
+            },
+            {
+              "id": 64,
+              "nom": "Kadabra",
+              "rarete": "commun"
+            },
+            {
+              "id": 97,
+              "nom": "Hypnomade",
+              "rarete": "commun"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-3",
+            "nom": "Rival Régis",
+            "equipe": [
+              {
+                "id": 17,
+                "nom": "Roucoups"
+              },
+              {
+                "id": 64,
+                "nom": "Kadabra"
+              },
+              {
+                "id": 8,
+                "nom": "Carabaffe"
+              }
+            ]
+          }
+        },
+        {
+          "palier": 4,
+          "lieu": "Rues de Safrania",
+          "etapes": [
+            "1-4",
+            "2-4",
+            "3-4",
+            "4-4",
+            "5-4"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 122,
+              "nom": "M. Mime",
+              "rarete": "peu commun"
+            },
+            {
+              "id": 96,
+              "nom": "Soporifik",
+              "rarete": "commun"
+            },
+            {
+              "id": 124,
+              "nom": "Lippoutou",
+              "rarete": "peu commun"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-4",
+            "nom": "Giovanni (Sylphe)",
+            "equipe": [
+              {
+                "id": 111,
+                "nom": "Rhinocorne"
+              },
+              {
+                "id": 53,
+                "nom": "Persian"
+              }
+            ]
+          }
+        },
+        {
+          "palier": 5,
+          "lieu": "Sous-sol de Sylphe",
+          "etapes": [
+            "1-5",
+            "2-5",
+            "3-5",
+            "4-5",
+            "5-5"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 110,
+              "nom": "Smogogo",
+              "rarete": "commun"
+            },
+            {
+              "id": 89,
+              "nom": "Grotadmorv",
+              "rarete": "commun"
+            },
+            {
+              "id": 2,
+              "nom": "Herbizarre",
+              "rarete": "rare"
+            },
+            {
+              "id": 5,
+              "nom": "Reptincel",
+              "rarete": "rare"
+            },
+            {
+              "id": 8,
+              "nom": "Carabaffe",
+              "rarete": "rare"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-5",
+            "nom": "Morgane",
+            "note": "Champion de la zone, voir champion_arene"
+          }
+        }
+      ]
+    },
+    {
+      "zone": 7,
+      "nom": "Îles et Cramois'Île",
+      "niveaux_sauvages": {
+        "min": 40,
+        "max": 50
+      },
+      "champion_arene": {
+        "nom": "Auguste",
+        "type": "Feu",
+        "badge": "Badge Volcan",
+        "equipe": [
+          {
+            "id": 58,
+            "nom": "Caninos"
+          },
+          {
+            "id": 77,
+            "nom": "Ponyta"
+          },
+          {
+            "id": 78,
+            "nom": "Galopa"
+          },
+          {
+            "id": 59,
+            "nom": "Arcanin"
+          }
+        ],
+        "niveau": 52
+      },
+      "paliers": [
+        {
+          "palier": 1,
+          "lieu": "Routes maritimes 19 et 20",
+          "etapes": [
+            "1-1",
+            "2-1",
+            "3-1",
+            "4-1",
+            "5-1"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 73,
+              "nom": "Tentacruel",
+              "rarete": "commun"
+            },
+            {
+              "id": 90,
+              "nom": "Kokiyas",
+              "rarete": "commun"
+            },
+            {
+              "id": 120,
+              "nom": "Stari",
+              "rarete": "commun"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-1",
+            "nom": "Nageuse",
+            "equipe": [
+              {
+                "id": 120,
+                "nom": "Stari"
+              },
+              {
+                "id": 72,
+                "nom": "Tentacool"
+              }
+            ]
+          }
+        },
+        {
+          "palier": 2,
+          "lieu": "Îles Écume",
+          "etapes": [
+            "1-2",
+            "2-2",
+            "3-2",
+            "4-2",
+            "5-2"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 86,
+              "nom": "Otaria",
+              "rarete": "commun"
+            },
+            {
+              "id": 87,
+              "nom": "Lamantine",
+              "rarete": "commun"
+            },
+            {
+              "id": 91,
+              "nom": "Crustabri",
+              "rarete": "commun"
+            },
+            {
+              "id": 79,
+              "nom": "Ramoloss",
+              "rarete": "commun"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-2",
+            "nom": "Pêcheur",
+            "equipe": [
+              {
+                "id": 90,
+                "nom": "Kokiyas"
+              },
+              {
+                "id": 87,
+                "nom": "Lamantine"
+              }
+            ]
+          },
+          "rencontre_legendaire": {
+            "id": 144,
+            "nom": "Artikodin",
+            "niveau": 50,
+            "capturable": true,
+            "note": "Combat optionnel débloqué après le boss du palier, capture possible après victoire"
+          }
+        },
+        {
+          "palier": 3,
+          "lieu": "Centrale",
+          "etapes": [
+            "1-3",
+            "2-3",
+            "3-3",
+            "4-3",
+            "5-3"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 82,
+              "nom": "Magnéton",
+              "rarete": "commun"
+            },
+            {
+              "id": 101,
+              "nom": "Électrode",
+              "rarete": "commun"
+            },
+            {
+              "id": 125,
+              "nom": "Élektek",
+              "rarete": "peu commun"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-3",
+            "nom": "Scientifique",
+            "equipe": [
+              {
+                "id": 100,
+                "nom": "Voltorbe"
+              },
+              {
+                "id": 82,
+                "nom": "Magnéton"
+              }
+            ]
+          },
+          "rencontre_legendaire": {
+            "id": 145,
+            "nom": "Électhor",
+            "niveau": 50,
+            "capturable": true,
+            "note": "Combat optionnel débloqué après le boss du palier, capture possible après victoire"
+          }
+        },
+        {
+          "palier": 4,
+          "lieu": "Manoir Pokémon",
+          "etapes": [
+            "1-4",
+            "2-4",
+            "3-4",
+            "4-4",
+            "5-4"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 126,
+              "nom": "Magmar",
+              "rarete": "peu commun"
+            },
+            {
+              "id": 132,
+              "nom": "Métamorph",
+              "rarete": "rare"
+            },
+            {
+              "id": 38,
+              "nom": "Feunard",
+              "rarete": "commun"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-4",
+            "nom": "Scientifique du labo",
+            "equipe": [
+              {
+                "id": 138,
+                "nom": "Amonita"
+              },
+              {
+                "id": 140,
+                "nom": "Kabuto"
+              }
+            ]
+          }
+        },
+        {
+          "palier": 5,
+          "lieu": "Laboratoire de Cramois'Île",
+          "etapes": [
+            "1-5",
+            "2-5",
+            "3-5",
+            "4-5",
+            "5-5"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 139,
+              "nom": "Amonistar",
+              "rarete": "rare"
+            },
+            {
+              "id": 141,
+              "nom": "Kabutops",
+              "rarete": "rare"
+            },
+            {
+              "id": 142,
+              "nom": "Ptéra",
+              "rarete": "rare"
+            },
+            {
+              "id": 121,
+              "nom": "Staross",
+              "rarete": "commun"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-5",
+            "nom": "Auguste",
+            "note": "Champion de la zone, voir champion_arene"
+          }
+        }
+      ]
+    },
+    {
+      "zone": 8,
+      "nom": "Retour à Jadielle",
+      "niveaux_sauvages": {
+        "min": 45,
+        "max": 55
+      },
+      "champion_arene": {
+        "nom": "Giovanni",
+        "type": "Sol",
+        "badge": "Badge Terre",
+        "equipe": [
+          {
+            "id": 111,
+            "nom": "Rhinocorne"
+          },
+          {
+            "id": 51,
+            "nom": "Triopikeur"
+          },
+          {
+            "id": 31,
+            "nom": "Nidoqueen"
+          },
+          {
+            "id": 34,
+            "nom": "Nidoking"
+          },
+          {
+            "id": 112,
+            "nom": "Rhinoféros"
+          }
+        ],
+        "niveau": 58
+      },
+      "paliers": [
+        {
+          "palier": 1,
+          "lieu": "Route 21 (pêche)",
+          "etapes": [
+            "1-1",
+            "2-1",
+            "3-1",
+            "4-1",
+            "5-1"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 130,
+              "nom": "Léviator",
+              "rarete": "rare"
+            },
+            {
+              "id": 99,
+              "nom": "Krabboss",
+              "rarete": "commun"
+            },
+            {
+              "id": 55,
+              "nom": "Akwakwak",
+              "rarete": "commun"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-1",
+            "nom": "Pêcheur",
+            "equipe": [
+              {
+                "id": 130,
+                "nom": "Léviator"
+              },
+              {
+                "id": 99,
+                "nom": "Krabboss"
+              }
+            ]
+          }
+        },
+        {
+          "palier": 2,
+          "lieu": "Route 23",
+          "etapes": [
+            "1-2",
+            "2-2",
+            "3-2",
+            "4-2",
+            "5-2"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 57,
+              "nom": "Colossinge",
+              "rarete": "commun"
+            },
+            {
+              "id": 78,
+              "nom": "Galopa",
+              "rarete": "commun"
+            },
+            {
+              "id": 85,
+              "nom": "Dodrio",
+              "rarete": "commun"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-2",
+            "nom": "Topdresseur",
+            "equipe": [
+              {
+                "id": 57,
+                "nom": "Colossinge"
+              },
+              {
+                "id": 85,
+                "nom": "Dodrio"
+              }
+            ]
+          }
+        },
+        {
+          "palier": 3,
+          "lieu": "Plaines de Jadielle",
+          "etapes": [
+            "1-3",
+            "2-3",
+            "3-3",
+            "4-3",
+            "5-3"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 31,
+              "nom": "Nidoqueen",
+              "rarete": "commun"
+            },
+            {
+              "id": 34,
+              "nom": "Nidoking",
+              "rarete": "commun"
+            },
+            {
+              "id": 112,
+              "nom": "Rhinoféros",
+              "rarete": "commun"
+            },
+            {
+              "id": 105,
+              "nom": "Ossatueur",
+              "rarete": "commun"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-3",
+            "nom": "Montagnard",
+            "equipe": [
+              {
+                "id": 112,
+                "nom": "Rhinoféros"
+              },
+              {
+                "id": 105,
+                "nom": "Ossatueur"
+              }
+            ]
+          }
+        },
+        {
+          "palier": 4,
+          "lieu": "Couloirs de l'Arène",
+          "etapes": [
+            "1-4",
+            "2-4",
+            "3-4",
+            "4-4",
+            "5-4"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 76,
+              "nom": "Grolem",
+              "rarete": "commun"
+            },
+            {
+              "id": 62,
+              "nom": "Tartard",
+              "rarete": "commun"
+            },
+            {
+              "id": 47,
+              "nom": "Parasect",
+              "rarete": "commun"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-4",
+            "nom": "Rival Régis",
+            "equipe": [
+              {
+                "id": 18,
+                "nom": "Roucarnage"
+              },
+              {
+                "id": 59,
+                "nom": "Arcanin"
+              },
+              {
+                "id": 65,
+                "nom": "Alakazam"
+              },
+              {
+                "id": 9,
+                "nom": "Tortank"
+              }
+            ]
+          }
+        },
+        {
+          "palier": 5,
+          "lieu": "Repaire de Giovanni",
+          "etapes": [
+            "1-5",
+            "2-5",
+            "3-5",
+            "4-5",
+            "5-5"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 26,
+              "nom": "Raichu",
+              "rarete": "peu commun"
+            },
+            {
+              "id": 59,
+              "nom": "Arcanin",
+              "rarete": "peu commun"
+            },
+            {
+              "id": 134,
+              "nom": "Aquali",
+              "rarete": "rare"
+            },
+            {
+              "id": 135,
+              "nom": "Voltali",
+              "rarete": "rare"
+            },
+            {
+              "id": 136,
+              "nom": "Pyroli",
+              "rarete": "rare"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-5",
+            "nom": "Giovanni",
+            "note": "Champion de la zone, voir champion_arene"
+          }
+        }
+      ]
+    },
+    {
+      "zone": 9,
+      "nom": "Ligue Pokémon",
+      "niveaux_sauvages": {
+        "min": 50,
+        "max": 62
+      },
+      "champion_arene": {
+        "nom": "Conseil 4 + Champion Régis",
+        "type": "Mixte",
+        "badge": "Titre de Maître",
+        "equipe": [
+          {
+            "id": 18,
+            "nom": "Roucarnage"
+          },
+          {
+            "id": 65,
+            "nom": "Alakazam"
+          },
+          {
+            "id": 112,
+            "nom": "Rhinoféros"
+          },
+          {
+            "id": 103,
+            "nom": "Noadkoko"
+          },
+          {
+            "id": 59,
+            "nom": "Arcanin"
+          },
+          {
+            "id": 9,
+            "nom": "Tortank"
+          }
+        ],
+        "niveau": 65,
+        "enchainement": [
+          {
+            "ordre": 1,
+            "nom": "Olga",
+            "type": "Glace",
+            "equipe": [
+              {
+                "id": 87,
+                "nom": "Lamantine"
+              },
+              {
+                "id": 91,
+                "nom": "Crustabri"
+              },
+              {
+                "id": 124,
+                "nom": "Lippoutou"
+              },
+              {
+                "id": 131,
+                "nom": "Lokhlass"
+              }
+            ],
+            "niveau": 56
+          },
+          {
+            "ordre": 2,
+            "nom": "Aldo",
+            "type": "Combat",
+            "equipe": [
+              {
+                "id": 95,
+                "nom": "Onix"
+              },
+              {
+                "id": 107,
+                "nom": "Tygnon"
+              },
+              {
+                "id": 106,
+                "nom": "Kicklee"
+              },
+              {
+                "id": 68,
+                "nom": "Mackogneur"
+              }
+            ],
+            "niveau": 58
+          },
+          {
+            "ordre": 3,
+            "nom": "Agatha",
+            "type": "Spectre",
+            "equipe": [
+              {
+                "id": 94,
+                "nom": "Ectoplasma"
+              },
+              {
+                "id": 42,
+                "nom": "Nosferalto"
+              },
+              {
+                "id": 93,
+                "nom": "Spectrum"
+              },
+              {
+                "id": 24,
+                "nom": "Arbok"
+              }
+            ],
+            "niveau": 60
+          },
+          {
+            "ordre": 4,
+            "nom": "Peter",
+            "type": "Dragon",
+            "equipe": [
+              {
+                "id": 130,
+                "nom": "Léviator"
+              },
+              {
+                "id": 148,
+                "nom": "Draco"
+              },
+              {
+                "id": 142,
+                "nom": "Ptéra"
+              },
+              {
+                "id": 149,
+                "nom": "Dracolosse"
+              }
+            ],
+            "niveau": 62
+          },
+          {
+            "ordre": 5,
+            "nom": "Champion Régis",
+            "type": "Mixte",
+            "equipe": [
+              {
+                "id": 18,
+                "nom": "Roucarnage"
+              },
+              {
+                "id": 65,
+                "nom": "Alakazam"
+              },
+              {
+                "id": 112,
+                "nom": "Rhinoféros"
+              },
+              {
+                "id": 103,
+                "nom": "Noadkoko"
+              },
+              {
+                "id": 59,
+                "nom": "Arcanin"
+              },
+              {
+                "id": 9,
+                "nom": "Tortank"
+              }
+            ],
+            "niveau": 65
+          }
+        ],
+        "regle": "Les 5 combats s'enchaînent sans retour au menu. Une défaite renvoie au début du Conseil 4."
+      },
+      "paliers": [
+        {
+          "palier": 1,
+          "lieu": "Route Victoire",
+          "etapes": [
+            "1-1",
+            "2-1",
+            "3-1",
+            "4-1",
+            "5-1"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 68,
+              "nom": "Mackogneur",
+              "rarete": "commun"
+            },
+            {
+              "id": 18,
+              "nom": "Roucarnage",
+              "rarete": "commun"
+            },
+            {
+              "id": 36,
+              "nom": "Mélodelfe",
+              "rarete": "peu commun"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-1",
+            "nom": "Topdresseur",
+            "equipe": [
+              {
+                "id": 57,
+                "nom": "Colossinge"
+              },
+              {
+                "id": 85,
+                "nom": "Dodrio"
+              },
+              {
+                "id": 78,
+                "nom": "Galopa"
+              }
+            ]
+          }
+        },
+        {
+          "palier": 2,
+          "lieu": "Profondeurs de la Route Victoire",
+          "etapes": [
+            "1-2",
+            "2-2",
+            "3-2",
+            "4-2",
+            "5-2"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 45,
+              "nom": "Rafflesia",
+              "rarete": "peu commun"
+            },
+            {
+              "id": 71,
+              "nom": "Empiflor",
+              "rarete": "peu commun"
+            },
+            {
+              "id": 80,
+              "nom": "Flagadoss",
+              "rarete": "commun"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-2",
+            "nom": "Montagnard",
+            "equipe": [
+              {
+                "id": 76,
+                "nom": "Grolem"
+              },
+              {
+                "id": 95,
+                "nom": "Onix"
+              },
+              {
+                "id": 105,
+                "nom": "Ossatueur"
+              }
+            ]
+          },
+          "rencontre_legendaire": {
+            "id": 146,
+            "nom": "Sulfura",
+            "niveau": 50,
+            "capturable": true,
+            "note": "Combat optionnel débloqué après le boss du palier, capture possible après victoire"
+          }
+        },
+        {
+          "palier": 3,
+          "lieu": "Plateau Indigo",
+          "etapes": [
+            "1-3",
+            "2-3",
+            "3-3",
+            "4-3",
+            "5-3"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 103,
+              "nom": "Noadkoko",
+              "rarete": "commun"
+            },
+            {
+              "id": 108,
+              "nom": "Excelangue",
+              "rarete": "commun"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-3",
+            "nom": "Topdresseuse",
+            "equipe": [
+              {
+                "id": 36,
+                "nom": "Mélodelfe"
+              },
+              {
+                "id": 103,
+                "nom": "Noadkoko"
+              },
+              {
+                "id": 62,
+                "nom": "Tartard"
+              }
+            ]
+          }
+        },
+        {
+          "palier": 4,
+          "lieu": "Grotte Azurée",
+          "etapes": [
+            "1-4",
+            "2-4",
+            "3-4",
+            "4-4",
+            "5-4"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 149,
+              "nom": "Dracolosse",
+              "rarete": "très rare"
+            },
+            {
+              "id": 3,
+              "nom": "Florizarre",
+              "rarete": "très rare"
+            },
+            {
+              "id": 6,
+              "nom": "Dracaufeu",
+              "rarete": "très rare"
+            },
+            {
+              "id": 9,
+              "nom": "Tortank",
+              "rarete": "très rare"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-4",
+            "nom": "Dresseur Dragon",
+            "equipe": [
+              {
+                "id": 147,
+                "nom": "Minidraco"
+              },
+              {
+                "id": 148,
+                "nom": "Draco"
+              },
+              {
+                "id": 130,
+                "nom": "Léviator"
+              }
+            ]
+          },
+          "rencontre_legendaire": {
+            "id": 150,
+            "nom": "Mewtwo",
+            "niveau": 70,
+            "capturable": true,
+            "note": "Combat optionnel débloqué après le boss du palier, capture possible après victoire"
+          }
+        },
+        {
+          "palier": 5,
+          "lieu": "Sommet du Plateau",
+          "etapes": [
+            "1-5",
+            "2-5",
+            "3-5",
+            "4-5",
+            "5-5"
+          ],
+          "pokemon_sauvages": [
+            {
+              "id": 65,
+              "nom": "Alakazam",
+              "rarete": "peu commun"
+            },
+            {
+              "id": 94,
+              "nom": "Ectoplasma",
+              "rarete": "peu commun"
+            },
+            {
+              "id": 151,
+              "nom": "Mew",
+              "rarete": "légendaire"
+            }
+          ],
+          "boss_etape_5": {
+            "etape": "5-5",
+            "nom": "Conseil 4 + Champion Régis",
+            "note": "Champion de la zone, voir champion_arene"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,31 +1,41 @@
-import pokemon from "../data/pokemon.json";
-import zones from "../data/zones.json";
 import { state, notify } from "../core/state.js";
-import { gainMoney } from "./economy.js";
+import { modes } from "./modes/index.js";
+import { rewardKill } from "./rewards.js";
+import { clickHit, teamDps } from "./hero.js";
 
-export const clickDamage = () => 1 + state.upgrades.clickDamage;
-
-export function teamDps() {
-  return state.team.reduce((sum, id) => sum + (pokemon[id]?.dps ?? 0), 0);
-}
-
-export function spawnEnemy() {
-  const spawns = zones[state.zone].spawns;
-  let roll = Math.random() * spawns.reduce((s, x) => s + x.weight, 0);
-  const pick = spawns.find((s) => (roll -= s.weight) < 0) ?? spawns[0];
-  const hp = pokemon[pick.id].hp;
-  state.enemy = { id: pick.id, hp, maxHp: hp };
-}
+export const spawnEnemy = () => modes[state.mode].spawn();
 
 export function damageEnemy(amount) {
-  if (!state.enemy) spawnEnemy();
-  state.enemy.hp -= amount;
-  if (state.enemy.hp <= 0) {
-    gainMoney(pokemon[state.enemy.id].reward);
+  const e = state.enemy;
+  if (!e) {
     spawnEnemy();
+    return notify();
+  }
+  if (e.defeated) return;
+  e.hp -= amount;
+  if (e.hp <= 0) {
+    state.stats.kills += 1;
+    if (e.kind === "legend") {
+      // un légendaire vaincu reste là, affaibli : on peut tenter de le capturer
+      e.hp = 0;
+      e.defeated = true;
+    } else {
+      rewardKill(e);
+      modes[state.mode].onClear(e);
+    }
   }
   notify();
 }
 
-export const click = () => damageEnemy(clickDamage());
-export const autoAttack = (dt) => teamDps() > 0 && damageEnemy(teamDps() * dt);
+// Retourne { damage, crit } pour l'affichage.
+export function click() {
+  state.stats.clicks += 1;
+  const hit = clickHit();
+  damageEnemy(hit.damage);
+  return hit;
+}
+
+export const autoAttack = (dt) => {
+  const dps = teamDps();
+  if (dps > 0) damageEnemy(dps * dt);
+};

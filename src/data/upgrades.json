@@ -1,5 +1,107 @@
 {
-  "clickDamage": { "name": "Force de Sacha", "baseCost": 10, "costGrowth": 1.5, "effect": "+1 dégât par clic" },
-  "moneyBonus": { "name": "Chance du dresseur", "baseCost": 25, "costGrowth": 1.7, "effect": "+10% d'argent" },
-  "pokeball": { "name": "Pokéball", "baseCost": 20, "costGrowth": 1, "effect": "1 Pokéball (consommable)" }
+  "poingFerme": {
+    "name": "Poing Ferme", "kind": "cumulative", "milestoneMult": 2, "effect": "+1 dégât par clic",
+    "maxLevel": 200, "baseCost": 10, "costGrowth": 1.07,
+    "unlock": null, "unlockLabel": "Début", "image": "upgrades/poing-ferme.png"
+  },
+  "doubleFrappe": {
+    "name": "Double Frappe", "kind": "unique", "effect": "Dégâts de clic ×2",
+    "maxLevel": 1, "baseCost": 500, "costGrowth": 1,
+    "unlock": { "type": "kills", "value": 10 }, "unlockLabel": "10 Pokémon vaincus", "image": "upgrades/double-frappe.png"
+  },
+  "entrainement": {
+    "name": "Entraînement", "kind": "cumulative", "milestoneMult": 2, "effect": "+5 % dégâts de clic",
+    "maxLevel": 100, "baseCost": 100, "costGrowth": 1.10,
+    "unlock": { "type": "kills", "value": 20 }, "unlockLabel": "20 Pokémon vaincus", "image": "upgrades/entrainement.png"
+  },
+  "superEfficace": {
+    "name": "Super Efficace", "kind": "unique", "effect": "+25 % dégâts avec l'avantage de type",
+    "maxLevel": 1, "baseCost": 1500, "costGrowth": 1,
+    "unlock": { "type": "captures", "value": 1 }, "unlockLabel": "1re capture", "image": "upgrades/super-efficace.png",
+    "implemented": false
+  },
+  "encouragements": {
+    "name": "Encouragements", "kind": "cumulative", "milestoneMult": 2, "effect": "+5 % DPS de l'équipe",
+    "maxLevel": 200, "baseCost": 200, "costGrowth": 1.07,
+    "unlock": { "type": "captures", "value": 1 }, "unlockLabel": "1re capture", "image": "upgrades/encouragements.png"
+  },
+  "combo": {
+    "name": "Combo", "kind": "unique", "effect": "Clics rapides : +2 % par clic (max ×2), reset après 1 s",
+    "maxLevel": 1, "baseCost": 5000, "costGrowth": 1,
+    "unlock": { "type": "kills", "value": 50 }, "unlockLabel": "50 Pokémon vaincus", "image": "upgrades/combo.png"
+  },
+  "coupDoeil": {
+    "name": "Coup d'Œil", "kind": "cumulative", "milestoneMult": 1.5, "effect": "+1 % chance de critique",
+    "maxLevel": 50, "baseCost": 500, "costGrowth": 1.15,
+    "unlock": { "type": "kills", "value": 50 }, "unlockLabel": "50 Pokémon vaincus", "image": "upgrades/coup-d-oeil.png"
+  },
+  "rappelTactique": {
+    "name": "Rappel Tactique", "kind": "unique", "effect": "DPS de l'équipe ×2",
+    "maxLevel": 1, "baseCost": 15000, "costGrowth": 1,
+    "unlock": { "type": "teamSize", "value": 3 }, "unlockLabel": "3 Pokémon dans l'équipe", "image": "upgrades/rappel-tactique.png"
+  },
+  "lienConfiance": {
+    "name": "Lien de Confiance", "kind": "cumulative", "milestoneMult": 2, "effect": "+0,5 % du DPS équipe ajouté à chaque clic",
+    "maxLevel": 100, "baseCost": 2000, "costGrowth": 1.10,
+    "unlock": { "type": "teamSize", "value": 3 }, "unlockLabel": "3 Pokémon dans l'équipe", "image": "upgrades/lien-de-confiance.png"
+  },
+  "coupDeGrace": {
+    "name": "Coup de Grâce", "kind": "unique", "effect": "Dégâts ×5 sous 20 % de PV adverses",
+    "maxLevel": 1, "baseCost": 30000, "costGrowth": 1,
+    "unlock": { "type": "badges", "value": 1 }, "unlockLabel": "Badge 1", "image": "upgrades/coup-de-grace.png"
+  },
+  "frappePrecise": {
+    "name": "Frappe Précise", "kind": "cumulative", "milestoneMult": 1.5, "effect": "+10 % dégâts critiques",
+    "maxLevel": 50, "baseCost": 1000, "costGrowth": 1.15,
+    "unlock": { "type": "badges", "value": 1 }, "unlockLabel": "Badge 1", "image": "upgrades/frappe-precise.png"
+  },
+  "frenesie": {
+    "name": "Frénésie", "kind": "unique", "effect": "Toutes les 100 frappes, 10 s de dégâts ×3",
+    "maxLevel": 1, "baseCost": 75000, "costGrowth": 1,
+    "unlock": { "type": "badges", "value": 2 }, "unlockLabel": "Badge 2", "image": "upgrades/frenesie.png"
+  },
+  "specialiste": {
+    "name": "Spécialiste [Type]", "kind": "cumulative", "milestoneMult": 2, "effect": "+5 % dégâts pour un type (1 par type)",
+    "maxLevel": 50, "baseCost": 5000, "costGrowth": 1.12,
+    "unlock": { "type": "badges", "value": 3 }, "unlockLabel": "Badge 3", "image": "upgrades/specialiste-type.png",
+    "implemented": false
+  },
+  "memoirePokedex": {
+    "name": "Mémoire du Pokédex", "kind": "unique", "effect": "+1 % dégâts par espèce capturée",
+    "maxLevel": 1, "baseCost": 150000, "costGrowth": 1,
+    "unlock": { "type": "species", "value": 30 }, "unlockLabel": "30 espèces", "image": "upgrades/memoire-du-pokedex.png"
+  },
+  "chasseurBoss": {
+    "name": "Chasseur de Boss", "kind": "cumulative", "milestoneMult": 2, "effect": "+5 % dégâts contre dresseurs et champions",
+    "maxLevel": 100, "baseCost": 10000, "costGrowth": 1.10,
+    "unlock": { "type": "badges", "value": 4 }, "unlockLabel": "Badge 4", "image": "upgrades/chasseur-de-boss.png",
+    "implemented": false
+  },
+  "auraChampion": {
+    "name": "Aura du Champion", "kind": "unique", "effect": "Tous les dégâts ×2",
+    "maxLevel": 1, "baseCost": 500000, "costGrowth": 1,
+    "unlock": { "type": "badges", "value": 5 }, "unlockLabel": "Badge 5", "image": "upgrades/aura-du-champion.png"
+  },
+  "briseGarde": {
+    "name": "Brise-Garde", "kind": "cumulative", "milestoneMult": 1.5, "effect": "+1 % de défense adverse ignorée",
+    "maxLevel": 30, "baseCost": 25000, "costGrowth": 1.15,
+    "unlock": { "type": "badges", "value": 6 }, "unlockLabel": "Badge 6", "image": "upgrades/brise-garde.png",
+    "implemented": false
+  },
+  "megaLien": {
+    "name": "Méga Lien", "kind": "unique", "effect": "Le Pokémon en tête d'équipe inflige ×3",
+    "maxLevel": 1, "baseCost": 1500000, "costGrowth": 1,
+    "unlock": { "type": "badges", "value": 7 }, "unlockLabel": "Badge 7", "image": "upgrades/mega-lien.png"
+  },
+  "equipeSoudee": {
+    "name": "Équipe Soudée", "kind": "cumulative", "milestoneMult": 2, "effect": "+2 % DPS par Pokémon de même type dans l'équipe",
+    "maxLevel": 25, "baseCost": 50000, "costGrowth": 1.15,
+    "unlock": { "type": "badges", "value": 8 }, "unlockLabel": "Badge 8", "image": "upgrades/equipe-soudee.png",
+    "implemented": false
+  },
+  "legendeVivante": {
+    "name": "Légende Vivante", "kind": "unique", "effect": "Compétence active : ×10 dégâts pendant 30 s, recharge 10 min",
+    "maxLevel": 1, "baseCost": 10000000, "costGrowth": 1,
+    "unlock": { "type": "league", "value": true }, "unlockLabel": "Ligue battue", "image": "upgrades/legende-vivante.png"
+  }
 }

@@ -46,3 +46,24 @@ Pokémon est une marque de Nintendo / Game Freak. Projet de fans non commercial.
 - [ ] Choix de la zone, plus de zones
 - [ ] Gestion de la boîte / équipe dans l'UI
 - [ ] Mode histoire
+
+## Modes de jeu
+
+- **Histoire** : 9 zones × 5 paliers × 5 étapes (affichées "étape-palier", ex. 3-2). L'étape 5 est un boss avec un minuteur ; s'il n'est pas battu à temps, on farme puis on le redéfie. Mini-boss (paliers 1-4), champion d'arène (palier 5), Conseil 4 + Champion pour la Ligue.
+- **Herbes sauvages** : on farme un palier déjà débloqué, argent et EXP sans fin, capture possible quand le Pokémon est affaibli.
+- **Arène** (à venir) : architecture prévue dans `src/game/modes/arena.js`.
+
+## Données et équilibrage
+
+| Fichier | Contenu |
+| --- | --- |
+| `src/data/gen1/zones.json` | zones, paliers, Pokémon sauvages, boss, champions, légendaires |
+| `src/data/gen1/pokemon.json` | Pokémon (nom, types, stats de base, sprite) |
+| `src/data/upgrades.json` | améliorations du héros |
+| `src/data/shop.json` | objets du Shop (Poké Ball…) |
+| `src/data/backgrounds.json` | décors par zone / palier |
+| `src/data/balance.js` | **toutes les formules** : PV, gains, EXP, DPS, capture, coûts, sauvegarde, gain hors ligne |
+
+Ajouter une génération : créer `src/data/gen2/zones.json` et `pokemon.json` sur le modèle de `gen1`, puis les ajouter à `GENERATIONS` dans `src/data/index.js`.
+
+Sauvegarde automatique toutes les 10 s ; au retour, l'équipe a farmé pendant l'absence (plafonné à 8 h).

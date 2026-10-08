@@ -1,0 +1,5 @@
+{
+  "balls": {
+    "pokeball": { "name": "Pokéball", "baseCost": 20, "catchMult": 1 }
+  }
+}
