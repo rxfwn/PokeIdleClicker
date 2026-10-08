@@ -3,6 +3,8 @@ import { POKEMON } from "../data/index.js";
 import { pokemonDps } from "../data/balance.js";
 import upgrades from "../data/upgrades.json" with { type: "json" };
 import { state, notify } from "../core/state.js";
+import { ITEMS, buffActive, heldDpsMult } from "./inventory.js";
+import { caughtCount } from "./dex.js";
 
 export const level = (id) => state.upgrades[id] ?? 0;
 const has = (id) => level(id) > 0;
@@ -23,7 +25,7 @@ function effLevel(id) {
   return lvl * Math.pow(u.milestoneMult, milestones(u.maxLevel).filter((m) => m <= lvl).length);
 }
 
-export const speciesCaught = () => Object.values(state.dex).filter((d) => d.caught).length;
+export const speciesCaught = () => caughtCount();
 
 export function isUnlocked(id) {
   const k = upgrades[id].unlock;
@@ -53,15 +55,17 @@ function globalMult(now) {
 }
 
 function teamDpsBase() {
-  const sum = state.team.reduce((s, mon) => s + pokemonDps(mon.level, POKEMON[mon.id]?.bst), 0);
-  return sum * (1 + 0.05 * effLevel("encouragements")) * (has("rappelTactique") ? 2 : 1);
+  const sum = state.team.reduce((s, mon) => s + pokemonDps(mon.level, POKEMON[mon.id]?.bst) * heldDpsMult(mon), 0);
+  const boost = (buffActive("team") ? ITEMS["x-sp-atk"].boost.mult : 1) * (buffActive("speed") ? ITEMS["x-speed"].boost.mult : 1);
+  return sum * boost * (1 + 0.05 * effLevel("encouragements")) * (has("rappelTactique") ? 2 : 1);
 }
 
 export const teamDps = (now = Date.now()) => teamDpsBase() * globalMult(now);
 
 function baseClick() {
   const flat = 1 + effLevel("poingFerme") + 0.005 * effLevel("lienConfiance") * teamDpsBase();
-  return flat * (1 + 0.05 * effLevel("entrainement")) * (has("doubleFrappe") ? 2 : 1);
+  const boost = buffActive("click") ? ITEMS["x-attack"].boost.mult : 1; // Attaque +
+  return flat * boost * (1 + 0.05 * effLevel("entrainement")) * (has("doubleFrappe") ? 2 : 1);
 }
 
 // Dégâts d'un clic "normal" (sans combo, critique ni coup de grâce), pour l'affichage.
@@ -79,7 +83,7 @@ export function clickHit(now = Date.now()) {
   if (has("combo")) dmg *= Math.min(2, 1 + 0.02 * temp.combo);
   const e = state.enemy;
   if (has("coupDeGrace") && e && e.hp / e.maxHp < 0.2) dmg *= 5;
-  const crit = Math.random() < Math.min(1, 0.01 * effLevel("coupDoeil"));
+  const crit = buffActive("crit") || Math.random() < Math.min(1, 0.01 * effLevel("coupDoeil")); // Muscle + : critiques garantis
   if (crit) dmg *= 2 + 0.1 * effLevel("frappePrecise");
   return { damage: Math.max(1, Math.round(dmg)), crit };
 }

@@ -1,18 +1,22 @@
 import { subscribe, notify, state } from "../core/state.js";
 import { reset } from "../core/save.js";
-import { buyUpgrade, buyPokeballs } from "../game/economy.js";
+import { buyUpgrade } from "../game/economy.js";
+import { buyItem, sellItem, useItem, useCandy, equip } from "../game/items.js";
+import { buffActive } from "../game/inventory.js";
 import { moveToTeam, moveToBox } from "../game/team.js";
-import { tryCapture } from "../game/capture.js";
+import { beginCapture, endCapture } from "../game/capture.js";
+import { playCapture } from "./captureAnim.js";
 import { setMode } from "../game/modes/index.js";
-import { chooseWild, cycleWild } from "../game/modes/wild.js";
+import { chooseWild, cycleWild, cycleZone } from "../game/modes/wild.js";
 import { challengeBoss } from "../game/modes/story.js";
 import { startLegend, fleeLegend } from "../game/legends.js";
 import { skillStatus, activateLegend } from "../game/hero.js";
 import { $, setHTML } from "./dom.js";
 import { money, pokeballIcon } from "./money.js";
-import { initBattle, renderBattle, renderBoss, toast } from "./battle.js";
+import { initBattle, renderBattle, renderBoss, refreshActions } from "./battle.js";
 import { initTabs, activeTab, TABS } from "./tabs.js";
 import { panelHTML } from "./panels.js";
+import { openDexCard, initDexCard } from "./dexView.js";
 
 const actions = {
   buyMode: (d) => {
@@ -20,26 +24,41 @@ const actions = {
     notify();
   },
   buy: (d) => buyUpgrade(d.key, state.buyMode),
-  buyBalls: () => buyPokeballs(state.buyMode),
+  buyItem: (d) => buyItem(d.id, state.buyMode),
+  sellItem: (d) => sellItem(d.id),
+  useItem: (d) => useItem(d.id),
+  candyChoose: (d) => {
+    state.useItem = d.id;
+    notify();
+  },
+  candyGive: (d) => useCandy(state.useItem, d.list, Number(d.i)),
+  candyCancel: () => {
+    state.useItem = null;
+    notify();
+  },
   toTeam: (d) => moveToTeam(Number(d.i)),
   toBox: (d) => moveToBox(Number(d.i)),
   skill: () => activateLegend(),
   setMode: (d) => setMode(d.mode),
   zonePrev: () => cycleWild(-1),
   zoneNext: () => cycleWild(1),
+  zonePrevZone: () => cycleZone(-1),
+  zoneNextZone: () => cycleZone(1),
   wild: (d) => chooseWild(Number(d.zone), Number(d.palier)),
-  capture: () => {
-    const r = tryCapture();
-    if (r) toast(r.ok ? "Capturé !" : "Raté…");
+  capture: (d) => {
+    const r = beginCapture(d.ball); // la ball est lancée : le résultat s'applique à la fin de l'animation
+    if (r) playCapture(r, () => endCapture(r));
   },
   challenge: () => challengeBoss(),
   legendStart: (d) => startLegend(d.key),
   legendFlee: () => fleeLegend(),
+  dexOpen: (d) => openDexCard(Number(d.id)),
   reset: () => confirm("Effacer toute ta progression ?") && reset(),
 };
 
 export function initUI() {
   initBattle();
+  initDexCard();
   initTabs(renderPanel);
   for (const id of ["panel", "skill", "actions", "zone-label"]) {
     $(id).addEventListener("click", (ev) => {
@@ -47,15 +66,30 @@ export function initUI() {
       if (b && !b.disabled) actions[b.dataset.action](b.dataset);
     });
   }
+  $("panel").addEventListener("change", (ev) => {
+    const hold = ev.target.closest("select[data-hold]");
+    if (hold) {
+      hold.blur();
+      return equip(Number(hold.dataset.hold), hold.value || null);
+    }
+    const sel = ev.target.closest("select[data-filter]");
+    if (!sel) return;
+    state.filters[sel.dataset.filter] = sel.value;
+    sel.blur();
+    notify();
+  });
   setInterval(() => {
     renderSkill();
     renderBoss();
+    refreshActions();
+    if (activeTab() === "bag" && ["click", "team", "speed", "crit", "repel", "lure"].some((k) => buffActive(k))) renderPanel(); // compte à rebours des effets
   }, 250);
   subscribe(render);
   render(state);
 }
 
 function renderPanel() {
+  if (document.activeElement?.matches?.("#panel select")) return; // ne pas fermer une liste ouverte
   const tab = activeTab();
   const t = TABS.find((x) => x.id === tab);
   $("panel").style.setProperty("--c", t.color);

@@ -1,9 +1,10 @@
 // Mode Histoire : zones, paliers de 5 étapes, boss à l'étape 5, timer de boss.
 import { ZONES } from "../../data/index.js";
-import { BALANCE, storyLevel, miniBossLevel, moneyReward } from "../../data/balance.js";
+import { BALANCE, storyLevel, miniBossLevel, moneyReward, killsPerStep } from "../../data/balance.js";
 import { state, notify } from "../../core/state.js";
 import { makeEnemy, setEnemy, pickWild } from "../enemies.js";
 import { gainMoney } from "../rewards.js";
+import { addItem } from "../inventory.js";
 import { nextPosition, ordinal, palierData } from "../progress.js";
 
 // Les dresseurs d'un boss : mini-boss (paliers 1-4), champion d'arène (palier 5) ou Conseil 4 de la Ligue.
@@ -19,6 +20,9 @@ export function bossTrainers(zoneIndex, palier) {
   const b = palierData(zoneIndex, palier).boss_etape_5;
   return { kind: "boss", trainers: [{ name: b.nom, level: miniBossLevel(z, palier), team: b.equipe }] };
 }
+
+// Pokémon à vaincre dans l'étape en cours.
+export const killsNeeded = () => killsPerStep(state.story.zone, state.story.step);
 
 const markBest = () => {
   const s = state.story;
@@ -47,7 +51,10 @@ function completeBoss() {
   if (s.palier === 5) {
     if (!state.badgeZones.includes(s.zone)) state.badgeZones.push(s.zone);
     state.badges = state.badgeZones.length;
-    if (kind === "league") state.leagueBeaten = true;
+    if (kind === "league") {
+      if (!state.leagueBeaten) addItem("master-ball", 1); // récompense de la Ligue
+      state.leagueBeaten = true;
+    }
   }
   const key = `${s.zone}-${s.palier}`;
   if (p.rencontre_legendaire && !state.legends.some((l) => l.key === key)) {
@@ -97,7 +104,7 @@ export const story = {
     const s = state.story;
     if (state.boss) return advanceBoss();
     s.killsInStep += 1;
-    if (s.step < 5 && s.killsInStep >= BALANCE.killsPerStep) {
+    if (s.step < 5 && s.killsInStep >= killsNeeded()) {
       s.step += 1;
       s.killsInStep = 0;
       markBest();
@@ -114,15 +121,21 @@ export const story = {
 
 // Le boss n'a pas été battu à temps : on reste à l'étape 5 et on farme avant de réessayer.
 export function failBoss() {
+  const kind = state.boss?.kind ?? "boss";
   state.boss = null;
   state.story.bossFailed = true;
+  state.story.recoverUntil = Date.now() + BALANCE.bossRecover[kind] * 1000; // temps de récupération
   story.spawn();
   notify();
 }
 
+// Secondes restantes avant de pouvoir redéfier le boss (0 = prêt).
+export const recoverLeft = (now = Date.now()) => Math.max(0, Math.ceil(((state.story.recoverUntil ?? 0) - now) / 1000));
+
 export function challengeBoss() {
   const s = state.story;
   if (state.mode !== "story" || s.step !== 5 || !s.bossFailed || s.done) return;
+  if (recoverLeft() > 0) return;
   s.bossFailed = false;
   story.spawn();
   notify();

@@ -2,7 +2,6 @@
 // Pour rééquilibrer le jeu, on ne touche (presque) qu'à ce fichier.
 
 export const BALANCE = {
-  killsPerStep: 1, // Pokémon à vaincre pour passer à l'étape suivante
   levelCap: 100,
 
   save: {
@@ -13,11 +12,17 @@ export const BALANCE = {
   },
 
   // Multiplicateurs selon le type d'adversaire : wild, boss (mini-boss), champion, league, legend
-  hpMult: { wild: 1, boss: 2.5, champion: 5, league: 6, legend: 8 },
-  moneyMult: { wild: 1, boss: 2, champion: 4, league: 4, legend: 0 },
+  hpMult: { wild: 1, boss: 12, champion: 24, league: 30, legend: 40 },
+  moneyMult: { wild: 1, boss: 10, champion: 10, league: 10, legend: 0 }, // un boss rapporte 10× un sauvage
   expMult: { wild: 1, boss: 2, champion: 3, league: 3, legend: 0 },
   bossClearBonus: { boss: 5, champion: 15, league: 25 }, // × gain d'argent du dernier Pokémon
   bossTimeLimit: { boss: 30, champion: 45, league: 45 }, // secondes (la Ligue : par dresseur)
+  bossRecover: { boss: 30, champion: 60, league: 90 }, // secondes de récupération après un échec, avant de pouvoir redéfier
+
+  heldTypeBonus: 1.2, // objet tenu du bon type : +20 % de dégâts
+  expShare: 0.3, // part d'EXP des Pokémon hors équipe avec la Multi Exp
+  sellRate: 0.5, // revente : 50 % du prix d'achat
+  ball: { step: 0.15, power: 2 }, // prix de la Poké Ball = base × (1 + step × achetées)^power
 
   capture: {
     weakenedBelow: 0.5, // le bouton "Lancer une Poké Ball" apparaît sous cette part de PV
@@ -32,8 +37,8 @@ export const BALANCE = {
 export const enemyHp = (level, kind = "wild") =>
   Math.round((10 + 1.6 * Math.pow(level, 2.1)) * BALANCE.hpMult[kind]);
 
-export const moneyReward = (level, kind = "wild") =>
-  Math.round((3 + 0.8 * Math.pow(level, 1.5)) * BALANCE.moneyMult[kind]);
+// Un Pokémon sauvage rapporte environ 2 ₽ × son niveau (hypothèse d'équilibrage de la boutique).
+export const moneyReward = (level, kind = "wild") => Math.round(2 * level * BALANCE.moneyMult[kind]);
 
 export const expReward = (level, kind = "wild") =>
   Math.round((4 + 3 * level) * BALANCE.expMult[kind]);
@@ -77,3 +82,15 @@ export function captureChance({ rarity, hpFraction, ballMult = 1 }) {
 
 // Coût du niveau `level` (0 = premier achat) d'une amélioration.
 export const upgradeLevelCost = (baseCost, growth, level) => Math.ceil(baseCost * Math.pow(growth, level));
+
+// Prix de la Poké Ball suivante, sachant que `bought` ont déjà été achetées.
+// Le prix grimpe fortement : base × (1 + 0,15 × achetées)². Avec 200 ₽ de base : 11ᵉ ball ≈ 1 250 ₽, 51ᵉ ≈ 14 000 ₽, 101ᵉ ≈ 51 000 ₽.
+export const ballPrice = (baseCost, bought) => Math.ceil(baseCost * Math.pow(1 + BALANCE.ball.step * bought, BALANCE.ball.power));
+
+// ---------- Progression ----------
+
+// Pokémon à vaincre pour passer une étape (1 à 4 ; la 5 est le boss) : 3 ou 4 en zone 1, de plus en plus ensuite.
+export const killsPerStep = (zoneIndex, step) => 3 + Math.floor((step - 1) / 2) + zoneIndex;
+
+// Cases d'équipe : la 1re est ouverte dès le début, les autres s'ouvrent en atteignant ce palier de l'histoire.
+export const TEAM_SLOT_UNLOCKS = [null, { zone: 1, palier: 3 }, { zone: 2, palier: 1 }, { zone: 3, palier: 1 }, { zone: 5, palier: 1 }, { zone: 7, palier: 1 }];

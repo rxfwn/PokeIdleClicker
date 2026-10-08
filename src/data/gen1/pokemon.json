@@ -8,7 +8,9 @@
    "poison"
   ],
   "bst": 318,
-  "sprite": "sprites/bulbasaur.png"
+  "sprite": "sprites/bw/bulbasaur.png",
+  "sw": 35,
+  "sh": 33
  },
  "2": {
   "id": 2,
@@ -19,7 +21,9 @@
    "poison"
   ],
   "bst": 405,
-  "sprite": "sprites/ivysaur.png"
+  "sprite": "sprites/bw/ivysaur.png",
+  "sw": 58,
+  "sh": 51
  },
  "3": {
   "id": 3,
@@ -30,7 +34,9 @@
    "poison"
   ],
   "bst": 525,
-  "sprite": "sprites/venusaur.png"
+  "sprite": "sprites/bw/venusaur.png",
+  "sw": 79,
+  "sh": 69
  },
  "4": {
   "id": 4,
@@ -40,7 +46,9 @@
    "fire"
   ],
   "bst": 309,
-  "sprite": "sprites/charmander.png"
+  "sprite": "sprites/bw/charmander.png",
+  "sw": 38,
+  "sh": 42
  },
  "5": {
   "id": 5,
@@ -50,7 +58,9 @@
    "fire"
   ],
   "bst": 405,
-  "sprite": "sprites/charmeleon.png"
+  "sprite": "sprites/bw/charmeleon.png",
+  "sw": 60,
+  "sh": 56
  },
  "6": {
   "id": 6,
@@ -61,7 +71,9 @@
    "flying"
   ],
   "bst": 534,
-  "sprite": "sprites/charizard.png"
+  "sprite": "sprites/bw/charizard.png",
+  "sw": 74,
+  "sh": 80
  },
  "7": {
   "id": 7,
@@ -71,7 +83,9 @@
    "water"
   ],
   "bst": 314,
-  "sprite": "sprites/squirtle.png"
+  "sprite": "sprites/bw/squirtle.png",
+  "sw": 38,
+  "sh": 39
  },
  "8": {
   "id": 8,
@@ -81,7 +95,9 @@
    "water"
   ],
   "bst": 405,
-  "sprite": "sprites/wartortle.png"
+  "sprite": "sprites/bw/wartortle.png",
+  "sw": 56,
+  "sh": 57
  },
  "9": {
   "id": 9,
@@ -91,7 +107,9 @@
    "water"
   ],
   "bst": 530,
-  "sprite": "sprites/blastoise.png"
+  "sprite": "sprites/bw/blastoise.png",
+  "sw": 66,
+  "sh": 62
  },
  "10": {
   "id": 10,
@@ -101,7 +119,9 @@
    "bug"
   ],
   "bst": 195,
-  "sprite": "sprites/caterpie.png"
+  "sprite": "sprites/bw/caterpie.png",
+  "sw": 31,
+  "sh": 35
  },
  "11": {
   "id": 11,
@@ -111,7 +131,9 @@
    "bug"
   ],
   "bst": 205,
-  "sprite": "sprites/metapod.png"
+  "sprite": "sprites/bw/metapod.png",
+  "sw": 31,
+  "sh": 37
  },
  "12": {
   "id": 12,
@@ -122,7 +144,9 @@
    "flying"
   ],
   "bst": 395,
-  "sprite": "sprites/butterfree.png"
+  "sprite": "sprites/bw/butterfree.png",
+  "sw": 57,
+  "sh": 51
  },
  "13": {
   "id": 13,
@@ -133,7 +157,9 @@
    "poison"
   ],
   "bst": 195,
-  "sprite": "sprites/weedle.png"
+  "sprite": "sprites/bw/weedle.png",
+  "sw": 28,
+  "sh": 37
  },
  "14": {
   "id": 14,
@@ -144,7 +170,9 @@
    "poison"
   ],
   "bst": 205,
-  "sprite": "sprites/kakuna.png"
+  "sprite": "sprites/bw/kakuna.png",
+  "sw": 21,
+  "sh": 39
  },
  "15": {
   "id": 15,
@@ -155,7 +183,9 @@
    "poison"
   ],
   "bst": 395,
-  "sprite": "sprites/beedrill.png"
+  "sprite": "sprites/bw/beedrill.png",
+  "sw": 62,
+  "sh": 59
  },
  "16": {
   "id": 16,
@@ -166,7 +196,9 @@
    "flying"
   ],
   "bst": 251,
-  "sprite": "sprites/pidgey.png"
+  "sprite": "sprites/bw/pidgey.png",
+  "sw": 37,
+  "sh": 41
  },
  "17": {
   "id": 17,
@@ -177,7 +209,9 @@
    "flying"
   ],
   "bst": 349,
-  "sprite": "sprites/pidgeotto.png"
+  "sprite": "sprites/bw/pidgeotto.png",
+  "sw": 68,
+  "sh": 80
  },
  "18": {
   "id": 18,
@@ -188,7 +222,9 @@
    "flying"
   ],
   "bst": 479,
-  "sprite": "sprites/pidgeot.png"
+  "sprite": "sprites/bw/pidgeot.png",
+  "sw": 55,
+  "sh": 68
  },
  "19": {
   "id": 19,
@@ -198,7 +234,9 @@
    "normal"
   ],
   "bst": 253,
-  "sprite": "sprites/rattata.png"
+  "sprite": "sprites/bw/rattata.png",
+  "sw": 36,
+  "sh": 43
  },
  "20": {
   "id": 20,
@@ -208,7 +246,9 @@
    "normal"
   ],
   "bst": 413,
-  "sprite": "sprites/raticate.png"
+  "sprite": "sprites/bw/raticate.png",
+  "sw": 56,
+  "sh": 51
  },
  "21": {
   "id": 21,
@@ -219,7 +259,9 @@
    "flying"
   ],
   "bst": 262,
-  "sprite": "sprites/spearow.png"
+  "sprite": "sprites/bw/spearow.png",
+  "sw": 32,
+  "sh": 39
  },
  "22": {
   "id": 22,
@@ -230,7 +272,9 @@
    "flying"
   ],
   "bst": 442,
-  "sprite": "sprites/fearow.png"
+  "sprite": "sprites/bw/fearow.png",
+  "sw": 82,
+  "sh": 72
  },
  "23": {
   "id": 23,
@@ -240,7 +284,9 @@
    "poison"
   ],
   "bst": 288,
-  "sprite": "sprites/ekans.png"
+  "sprite": "sprites/bw/ekans.png",
+  "sw": 41,
+  "sh": 44
  },
  "24": {
   "id": 24,
@@ -250,7 +296,9 @@
    "poison"
   ],
   "bst": 448,
-  "sprite": "sprites/arbok.png"
+  "sprite": "sprites/bw/arbok.png",
+  "sw": 61,
+  "sh": 65
  },
  "25": {
   "id": 25,
@@ -260,7 +308,9 @@
    "electric"
   ],
   "bst": 320,
-  "sprite": "sprites/pikachu.png"
+  "sprite": "sprites/bw/pikachu.png",
+  "sw": 39,
+  "sh": 46
  },
  "26": {
   "id": 26,
@@ -270,7 +320,9 @@
    "electric"
   ],
   "bst": 485,
-  "sprite": "sprites/raichu.png"
+  "sprite": "sprites/bw/raichu.png",
+  "sw": 63,
+  "sh": 61
  },
  "27": {
   "id": 27,
@@ -280,7 +332,9 @@
    "ground"
   ],
   "bst": 300,
-  "sprite": "sprites/sandshrew.png"
+  "sprite": "sprites/bw/sandshrew.png",
+  "sw": 35,
+  "sh": 39
  },
  "28": {
   "id": 28,
@@ -290,7 +344,9 @@
    "ground"
   ],
   "bst": 450,
-  "sprite": "sprites/sandslash.png"
+  "sprite": "sprites/bw/sandslash.png",
+  "sw": 53,
+  "sh": 49
  },
  "29": {
   "id": 29,
@@ -300,7 +356,9 @@
    "poison"
   ],
   "bst": 275,
-  "sprite": "sprites/nidoran-f.png"
+  "sprite": "sprites/bw/nidoran-f.png",
+  "sw": 34,
+  "sh": 34
  },
  "30": {
   "id": 30,
@@ -310,7 +368,9 @@
    "poison"
   ],
   "bst": 365,
-  "sprite": "sprites/nidorina.png"
+  "sprite": "sprites/bw/nidorina.png",
+  "sw": 47,
+  "sh": 45
  },
  "31": {
   "id": 31,
@@ -321,7 +381,9 @@
    "ground"
   ],
   "bst": 505,
-  "sprite": "sprites/nidoqueen.png"
+  "sprite": "sprites/bw/nidoqueen.png",
+  "sw": 74,
+  "sh": 69
  },
  "32": {
   "id": 32,
@@ -331,7 +393,9 @@
    "poison"
   ],
   "bst": 273,
-  "sprite": "sprites/nidoran-m.png"
+  "sprite": "sprites/bw/nidoran-m.png",
+  "sw": 34,
+  "sh": 36
  },
  "33": {
   "id": 33,
@@ -341,7 +405,9 @@
    "poison"
   ],
   "bst": 365,
-  "sprite": "sprites/nidorino.png"
+  "sprite": "sprites/bw/nidorino.png",
+  "sw": 51,
+  "sh": 51
  },
  "34": {
   "id": 34,
@@ -352,7 +418,9 @@
    "ground"
   ],
   "bst": 505,
-  "sprite": "sprites/nidoking.png"
+  "sprite": "sprites/bw/nidoking.png",
+  "sw": 78,
+  "sh": 67
  },
  "35": {
   "id": 35,
@@ -362,7 +430,9 @@
    "fairy"
   ],
   "bst": 323,
-  "sprite": "sprites/clefairy.png"
+  "sprite": "sprites/bw/clefairy.png",
+  "sw": 41,
+  "sh": 39
  },
  "36": {
   "id": 36,
@@ -372,7 +442,9 @@
    "fairy"
   ],
   "bst": 483,
-  "sprite": "sprites/clefable.png"
+  "sprite": "sprites/bw/clefable.png",
+  "sw": 52,
+  "sh": 52
  },
  "37": {
   "id": 37,
@@ -382,7 +454,9 @@
    "fire"
   ],
   "bst": 299,
-  "sprite": "sprites/vulpix.png"
+  "sprite": "sprites/bw/vulpix.png",
+  "sw": 53,
+  "sh": 46
  },
  "38": {
   "id": 38,
@@ -392,7 +466,9 @@
    "fire"
   ],
   "bst": 505,
-  "sprite": "sprites/ninetales.png"
+  "sprite": "sprites/bw/ninetales.png",
+  "sw": 74,
+  "sh": 69
  },
  "39": {
   "id": 39,
@@ -403,7 +479,9 @@
    "fairy"
   ],
   "bst": 270,
-  "sprite": "sprites/jigglypuff.png"
+  "sprite": "sprites/bw/jigglypuff.png",
+  "sw": 34,
+  "sh": 35
  },
  "40": {
   "id": 40,
@@ -414,7 +492,9 @@
    "fairy"
   ],
   "bst": 435,
-  "sprite": "sprites/wigglytuff.png"
+  "sprite": "sprites/bw/wigglytuff.png",
+  "sw": 40,
+  "sh": 57
  },
  "41": {
   "id": 41,
@@ -425,7 +505,9 @@
    "flying"
   ],
   "bst": 245,
-  "sprite": "sprites/zubat.png"
+  "sprite": "sprites/bw/zubat.png",
+  "sw": 51,
+  "sh": 37
  },
  "42": {
   "id": 42,
@@ -436,7 +518,9 @@
    "flying"
   ],
   "bst": 455,
-  "sprite": "sprites/golbat.png"
+  "sprite": "sprites/bw/golbat.png",
+  "sw": 80,
+  "sh": 62
  },
  "43": {
   "id": 43,
@@ -447,7 +531,9 @@
    "poison"
   ],
   "bst": 320,
-  "sprite": "sprites/oddish.png"
+  "sprite": "sprites/bw/oddish.png",
+  "sw": 34,
+  "sh": 35
  },
  "44": {
   "id": 44,
@@ -458,7 +544,9 @@
    "poison"
   ],
   "bst": 395,
-  "sprite": "sprites/gloom.png"
+  "sprite": "sprites/bw/gloom.png",
+  "sw": 49,
+  "sh": 45
  },
  "45": {
   "id": 45,
@@ -469,7 +557,9 @@
    "poison"
   ],
   "bst": 490,
-  "sprite": "sprites/vileplume.png"
+  "sprite": "sprites/bw/vileplume.png",
+  "sw": 56,
+  "sh": 49
  },
  "46": {
   "id": 46,
@@ -480,7 +570,9 @@
    "grass"
   ],
   "bst": 285,
-  "sprite": "sprites/paras.png"
+  "sprite": "sprites/bw/paras.png",
+  "sw": 45,
+  "sh": 37
  },
  "47": {
   "id": 47,
@@ -491,7 +583,9 @@
    "grass"
   ],
   "bst": 405,
-  "sprite": "sprites/parasect.png"
+  "sprite": "sprites/bw/parasect.png",
+  "sw": 55,
+  "sh": 57
  },
  "48": {
   "id": 48,
@@ -502,7 +596,9 @@
    "poison"
   ],
   "bst": 305,
-  "sprite": "sprites/venonat.png"
+  "sprite": "sprites/bw/venonat.png",
+  "sw": 41,
+  "sh": 53
  },
  "49": {
   "id": 49,
@@ -513,7 +609,9 @@
    "poison"
   ],
   "bst": 450,
-  "sprite": "sprites/venomoth.png"
+  "sprite": "sprites/bw/venomoth.png",
+  "sw": 59,
+  "sh": 61
  },
  "50": {
   "id": 50,
@@ -523,7 +621,9 @@
    "ground"
   ],
   "bst": 265,
-  "sprite": "sprites/diglett.png"
+  "sprite": "sprites/bw/diglett.png",
+  "sw": 38,
+  "sh": 27
  },
  "51": {
   "id": 51,
@@ -533,7 +633,9 @@
    "ground"
   ],
   "bst": 425,
-  "sprite": "sprites/dugtrio.png"
+  "sprite": "sprites/bw/dugtrio.png",
+  "sw": 52,
+  "sh": 41
  },
  "52": {
   "id": 52,
@@ -543,7 +645,9 @@
    "normal"
   ],
   "bst": 290,
-  "sprite": "sprites/meowth.png"
+  "sprite": "sprites/bw/meowth.png",
+  "sw": 41,
+  "sh": 49
  },
  "53": {
   "id": 53,
@@ -553,7 +657,9 @@
    "normal"
   ],
   "bst": 440,
-  "sprite": "sprites/persian.png"
+  "sprite": "sprites/bw/persian.png",
+  "sw": 69,
+  "sh": 62
  },
  "54": {
   "id": 54,
@@ -563,7 +669,9 @@
    "water"
   ],
   "bst": 320,
-  "sprite": "sprites/psyduck.png"
+  "sprite": "sprites/bw/psyduck.png",
+  "sw": 34,
+  "sh": 45
  },
  "55": {
   "id": 55,
@@ -573,7 +681,9 @@
    "water"
   ],
   "bst": 500,
-  "sprite": "sprites/golduck.png"
+  "sprite": "sprites/bw/golduck.png",
+  "sw": 59,
+  "sh": 59
  },
  "56": {
   "id": 56,
@@ -583,7 +693,9 @@
    "fighting"
   ],
   "bst": 305,
-  "sprite": "sprites/mankey.png"
+  "sprite": "sprites/bw/mankey.png",
+  "sw": 63,
+  "sh": 49
  },
  "57": {
   "id": 57,
@@ -593,7 +705,9 @@
    "fighting"
   ],
   "bst": 455,
-  "sprite": "sprites/primeape.png"
+  "sprite": "sprites/bw/primeape.png",
+  "sw": 62,
+  "sh": 55
  },
  "58": {
   "id": 58,
@@ -603,7 +717,9 @@
    "fire"
   ],
   "bst": 350,
-  "sprite": "sprites/growlithe.png"
+  "sprite": "sprites/bw/growlithe.png",
+  "sw": 48,
+  "sh": 42
  },
  "59": {
   "id": 59,
@@ -613,7 +729,9 @@
    "fire"
   ],
   "bst": 555,
-  "sprite": "sprites/arcanine.png"
+  "sprite": "sprites/bw/arcanine.png",
+  "sw": 70,
+  "sh": 69
  },
  "60": {
   "id": 60,
@@ -623,7 +741,9 @@
    "water"
   ],
   "bst": 300,
-  "sprite": "sprites/poliwag.png"
+  "sprite": "sprites/bw/poliwag.png",
+  "sw": 48,
+  "sh": 34
  },
  "61": {
   "id": 61,
@@ -633,7 +753,9 @@
    "water"
   ],
   "bst": 385,
-  "sprite": "sprites/poliwhirl.png"
+  "sprite": "sprites/bw/poliwhirl.png",
+  "sw": 59,
+  "sh": 46
  },
  "62": {
   "id": 62,
@@ -644,7 +766,9 @@
    "fighting"
   ],
   "bst": 510,
-  "sprite": "sprites/poliwrath.png"
+  "sprite": "sprites/bw/poliwrath.png",
+  "sw": 80,
+  "sh": 57
  },
  "63": {
   "id": 63,
@@ -654,7 +778,9 @@
    "psychic"
   ],
   "bst": 310,
-  "sprite": "sprites/abra.png"
+  "sprite": "sprites/bw/abra.png",
+  "sw": 51,
+  "sh": 44
  },
  "64": {
   "id": 64,
@@ -664,7 +790,9 @@
    "psychic"
   ],
   "bst": 400,
-  "sprite": "sprites/kadabra.png"
+  "sprite": "sprites/bw/kadabra.png",
+  "sw": 70,
+  "sh": 56
  },
  "65": {
   "id": 65,
@@ -674,7 +802,9 @@
    "psychic"
   ],
   "bst": 500,
-  "sprite": "sprites/alakazam.png"
+  "sprite": "sprites/bw/alakazam.png",
+  "sw": 72,
+  "sh": 67
  },
  "66": {
   "id": 66,
@@ -684,7 +814,9 @@
    "fighting"
   ],
   "bst": 305,
-  "sprite": "sprites/machop.png"
+  "sprite": "sprites/bw/machop.png",
+  "sw": 50,
+  "sh": 50
  },
  "67": {
   "id": 67,
@@ -694,7 +826,9 @@
    "fighting"
   ],
   "bst": 405,
-  "sprite": "sprites/machoke.png"
+  "sprite": "sprites/bw/machoke.png",
+  "sw": 56,
+  "sh": 69
  },
  "68": {
   "id": 68,
@@ -704,7 +838,9 @@
    "fighting"
   ],
   "bst": 505,
-  "sprite": "sprites/machamp.png"
+  "sprite": "sprites/bw/machamp.png",
+  "sw": 63,
+  "sh": 68
  },
  "69": {
   "id": 69,
@@ -715,7 +851,9 @@
    "poison"
   ],
   "bst": 300,
-  "sprite": "sprites/bellsprout.png"
+  "sprite": "sprites/bw/bellsprout.png",
+  "sw": 37,
+  "sh": 44
  },
  "70": {
   "id": 70,
@@ -726,7 +864,9 @@
    "poison"
   ],
   "bst": 390,
-  "sprite": "sprites/weepinbell.png"
+  "sprite": "sprites/bw/weepinbell.png",
+  "sw": 51,
+  "sh": 48
  },
  "71": {
   "id": 71,
@@ -737,7 +877,9 @@
    "poison"
   ],
   "bst": 490,
-  "sprite": "sprites/victreebel.png"
+  "sprite": "sprites/bw/victreebel.png",
+  "sw": 55,
+  "sh": 71
  },
  "72": {
   "id": 72,
@@ -748,7 +890,9 @@
    "poison"
   ],
   "bst": 335,
-  "sprite": "sprites/tentacool.png"
+  "sprite": "sprites/bw/tentacool.png",
+  "sw": 50,
+  "sh": 53
  },
  "73": {
   "id": 73,
@@ -759,7 +903,9 @@
    "poison"
   ],
   "bst": 515,
-  "sprite": "sprites/tentacruel.png"
+  "sprite": "sprites/bw/tentacruel.png",
+  "sw": 71,
+  "sh": 63
  },
  "74": {
   "id": 74,
@@ -770,7 +916,9 @@
    "ground"
   ],
   "bst": 300,
-  "sprite": "sprites/geodude.png"
+  "sprite": "sprites/bw/geodude.png",
+  "sw": 56,
+  "sh": 24
  },
  "75": {
   "id": 75,
@@ -781,7 +929,9 @@
    "ground"
   ],
   "bst": 390,
-  "sprite": "sprites/graveler.png"
+  "sprite": "sprites/bw/graveler.png",
+  "sw": 67,
+  "sh": 44
  },
  "76": {
   "id": 76,
@@ -792,7 +942,9 @@
    "ground"
   ],
   "bst": 495,
-  "sprite": "sprites/golem.png"
+  "sprite": "sprites/bw/golem.png",
+  "sw": 65,
+  "sh": 57
  },
  "77": {
   "id": 77,
@@ -802,7 +954,9 @@
    "fire"
   ],
   "bst": 410,
-  "sprite": "sprites/ponyta.png"
+  "sprite": "sprites/bw/ponyta.png",
+  "sw": 52,
+  "sh": 57
  },
  "78": {
   "id": 78,
@@ -812,7 +966,9 @@
    "fire"
   ],
   "bst": 500,
-  "sprite": "sprites/rapidash.png"
+  "sprite": "sprites/bw/rapidash.png",
+  "sw": 71,
+  "sh": 73
  },
  "79": {
   "id": 79,
@@ -823,7 +979,9 @@
    "psychic"
   ],
   "bst": 315,
-  "sprite": "sprites/slowpoke.png"
+  "sprite": "sprites/bw/slowpoke.png",
+  "sw": 56,
+  "sh": 44
  },
  "80": {
   "id": 80,
@@ -834,7 +992,9 @@
    "psychic"
   ],
   "bst": 490,
-  "sprite": "sprites/slowbro.png"
+  "sprite": "sprites/bw/slowbro.png",
+  "sw": 53,
+  "sh": 60
  },
  "81": {
   "id": 81,
@@ -845,7 +1005,9 @@
    "steel"
   ],
   "bst": 325,
-  "sprite": "sprites/magnemite.png"
+  "sprite": "sprites/bw/magnemite.png",
+  "sw": 35,
+  "sh": 24
  },
  "82": {
   "id": 82,
@@ -856,7 +1018,9 @@
    "steel"
   ],
   "bst": 465,
-  "sprite": "sprites/magneton.png"
+  "sprite": "sprites/bw/magneton.png",
+  "sw": 55,
+  "sh": 53
  },
  "83": {
   "id": 83,
@@ -867,7 +1031,9 @@
    "flying"
   ],
   "bst": 377,
-  "sprite": "sprites/farfetchd.png"
+  "sprite": "sprites/bw/farfetchd.png",
+  "sw": 45,
+  "sh": 48
  },
  "84": {
   "id": 84,
@@ -878,7 +1044,9 @@
    "flying"
   ],
   "bst": 310,
-  "sprite": "sprites/doduo.png"
+  "sprite": "sprites/bw/doduo.png",
+  "sw": 52,
+  "sh": 53
  },
  "85": {
   "id": 85,
@@ -889,7 +1057,9 @@
    "flying"
   ],
   "bst": 470,
-  "sprite": "sprites/dodrio.png"
+  "sprite": "sprites/bw/dodrio.png",
+  "sw": 61,
+  "sh": 76
  },
  "86": {
   "id": 86,
@@ -899,7 +1069,9 @@
    "water"
   ],
   "bst": 325,
-  "sprite": "sprites/seel.png"
+  "sprite": "sprites/bw/seel.png",
+  "sw": 55,
+  "sh": 46
  },
  "87": {
   "id": 87,
@@ -910,7 +1082,9 @@
    "ice"
   ],
   "bst": 475,
-  "sprite": "sprites/dewgong.png"
+  "sprite": "sprites/bw/dewgong.png",
+  "sw": 66,
+  "sh": 67
  },
  "88": {
   "id": 88,
@@ -920,7 +1094,9 @@
    "poison"
   ],
   "bst": 325,
-  "sprite": "sprites/grimer.png"
+  "sprite": "sprites/bw/grimer.png",
+  "sw": 53,
+  "sh": 37
  },
  "89": {
   "id": 89,
@@ -930,7 +1106,9 @@
    "poison"
   ],
   "bst": 500,
-  "sprite": "sprites/muk.png"
+  "sprite": "sprites/bw/muk.png",
+  "sw": 78,
+  "sh": 58
  },
  "90": {
   "id": 90,
@@ -940,7 +1118,9 @@
    "water"
   ],
   "bst": 305,
-  "sprite": "sprites/shellder.png"
+  "sprite": "sprites/bw/shellder.png",
+  "sw": 36,
+  "sh": 31
  },
  "91": {
   "id": 91,
@@ -951,7 +1131,9 @@
    "ice"
   ],
   "bst": 525,
-  "sprite": "sprites/cloyster.png"
+  "sprite": "sprites/bw/cloyster.png",
+  "sw": 61,
+  "sh": 62
  },
  "92": {
   "id": 92,
@@ -962,7 +1144,9 @@
    "poison"
   ],
   "bst": 310,
-  "sprite": "sprites/gastly.png"
+  "sprite": "sprites/bw/gastly.png",
+  "sw": 65,
+  "sh": 55
  },
  "93": {
   "id": 93,
@@ -973,7 +1157,9 @@
    "poison"
   ],
   "bst": 405,
-  "sprite": "sprites/haunter.png"
+  "sprite": "sprites/bw/haunter.png",
+  "sw": 61,
+  "sh": 48
  },
  "94": {
   "id": 94,
@@ -984,7 +1170,9 @@
    "poison"
   ],
   "bst": 500,
-  "sprite": "sprites/gengar.png"
+  "sprite": "sprites/bw/gengar.png",
+  "sw": 58,
+  "sh": 56
  },
  "95": {
   "id": 95,
@@ -995,7 +1183,9 @@
    "ground"
   ],
   "bst": 385,
-  "sprite": "sprites/onix.png"
+  "sprite": "sprites/bw/onix.png",
+  "sw": 72,
+  "sh": 73
  },
  "96": {
   "id": 96,
@@ -1005,7 +1195,9 @@
    "psychic"
   ],
   "bst": 328,
-  "sprite": "sprites/drowzee.png"
+  "sprite": "sprites/bw/drowzee.png",
+  "sw": 51,
+  "sh": 52
  },
  "97": {
   "id": 97,
@@ -1015,7 +1207,9 @@
    "psychic"
   ],
   "bst": 483,
-  "sprite": "sprites/hypno.png"
+  "sprite": "sprites/bw/hypno.png",
+  "sw": 58,
+  "sh": 62
  },
  "98": {
   "id": 98,
@@ -1025,7 +1219,9 @@
    "water"
   ],
   "bst": 325,
-  "sprite": "sprites/krabby.png"
+  "sprite": "sprites/bw/krabby.png",
+  "sw": 50,
+  "sh": 39
  },
  "99": {
   "id": 99,
@@ -1035,7 +1231,9 @@
    "water"
   ],
   "bst": 475,
-  "sprite": "sprites/kingler.png"
+  "sprite": "sprites/bw/kingler.png",
+  "sw": 77,
+  "sh": 59
  },
  "100": {
   "id": 100,
@@ -1045,7 +1243,9 @@
    "electric"
   ],
   "bst": 330,
-  "sprite": "sprites/voltorb.png"
+  "sprite": "sprites/bw/voltorb.png",
+  "sw": 30,
+  "sh": 30
  },
  "101": {
   "id": 101,
@@ -1055,7 +1255,9 @@
    "electric"
   ],
   "bst": 490,
-  "sprite": "sprites/electrode.png"
+  "sprite": "sprites/bw/electrode.png",
+  "sw": 44,
+  "sh": 46
  },
  "102": {
   "id": 102,
@@ -1066,7 +1268,9 @@
    "psychic"
   ],
   "bst": 325,
-  "sprite": "sprites/exeggcute.png"
+  "sprite": "sprites/bw/exeggcute.png",
+  "sw": 54,
+  "sh": 36
  },
  "103": {
   "id": 103,
@@ -1077,7 +1281,9 @@
    "psychic"
   ],
   "bst": 530,
-  "sprite": "sprites/exeggutor.png"
+  "sprite": "sprites/bw/exeggutor.png",
+  "sw": 63,
+  "sh": 70
  },
  "104": {
   "id": 104,
@@ -1087,7 +1293,9 @@
    "ground"
   ],
   "bst": 320,
-  "sprite": "sprites/cubone.png"
+  "sprite": "sprites/bw/cubone.png",
+  "sw": 41,
+  "sh": 39
  },
  "105": {
   "id": 105,
@@ -1097,7 +1305,9 @@
    "ground"
   ],
   "bst": 425,
-  "sprite": "sprites/marowak.png"
+  "sprite": "sprites/bw/marowak.png",
+  "sw": 64,
+  "sh": 47
  },
  "106": {
   "id": 106,
@@ -1107,7 +1317,9 @@
    "fighting"
   ],
   "bst": 455,
-  "sprite": "sprites/hitmonlee.png"
+  "sprite": "sprites/bw/hitmonlee.png",
+  "sw": 57,
+  "sh": 69
  },
  "107": {
   "id": 107,
@@ -1117,7 +1329,9 @@
    "fighting"
   ],
   "bst": 455,
-  "sprite": "sprites/hitmonchan.png"
+  "sprite": "sprites/bw/hitmonchan.png",
+  "sw": 33,
+  "sh": 59
  },
  "108": {
   "id": 108,
@@ -1127,7 +1341,9 @@
    "normal"
   ],
   "bst": 385,
-  "sprite": "sprites/lickitung.png"
+  "sprite": "sprites/bw/lickitung.png",
+  "sw": 56,
+  "sh": 52
  },
  "109": {
   "id": 109,
@@ -1137,7 +1353,9 @@
    "poison"
   ],
   "bst": 340,
-  "sprite": "sprites/koffing.png"
+  "sprite": "sprites/bw/koffing.png",
+  "sw": 65,
+  "sh": 53
  },
  "110": {
   "id": 110,
@@ -1147,7 +1365,9 @@
    "poison"
   ],
   "bst": 490,
-  "sprite": "sprites/weezing.png"
+  "sprite": "sprites/bw/weezing.png",
+  "sw": 78,
+  "sh": 64
  },
  "111": {
   "id": 111,
@@ -1158,7 +1378,9 @@
    "rock"
   ],
   "bst": 345,
-  "sprite": "sprites/rhyhorn.png"
+  "sprite": "sprites/bw/rhyhorn.png",
+  "sw": 64,
+  "sh": 54
  },
  "112": {
   "id": 112,
@@ -1169,7 +1391,9 @@
    "rock"
   ],
   "bst": 485,
-  "sprite": "sprites/rhydon.png"
+  "sprite": "sprites/bw/rhydon.png",
+  "sw": 73,
+  "sh": 63
  },
  "113": {
   "id": 113,
@@ -1179,7 +1403,9 @@
    "normal"
   ],
   "bst": 450,
-  "sprite": "sprites/chansey.png"
+  "sprite": "sprites/bw/chansey.png",
+  "sw": 51,
+  "sh": 44
  },
  "114": {
   "id": 114,
@@ -1189,7 +1415,9 @@
    "grass"
   ],
   "bst": 435,
-  "sprite": "sprites/tangela.png"
+  "sprite": "sprites/bw/tangela.png",
+  "sw": 47,
+  "sh": 42
  },
  "115": {
   "id": 115,
@@ -1199,7 +1427,9 @@
    "normal"
   ],
   "bst": 490,
-  "sprite": "sprites/kangaskhan.png"
+  "sprite": "sprites/bw/kangaskhan.png",
+  "sw": 71,
+  "sh": 61
  },
  "116": {
   "id": 116,
@@ -1209,7 +1439,9 @@
    "water"
   ],
   "bst": 295,
-  "sprite": "sprites/horsea.png"
+  "sprite": "sprites/bw/horsea.png",
+  "sw": 30,
+  "sh": 35
  },
  "117": {
   "id": 117,
@@ -1219,7 +1451,9 @@
    "water"
   ],
   "bst": 440,
-  "sprite": "sprites/seadra.png"
+  "sprite": "sprites/bw/seadra.png",
+  "sw": 50,
+  "sh": 47
  },
  "118": {
   "id": 118,
@@ -1229,7 +1463,9 @@
    "water"
   ],
   "bst": 320,
-  "sprite": "sprites/goldeen.png"
+  "sprite": "sprites/bw/goldeen.png",
+  "sw": 64,
+  "sh": 39
  },
  "119": {
   "id": 119,
@@ -1239,7 +1475,9 @@
    "water"
   ],
   "bst": 450,
-  "sprite": "sprites/seaking.png"
+  "sprite": "sprites/bw/seaking.png",
+  "sw": 59,
+  "sh": 50
  },
  "120": {
   "id": 120,
@@ -1249,7 +1487,9 @@
    "water"
   ],
   "bst": 340,
-  "sprite": "sprites/staryu.png"
+  "sprite": "sprites/bw/staryu.png",
+  "sw": 40,
+  "sh": 44
  },
  "121": {
   "id": 121,
@@ -1260,7 +1500,9 @@
    "psychic"
   ],
   "bst": 520,
-  "sprite": "sprites/starmie.png"
+  "sprite": "sprites/bw/starmie.png",
+  "sw": 49,
+  "sh": 51
  },
  "122": {
   "id": 122,
@@ -1271,7 +1513,9 @@
    "fairy"
   ],
   "bst": 460,
-  "sprite": "sprites/mr-mime.png"
+  "sprite": "sprites/bw/mr-mime.png",
+  "sw": 55,
+  "sh": 53
  },
  "123": {
   "id": 123,
@@ -1282,7 +1526,9 @@
    "flying"
   ],
   "bst": 500,
-  "sprite": "sprites/scyther.png"
+  "sprite": "sprites/bw/scyther.png",
+  "sw": 50,
+  "sh": 61
  },
  "124": {
   "id": 124,
@@ -1293,7 +1539,9 @@
    "psychic"
   ],
   "bst": 455,
-  "sprite": "sprites/jynx.png"
+  "sprite": "sprites/bw/jynx.png",
+  "sw": 58,
+  "sh": 53
  },
  "125": {
   "id": 125,
@@ -1303,7 +1551,9 @@
    "electric"
   ],
   "bst": 490,
-  "sprite": "sprites/electabuzz.png"
+  "sprite": "sprites/bw/electabuzz.png",
+  "sw": 60,
+  "sh": 61
  },
  "126": {
   "id": 126,
@@ -1313,7 +1563,9 @@
    "fire"
   ],
   "bst": 495,
-  "sprite": "sprites/magmar.png"
+  "sprite": "sprites/bw/magmar.png",
+  "sw": 60,
+  "sh": 61
  },
  "127": {
   "id": 127,
@@ -1323,7 +1575,9 @@
    "bug"
   ],
   "bst": 500,
-  "sprite": "sprites/pinsir.png"
+  "sprite": "sprites/bw/pinsir.png",
+  "sw": 66,
+  "sh": 61
  },
  "128": {
   "id": 128,
@@ -1333,7 +1587,9 @@
    "normal"
   ],
   "bst": 490,
-  "sprite": "sprites/tauros.png"
+  "sprite": "sprites/bw/tauros.png",
+  "sw": 67,
+  "sh": 59
  },
  "129": {
   "id": 129,
@@ -1343,7 +1599,9 @@
    "water"
   ],
   "bst": 200,
-  "sprite": "sprites/magikarp.png"
+  "sprite": "sprites/bw/magikarp.png",
+  "sw": 44,
+  "sh": 57
  },
  "130": {
   "id": 130,
@@ -1354,7 +1612,9 @@
    "flying"
   ],
   "bst": 540,
-  "sprite": "sprites/gyarados.png"
+  "sprite": "sprites/bw/gyarados.png",
+  "sw": 81,
+  "sh": 77
  },
  "131": {
   "id": 131,
@@ -1365,7 +1625,9 @@
    "ice"
   ],
   "bst": 535,
-  "sprite": "sprites/lapras.png"
+  "sprite": "sprites/bw/lapras.png",
+  "sw": 68,
+  "sh": 66
  },
  "132": {
   "id": 132,
@@ -1375,7 +1637,9 @@
    "normal"
   ],
   "bst": 288,
-  "sprite": "sprites/ditto.png"
+  "sprite": "sprites/bw/ditto.png",
+  "sw": 36,
+  "sh": 29
  },
  "133": {
   "id": 133,
@@ -1385,7 +1649,9 @@
    "normal"
   ],
   "bst": 325,
-  "sprite": "sprites/eevee.png"
+  "sprite": "sprites/bw/eevee.png",
+  "sw": 37,
+  "sh": 47
  },
  "134": {
   "id": 134,
@@ -1395,7 +1661,9 @@
    "water"
   ],
   "bst": 525,
-  "sprite": "sprites/vaporeon.png"
+  "sprite": "sprites/bw/vaporeon.png",
+  "sw": 47,
+  "sh": 53
  },
  "135": {
   "id": 135,
@@ -1405,7 +1673,9 @@
    "electric"
   ],
   "bst": 525,
-  "sprite": "sprites/jolteon.png"
+  "sprite": "sprites/bw/jolteon.png",
+  "sw": 46,
+  "sh": 49
  },
  "136": {
   "id": 136,
@@ -1415,7 +1685,9 @@
    "fire"
   ],
   "bst": 525,
-  "sprite": "sprites/flareon.png"
+  "sprite": "sprites/bw/flareon.png",
+  "sw": 55,
+  "sh": 49
  },
  "137": {
   "id": 137,
@@ -1425,7 +1697,9 @@
    "normal"
   ],
   "bst": 395,
-  "sprite": "sprites/porygon.png"
+  "sprite": "sprites/bw/porygon.png",
+  "sw": 36,
+  "sh": 40
  },
  "138": {
   "id": 138,
@@ -1436,7 +1710,9 @@
    "water"
   ],
   "bst": 355,
-  "sprite": "sprites/omanyte.png"
+  "sprite": "sprites/bw/omanyte.png",
+  "sw": 35,
+  "sh": 34
  },
  "139": {
   "id": 139,
@@ -1447,7 +1723,9 @@
    "water"
   ],
   "bst": 495,
-  "sprite": "sprites/omastar.png"
+  "sprite": "sprites/bw/omastar.png",
+  "sw": 54,
+  "sh": 48
  },
  "140": {
   "id": 140,
@@ -1458,7 +1736,9 @@
    "water"
   ],
   "bst": 355,
-  "sprite": "sprites/kabuto.png"
+  "sprite": "sprites/bw/kabuto.png",
+  "sw": 33,
+  "sh": 30
  },
  "141": {
   "id": 141,
@@ -1469,7 +1749,9 @@
    "water"
   ],
   "bst": 495,
-  "sprite": "sprites/kabutops.png"
+  "sprite": "sprites/bw/kabutops.png",
+  "sw": 64,
+  "sh": 61
  },
  "142": {
   "id": 142,
@@ -1480,7 +1762,9 @@
    "flying"
   ],
   "bst": 515,
-  "sprite": "sprites/aerodactyl.png"
+  "sprite": "sprites/bw/aerodactyl.png",
+  "sw": 79,
+  "sh": 59
  },
  "143": {
   "id": 143,
@@ -1490,7 +1774,9 @@
    "normal"
   ],
   "bst": 540,
-  "sprite": "sprites/snorlax.png"
+  "sprite": "sprites/bw/snorlax.png",
+  "sw": 62,
+  "sh": 67
  },
  "144": {
   "id": 144,
@@ -1501,7 +1787,9 @@
    "flying"
   ],
   "bst": 580,
-  "sprite": "sprites/articuno.png"
+  "sprite": "sprites/bw/articuno.png",
+  "sw": 72,
+  "sh": 81
  },
  "145": {
   "id": 145,
@@ -1512,7 +1800,9 @@
    "flying"
   ],
   "bst": 580,
-  "sprite": "sprites/zapdos.png"
+  "sprite": "sprites/bw/zapdos.png",
+  "sw": 91,
+  "sh": 58
  },
  "146": {
   "id": 146,
@@ -1523,7 +1813,9 @@
    "flying"
   ],
   "bst": 580,
-  "sprite": "sprites/moltres.png"
+  "sprite": "sprites/bw/moltres.png",
+  "sw": 87,
+  "sh": 70
  },
  "147": {
   "id": 147,
@@ -1533,7 +1825,9 @@
    "dragon"
   ],
   "bst": 300,
-  "sprite": "sprites/dratini.png"
+  "sprite": "sprites/bw/dratini.png",
+  "sw": 35,
+  "sh": 44
  },
  "148": {
   "id": 148,
@@ -1543,7 +1837,9 @@
    "dragon"
   ],
   "bst": 420,
-  "sprite": "sprites/dragonair.png"
+  "sprite": "sprites/bw/dragonair.png",
+  "sw": 60,
+  "sh": 68
  },
  "149": {
   "id": 149,
@@ -1554,7 +1850,9 @@
    "flying"
   ],
   "bst": 600,
-  "sprite": "sprites/dragonite.png"
+  "sprite": "sprites/bw/dragonite.png",
+  "sw": 64,
+  "sh": 80
  },
  "150": {
   "id": 150,
@@ -1564,7 +1862,9 @@
    "psychic"
   ],
   "bst": 680,
-  "sprite": "sprites/mewtwo.png"
+  "sprite": "sprites/bw/mewtwo.png",
+  "sw": 68,
+  "sh": 65
  },
  "151": {
   "id": 151,
@@ -1574,6 +1874,8 @@
    "psychic"
   ],
   "bst": 600,
-  "sprite": "sprites/mew.png"
+  "sprite": "sprites/bw/mew.png",
+  "sw": 50,
+  "sh": 42
  }
 }

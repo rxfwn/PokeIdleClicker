@@ -47,7 +47,10 @@ export function wildNav() {
   const list = unlockedPaliers(state);
   const pos = state.mode === "wild" ? state.wild : state.story;
   const index = list.findIndex((p) => p.zone === pos.zone && p.palier === pos.palier);
-  return { list, index, canPrev: index > 0, canNext: index >= 0 && index < list.length - 1 };
+  // zones qui ont au moins un palier débloqué, avec leur palier le plus avancé
+  const zones = [...new Set(list.map((p) => p.zone))];
+  const zi = zones.indexOf(pos.zone);
+  return { list, index, canPrev: index > 0, canNext: index >= 0 && index < list.length - 1, zones, canPrevZone: zi > 0, canNextZone: zi >= 0 && zi < zones.length - 1 };
 }
 
 // Palier débloqué précédent (-1) ou suivant (+1), sans revenir au début après le dernier.
@@ -55,4 +58,14 @@ export function cycleWild(dir) {
   const { list, index } = wildNav();
   const next = list[index + dir];
   if (next) chooseWild(next.zone, next.palier);
+}
+
+// Saute à la zone précédente (-1) ou suivante (+1), sur son palier débloqué le plus avancé.
+export function cycleZone(dir) {
+  const { list, zones } = wildNav();
+  const pos = state.mode === "wild" ? state.wild : state.story;
+  const target = zones[zones.indexOf(pos.zone) + dir];
+  if (target === undefined) return;
+  const best = Math.max(...list.filter((p) => p.zone === target).map((p) => p.palier));
+  chooseWild(target, best);
 }

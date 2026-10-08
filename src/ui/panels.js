@@ -1,18 +1,23 @@
 import { POKEMON, ZONES } from "../data/index.js";
+import { spriteImg } from "./sprites.js";
 import upgrades from "../data/upgrades.json";
 import shop from "../data/shop.json";
 import { expToNext, pokemonDps } from "../data/balance.js";
 import { MAX_TEAM } from "../core/state.js";
-import { quote, quoteBalls, blockedReason } from "../game/economy.js";
+import { TEAM_SLOT_UNLOCKS } from "../data/balance.js";
+import { teamSlots, slotUnlocked } from "../game/team.js";
+import { quote as upgradeQuote, blockedReason } from "../game/economy.js";
+import { ITEMS, qty, holdableItems, buffLeft } from "../game/inventory.js";
+import { quote as itemQuote, blocked, sellPrice, isUsable, canUse } from "../game/items.js";
 import { teamDps, clickDamage, level, milestones } from "../game/hero.js";
 import { modes } from "../game/modes/index.js";
 import { unlockedPaliers, palierMons } from "../game/progress.js";
-import { money, pokeballIcon } from "./money.js";
-import { spriteSrc } from "./battle.js";
+import { isSeen, isCaught } from "../game/dex.js";
+import { money } from "./money.js";
 import { TABS } from "./tabs.js";
+import { dexView } from "./dexView.js";
 
-const sprite = (id, cls = "") =>
-  `<img class="sprite ${cls}" src="${spriteSrc(id)}" alt="${POKEMON[id].name}" draggable="false" />`;
+const sprite = (id, box, cls = "") => spriteImg(id, box, { silhouette: cls === "silhouette" });
 
 const buyModes = (s) =>
   `<div class="modes">${[1, 10, "max"]
@@ -21,6 +26,18 @@ const buyModes = (s) =>
 
 const buyBtn = (action, q, attrs = "") =>
   `<button data-action="${action}" ${attrs} ${q.ok ? "" : "disabled"}>Acheter ×${q.count} — ${money(q.cost)}</button>`;
+
+// Menu déroulant de filtre par catégorie (Sac et Shop).
+const filterSelect = (name, s) =>
+  `<select class="filter" data-filter="${name}" aria-label="Filtrer par catégorie">${shop.categories
+    .map((c) => `<option value="${c.id}" ${s.filters[name] === c.id ? "selected" : ""}>${c.label}</option>`)
+    .join("")}</select>`;
+
+const inCategory = (id, cat) => cat === "all" || ITEMS[id].category === cat;
+// Image d'un objet (data/shop.json), sans cadre ; absente si le fichier manque.
+const itemIcon = (id, big = false) =>
+  `<img class="item-icon${big ? " big" : ""}" src="${import.meta.env.BASE_URL}${ITEMS[id].image}" alt="" draggable="false" onerror="this.remove()" />`;
+const empty = "<p><small>Aucun objet dans cette catégorie.</small></p>";
 
 const fmt = (n) => (Math.round(n * 10) / 10).toLocaleString("fr-FR");
 
@@ -38,7 +55,7 @@ function progressBar(k, lvl, max) {
 function upgradeRow(k, s) {
   const u = upgrades[k];
   const why = blockedReason(k);
-  const q = quote(k, s.buyMode);
+  const q = upgradeQuote(k, s.buyMode);
   const label = { max: "MAX", soon: "Bientôt", locked: "Verrouillé" }[why];
   const note = why === "locked" ? `<small class="lock">Débloqué : ${u.unlockLabel}</small>` : "";
   const img = `${import.meta.env.BASE_URL}${u.image}`;
@@ -52,24 +69,36 @@ function upgradeRow(k, s) {
   </div>`;
 }
 
+// Objet tenu : un par Pokémon de l'équipe, échangeable à tout moment.
+function holdSelect(mon, i) {
+  const ids = holdableItems().filter((id) => id === mon.held || qty(id) > 0);
+  const opts = ids.map((id) => `<option value="${id}" ${id === mon.held ? "selected" : ""}>${ITEMS[id].name}</option>`).join("");
+  return `<label class="slot-hold">Objet <select class="filter" data-hold="${i}" aria-label="Objet tenu"><option value="">—</option>${opts}</select></label>`;
+}
+
 // Case d'équipe façon écran "Pokémon" : coins coupés en escalier, nom, niveau, barre d'EXP.
 function teamSlot(mon, i) {
+  if (!mon && !slotUnlocked(i) && i >= teamSlots()) {
+    const u = TEAM_SLOT_UNLOCKS[i];
+    return `<div class="slot locked"><div class="slot-in"><span class="slot-empty">Verrouillé · zone ${u.zone}${u.palier > 1 ? `, palier ${u.palier}` : ""}</span></div></div>`;
+  }
   if (!mon) return `<div class="slot empty"><div class="slot-in"><span class="slot-empty">Emplacement libre</span></div></div>`;
   const need = expToNext(mon.level);
   const dps = pokemonDps(mon.level, POKEMON[mon.id].bst);
   return `<div class="slot"><div class="slot-in">
-    <div class="slot-sprite">${sprite(mon.id)}</div>
+    <div class="slot-sprite">${sprite(mon.id, "slot")}</div>
     <div class="slot-info">
       <div class="slot-top"><b>${POKEMON[mon.id].name}</b><button class="slot-btn" data-action="toBox" data-i="${i}" title="Envoyer dans la boîte">Boîte</button></div>
       <div class="slot-bar"><i>EXP</i><div class="slot-track"><div class="slot-fill" style="width:${Math.min(100, (mon.exp / need) * 100)}%"></div></div></div>
       <div class="slot-bot"><span class="lv">Niv. ${mon.level}</span><span>${mon.exp.toLocaleString("fr-FR")}/${need.toLocaleString("fr-FR")}</span><span>${fmt(dps)} dgt/s</span></div>
+      ${holdSelect(mon, i)}
     </div>
   </div></div>`;
 }
 
 const monRow = (mon, button) => {
   const need = expToNext(mon.level);
-  return `<div class="row"><div>${sprite(mon.id)} ${POKEMON[mon.id].name}<br><small>Niv. ${mon.level} · EXP ${mon.exp}/${need}</small></div>${button}</div>`;
+  return `<div class="row"><div class="mon">${sprite(mon.id, "row")}<span>${POKEMON[mon.id].name}<br><small>Niv. ${mon.level} · EXP ${mon.exp}/${need}</small></span></div>${button}</div>`;
 };
 
 // Liste des Pokémon du palier en cours : capturé, vu ou inconnu.
@@ -77,8 +106,7 @@ function wildMons(s) {
   const pos = s.mode === "wild" ? s.wild : s.story;
   const rows = palierMons(pos.zone, pos.palier)
     .map((m) => {
-      const d = s.dex[m.id];
-      return `<div class="row"><div>${sprite(m.id, d?.caught ? "" : "silhouette")} ${d?.seen ? POKEMON[m.id].name : "???"}</div><small>${m.rarete}${d?.caught ? " · capturé" : ""}</small></div>`;
+      return `<div class="row"><div class="mon">${sprite(m.id, "row", isCaught(m.id) ? "" : "silhouette")}<span>${isSeen(m.id) ? POKEMON[m.id].name : "???"}</span></div><small>${m.rarete}${isCaught(m.id) ? " · capturé" : ""}</small></div>`;
     })
     .join("");
   return `<h3>Pokémon de ce palier</h3>${rows}`;
@@ -99,7 +127,7 @@ function adventureView(s) {
         .map((u) => {
           const on = s.mode === "wild" && s.wild.zone === u.zone && s.wild.palier === u.palier;
           const mons = palierMons(u.zone, u.palier);
-          const got = mons.filter((m) => s.dex[m.id]?.caught).length;
+          const got = mons.filter((m) => isCaught(m.id)).length;
           return `<button data-action="wild" data-zone="${u.zone}" data-palier="${u.palier}" class="${on ? "on" : ""}">${ZONES[u.zone].paliers[u.palier - 1].lieu} <small>${got}/${mons.length}</small></button>`;
         })
         .join("")}</div>`
@@ -122,37 +150,88 @@ function adventureView(s) {
     ${s.legends.length ? s.legends.map((l) => `<p>${POKEMON[l.id].name} Niv. ${l.level} : disponible, bouton sous le Pokémon.</p>`).join("") : "<p><small>Bats certains boss pour en débloquer.</small></p>"}`;
 }
 
+const clock = (sec) => `${Math.floor(sec / 60)}:${String(sec % 60).padStart(2, "0")}`;
+
+// Une ligne du Shop : prix, effet, condition de déblocage, bouton d'achat.
+function shopRow(id, s) {
+  const it = ITEMS[id];
+  const why = blocked(id);
+  const q = itemQuote(id, s.buyMode);
+  const label = { soon: "Bientôt", locked: "Verrouillé", owned: "Déjà acquis" }[why];
+  const lot = it.lot ? ` le lot de ${it.lot}` : "";
+  const price = id === "pokeball" ? `${money(q.cost / q.count)} (monte à chaque achat)` : `${money(it.price)}${lot}`;
+  const note = why === "locked" ? `<small class="lock">Débloqué : ${it.unlockLabel}</small>` : "";
+  const have = qty(id) > 0 ? ` <small>possédé ×${qty(id)}</small>` : "";
+  return `<div class="row col upgrade ${why ?? ""}"><div class="uhead item">${itemIcon(id, true)}<div><b>${it.name}</b>${have}<br><small>${it.effect}</small><br><small>Prix : ${price}</small>${note ? `<br>${note}` : ""}</div></div>
+    <button data-action="buyItem" data-id="${id}" ${q.ok ? "" : "disabled"}>${label ?? `Acheter ×${q.count} — ${money(q.cost)}`}</button></div>`;
+}
+
+const EFFECT_NAMES = { click: "Attaque +", team: "Atq. Spé. +", speed: "Vitesse +", crit: "Muscle +", repel: "Repousse", lure: "Parfum" };
+
+// Effets temporaires en cours, avec le temps restant.
+function activeEffects(s) {
+  const rows = Object.keys(EFFECT_NAMES)
+    .filter((k) => buffLeft(k) > 0)
+    .map((k) => `<div class="row"><div>${EFFECT_NAMES[k]}</div><b>${clock(buffLeft(k))}</b></div>`);
+  if (s.buffs.honey) rows.push(`<div class="row"><div>Miel</div><b>prochain Pokémon</b></div>`);
+  return rows.length ? `<h3>Effets en cours</h3>${rows.join("")}` : "";
+}
+
+// Choix du Pokémon qui reçoit un bonbon.
+function candyTarget(s) {
+  const id = s.useItem;
+  const rows = (list, label) =>
+    s[list].map((mon, i) => monRow(mon, `<button data-action="candyGive" data-list="${list}" data-i="${i}">Donner</button>`));
+  const all = [...rows("team"), ...rows("box")];
+  return `<h3>${ITEMS[id].name} ×${qty(id)}</h3><p><small>${ITEMS[id].effect} : choisis un Pokémon.</small></p>
+    ${all.join("") || "<p>Aucun Pokémon.</p>"}
+    <button data-action="candyCancel" class="danger">Annuler</button>`;
+}
+
+function bagRow(id, s) {
+  const it = ITEMS[id];
+  const btns = [];
+  if (isUsable(id)) {
+    btns.push(
+      it.candy
+        ? `<button data-action="candyChoose" data-id="${id}">Utiliser</button>`
+        : `<button data-action="useItem" data-id="${id}" ${canUse(id) ? "" : "disabled"}>Utiliser</button>`
+    );
+  }
+  if (sellPrice(id) > 0) btns.push(`<button data-action="sellItem" data-id="${id}">Vendre (${money(sellPrice(id))})</button>`);
+  return `<div class="row col upgrade"><div class="uhead item">${itemIcon(id, true)}<div><b>${it.name}</b> <small>×${qty(id)}</small><br><small>${it.effect}</small></div></div>
+    ${btns.length ? `<div class="btns">${btns.join("")}</div>` : ""}</div>`;
+}
+
+function bagView(s) {
+  if (s.useItem && qty(s.useItem) > 0) return candyTarget(s);
+  const rows = Object.keys(ITEMS)
+    .filter((id) => inCategory(id, s.filters.bag) && qty(id) > 0)
+    .map((id) => bagRow(id, s));
+  return `${activeEffects(s)}${filterSelect("bag", s)}${rows.join("") || empty}`;
+}
+
 const views = {
   hero: (s) => `${buyModes(s)}${Object.keys(upgrades).map((k) => upgradeRow(k, s)).join("")}`,
 
   team: (s) => `
-    <h3>Équipe ${s.team.length}/${MAX_TEAM} <small>(${fmt(teamDps())} dégâts/s)</small></h3>
+    <h3>Équipe ${s.team.length}/${teamSlots()} <small>(${fmt(teamDps())} dégâts/s)</small></h3>
     <div class="slots">${Array.from({ length: MAX_TEAM }, (_, i) => teamSlot(s.team[i], i)).join("")}</div>
     <h3>Boîte (${s.box.length})</h3>
-    ${s.box.map((mon, i) => monRow(mon, `<button data-action="toTeam" data-i="${i}" ${s.team.length >= MAX_TEAM ? "disabled" : ""}>Ajouter</button>`)).join("") || "<p>Vide.</p>"}`,
+    ${s.box.map((mon, i) => monRow(mon, `<button data-action="toTeam" data-i="${i}" ${s.team.length >= teamSlots() ? "disabled" : ""}>Ajouter</button>`)).join("") || "<p>Vide.</p>"}`,
 
-  bag: (s) => `
-    <div class="row"><div>${pokeballIcon()} ${shop.balls.pokeball.name}</div><b>×${s.pokeballs}</b></div>`,
+  bag: bagView,
 
-  shop: (s) => `
-    ${buyModes(s)}
-    <div class="row col"><div><b>${shop.balls.pokeball.name}</b><br><small>${money(shop.balls.pokeball.baseCost)} l'unité</small></div>
-    ${buyBtn("buyBalls", quoteBalls(s.buyMode))}</div>`,
+  shop: (s) => {
+    const rows = Object.keys(ITEMS)
+      .filter((id) => ITEMS[id].price != null && inCategory(id, s.filters.shop))
+      .map((id) => shopRow(id, s));
+    return `${filterSelect("shop", s)}${buyModes(s)}${rows.join("") || empty}`;
+  },
 
   adventure: adventureView,
 
-  dex: (s) => {
-    const ids = Object.keys(POKEMON).sort((a, b) => a - b);
-    const seen = ids.filter((id) => s.dex[id]?.seen).length;
-    const caught = ids.filter((id) => s.dex[id]?.caught).length;
-    return `<p>Vus : ${seen}/${ids.length} · Capturés : ${caught}/${ids.length}</p>
-      <div class="dex">${ids
-        .map((id) => {
-          const d = s.dex[id];
-          return `<div class="dexcell">${sprite(id, d?.caught ? "" : "silhouette")}<small>${d?.seen ? POKEMON[id].name : "???"}</small></div>`;
-        })
-        .join("")}</div>`;
-  },
+  dex: dexView,
 
   card: (s) => `
     <table class="stats">

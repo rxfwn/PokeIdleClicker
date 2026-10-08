@@ -1,5 +1,4 @@
 import upgrades from "../data/upgrades.json" with { type: "json" };
-import shop from "../data/shop.json" with { type: "json" };
 import { upgradeLevelCost } from "../data/balance.js";
 import { state, notify } from "../core/state.js";
 import { level, isUnlocked } from "./hero.js";
@@ -38,24 +37,6 @@ export function buyUpgrade(key, mode) {
   if (!q.ok) return false;
   state.money -= q.cost;
   state.upgrades[key] = level(key) + q.count;
-  notify();
-  return true;
-}
-
-export function quoteBalls(mode) {
-  const unit = shop.balls.pokeball.baseCost;
-  if (mode === "max") {
-    const count = Math.floor(state.money / unit);
-    return count ? { count, cost: count * unit, ok: true } : { count: 1, cost: unit, ok: false };
-  }
-  return { count: mode, cost: mode * unit, ok: state.money >= mode * unit };
-}
-
-export function buyPokeballs(mode) {
-  const q = quoteBalls(mode);
-  if (!q.ok) return false;
-  state.money -= q.cost;
-  state.pokeballs += q.count;
   notify();
   return true;
 }

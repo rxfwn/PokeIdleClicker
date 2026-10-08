@@ -6,9 +6,11 @@ import { autoAttack, spawnEnemy } from "./game/combat.js";
 import { checkBossTimer } from "./game/modes/story.js";
 import { applyOffline } from "./game/offline.js";
 import { BALANCE } from "./data/balance.js";
+import { migrateDex } from "./game/dex.js";
 import { initUI, showOffline } from "./ui/ui.js";
 
 const elapsed = load();
+migrateDex(); // anciennes sauvegardes : { seen, caught } -> nouveau format
 const offline = elapsed ? applyOffline(elapsed) : null;
 state.legendFight = false; // un combat légendaire interrompu est à relancer
 spawnEnemy(); // nouvel adversaire à chaque ouverture (un boss en cours est redéfié depuis le début)

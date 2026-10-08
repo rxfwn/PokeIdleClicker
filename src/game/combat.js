@@ -2,6 +2,7 @@ import { state, notify } from "../core/state.js";
 import { modes } from "./modes/index.js";
 import { rewardKill } from "./rewards.js";
 import { clickHit, teamDps } from "./hero.js";
+import { isCapturing } from "./capture.js";
 
 export const spawnEnemy = () => modes[state.mode].spawn();
 
@@ -11,7 +12,7 @@ export function damageEnemy(amount) {
     spawnEnemy();
     return notify();
   }
-  if (e.defeated) return;
+  if (e.defeated || isCapturing()) return; // pas de dégâts pendant un lancer
   e.hp -= amount;
   if (e.hp <= 0) {
     state.stats.kills += 1;

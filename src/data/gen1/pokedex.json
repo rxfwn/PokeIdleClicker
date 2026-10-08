@@ -1,0 +1,4759 @@
+{
+ "1": {
+  "id": 1,
+  "nom": "Bulbizarre",
+  "categorie": "Pokémon Graine",
+  "types": [
+   "Plante",
+   "Poison"
+  ],
+  "taille": 0.7,
+  "poids": 6.9,
+  "description": "Au matin de sa vie, la graine sur son dos lui fournit les éléments dont il a besoin pour grandir.",
+  "stats_base": {
+   "pv": 45,
+   "attaque": 49,
+   "defense": 49,
+   "atq_spe": 65,
+   "def_spe": 65,
+   "vitesse": 45
+  },
+  "evolutions": {
+   "id": 1,
+   "evolvesTo": [
+    {
+     "id": 2,
+     "evolvesTo": [
+      {
+       "id": 3,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "2": {
+  "id": 2,
+  "nom": "Herbizarre",
+  "categorie": "Pokémon Graine",
+  "types": [
+   "Plante",
+   "Poison"
+  ],
+  "taille": 1,
+  "poids": 13,
+  "description": "Lorsque le bourgeon sur son dos éclot, il répand un doux parfum pour célébrer sa floraison.",
+  "stats_base": {
+   "pv": 60,
+   "attaque": 62,
+   "defense": 63,
+   "atq_spe": 80,
+   "def_spe": 80,
+   "vitesse": 60
+  },
+  "evolutions": {
+   "id": 1,
+   "evolvesTo": [
+    {
+     "id": 2,
+     "evolvesTo": [
+      {
+       "id": 3,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "3": {
+  "id": 3,
+  "nom": "Florizarre",
+  "categorie": "Pokémon Graine",
+  "types": [
+   "Plante",
+   "Poison"
+  ],
+  "taille": 2,
+  "poids": 100,
+  "description": "Le parfum de sa fleur se fait plus pénétrant les lendemains de pluie. Cela appâte les autres Pokémon.",
+  "stats_base": {
+   "pv": 80,
+   "attaque": 82,
+   "defense": 83,
+   "atq_spe": 100,
+   "def_spe": 100,
+   "vitesse": 80
+  },
+  "evolutions": {
+   "id": 1,
+   "evolvesTo": [
+    {
+     "id": 2,
+     "evolvesTo": [
+      {
+       "id": 3,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "4": {
+  "id": 4,
+  "nom": "Salamèche",
+  "categorie": "Pokémon Lézard",
+  "types": [
+   "Feu"
+  ],
+  "taille": 0.6,
+  "poids": 8.5,
+  "description": "La flamme de sa queue symbolise sa vitalité. Elle est intense quand il est en bonne santé.",
+  "stats_base": {
+   "pv": 39,
+   "attaque": 52,
+   "defense": 43,
+   "atq_spe": 60,
+   "def_spe": 50,
+   "vitesse": 65
+  },
+  "evolutions": {
+   "id": 4,
+   "evolvesTo": [
+    {
+     "id": 5,
+     "evolvesTo": [
+      {
+       "id": 6,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "5": {
+  "id": 5,
+  "nom": "Reptincel",
+  "categorie": "Pokémon Flamme",
+  "types": [
+   "Feu"
+  ],
+  "taille": 1.1,
+  "poids": 19,
+  "description": "La nuit, la queue ardente du Reptincel brille comme une étoile dans son repaire montagneux.",
+  "stats_base": {
+   "pv": 58,
+   "attaque": 64,
+   "defense": 58,
+   "atq_spe": 80,
+   "def_spe": 65,
+   "vitesse": 80
+  },
+  "evolutions": {
+   "id": 4,
+   "evolvesTo": [
+    {
+     "id": 5,
+     "evolvesTo": [
+      {
+       "id": 6,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "6": {
+  "id": 6,
+  "nom": "Dracaufeu",
+  "categorie": "Pokémon Flamme",
+  "types": [
+   "Feu",
+   "Vol"
+  ],
+  "taille": 1.7,
+  "poids": 90.5,
+  "description": "On raconte que la flamme du Dracaufeu s’intensifie après un combat difficile.",
+  "stats_base": {
+   "pv": 78,
+   "attaque": 84,
+   "defense": 78,
+   "atq_spe": 109,
+   "def_spe": 85,
+   "vitesse": 100
+  },
+  "evolutions": {
+   "id": 4,
+   "evolvesTo": [
+    {
+     "id": 5,
+     "evolvesTo": [
+      {
+       "id": 6,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "7": {
+  "id": 7,
+  "nom": "Carapuce",
+  "categorie": "Pokémon Minitortue",
+  "types": [
+   "Eau"
+  ],
+  "taille": 0.5,
+  "poids": 9,
+  "description": "Il se réfugie dans sa carapace et réplique en éclaboussant l’ennemi à la première occasion.",
+  "stats_base": {
+   "pv": 44,
+   "attaque": 48,
+   "defense": 65,
+   "atq_spe": 50,
+   "def_spe": 64,
+   "vitesse": 43
+  },
+  "evolutions": {
+   "id": 7,
+   "evolvesTo": [
+    {
+     "id": 8,
+     "evolvesTo": [
+      {
+       "id": 9,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "8": {
+  "id": 8,
+  "nom": "Carabaffe",
+  "categorie": "Pokémon Tortue",
+  "types": [
+   "Eau"
+  ],
+  "taille": 1,
+  "poids": 22.5,
+  "description": "On prétend qu’il vit 10 000 ans. Sa queue duveteuse est un symbole de longévité populaire.",
+  "stats_base": {
+   "pv": 59,
+   "attaque": 63,
+   "defense": 80,
+   "atq_spe": 65,
+   "def_spe": 80,
+   "vitesse": 58
+  },
+  "evolutions": {
+   "id": 7,
+   "evolvesTo": [
+    {
+     "id": 8,
+     "evolvesTo": [
+      {
+       "id": 9,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "9": {
+  "id": 9,
+  "nom": "Tortank",
+  "categorie": "Pokémon Carapace",
+  "types": [
+   "Eau"
+  ],
+  "taille": 1.6,
+  "poids": 85.5,
+  "description": "Les trombes d’eau projetées par les canons de sa carapace peuvent percer le métal le plus résistant.",
+  "stats_base": {
+   "pv": 79,
+   "attaque": 83,
+   "defense": 100,
+   "atq_spe": 85,
+   "def_spe": 105,
+   "vitesse": 78
+  },
+  "evolutions": {
+   "id": 7,
+   "evolvesTo": [
+    {
+     "id": 8,
+     "evolvesTo": [
+      {
+       "id": 9,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "10": {
+  "id": 10,
+  "nom": "Chenipan",
+  "categorie": "Pokémon Ver",
+  "types": [
+   "Insecte"
+  ],
+  "taille": 0.3,
+  "poids": 2.9,
+  "description": "Ses antennes rouges libèrent une puanteur qui repousse l’ennemi. Il grandit par mues régulières.",
+  "stats_base": {
+   "pv": 45,
+   "attaque": 30,
+   "defense": 35,
+   "atq_spe": 20,
+   "def_spe": 20,
+   "vitesse": 45
+  },
+  "evolutions": {
+   "id": 10,
+   "evolvesTo": [
+    {
+     "id": 11,
+     "evolvesTo": [
+      {
+       "id": 12,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "11": {
+  "id": 11,
+  "nom": "Chrysacier",
+  "categorie": "Pokémon Cocon",
+  "types": [
+   "Insecte"
+  ],
+  "taille": 0.7,
+  "poids": 9.9,
+  "description": "Son corps frêle est protégé par sa carapace d’acier. Il encaisse les coups durs en attendant d’évoluer.",
+  "stats_base": {
+   "pv": 50,
+   "attaque": 20,
+   "defense": 55,
+   "atq_spe": 25,
+   "def_spe": 25,
+   "vitesse": 30
+  },
+  "evolutions": {
+   "id": 10,
+   "evolvesTo": [
+    {
+     "id": 11,
+     "evolvesTo": [
+      {
+       "id": 12,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "12": {
+  "id": 12,
+  "nom": "Papilusion",
+  "categorie": "Pokémon Papillon",
+  "types": [
+   "Insecte",
+   "Vol"
+  ],
+  "taille": 1.1,
+  "poids": 32,
+  "description": "Il raffole du nectar des fleurs. Il est capable de repérer la plus petite quantité de pollen.",
+  "stats_base": {
+   "pv": 60,
+   "attaque": 45,
+   "defense": 50,
+   "atq_spe": 90,
+   "def_spe": 80,
+   "vitesse": 70
+  },
+  "evolutions": {
+   "id": 10,
+   "evolvesTo": [
+    {
+     "id": 11,
+     "evolvesTo": [
+      {
+       "id": 12,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "13": {
+  "id": 13,
+  "nom": "Aspicot",
+  "categorie": "Pokémon Insectopic",
+  "types": [
+   "Insecte",
+   "Poison"
+  ],
+  "taille": 0.3,
+  "poids": 3.2,
+  "description": "Il mange chaque jour son poids en feuilles. Il utilise l’aiguillon sur sa tête pour repousser l’ennemi.",
+  "stats_base": {
+   "pv": 40,
+   "attaque": 35,
+   "defense": 30,
+   "atq_spe": 20,
+   "def_spe": 20,
+   "vitesse": 50
+  },
+  "evolutions": {
+   "id": 13,
+   "evolvesTo": [
+    {
+     "id": 14,
+     "evolvesTo": [
+      {
+       "id": 15,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "14": {
+  "id": 14,
+  "nom": "Coconfort",
+  "categorie": "Pokémon Cocon",
+  "types": [
+   "Insecte",
+   "Poison"
+  ],
+  "taille": 0.6,
+  "poids": 10,
+  "description": "Il se cache sous les feuilles et les branches pour fuir les prédateurs en attendant d’évoluer.",
+  "stats_base": {
+   "pv": 45,
+   "attaque": 25,
+   "defense": 50,
+   "atq_spe": 25,
+   "def_spe": 25,
+   "vitesse": 35
+  },
+  "evolutions": {
+   "id": 13,
+   "evolvesTo": [
+    {
+     "id": 14,
+     "evolvesTo": [
+      {
+       "id": 15,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "15": {
+  "id": 15,
+  "nom": "Dardargnan",
+  "categorie": "Pokémon Guêpoison",
+  "types": [
+   "Insecte",
+   "Poison"
+  ],
+  "taille": 1,
+  "poids": 29.5,
+  "description": "Il virevolte rapidement autour de l’ennemi et frappe de son dard empoisonné avant de décamper.",
+  "stats_base": {
+   "pv": 65,
+   "attaque": 90,
+   "defense": 40,
+   "atq_spe": 45,
+   "def_spe": 80,
+   "vitesse": 75
+  },
+  "evolutions": {
+   "id": 13,
+   "evolvesTo": [
+    {
+     "id": 14,
+     "evolvesTo": [
+      {
+       "id": 15,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "16": {
+  "id": 16,
+  "nom": "Roucool",
+  "categorie": "Pokémon Minoiseau",
+  "types": [
+   "Normal",
+   "Vol"
+  ],
+  "taille": 0.3,
+  "poids": 1.8,
+  "description": "Ce Pokémon docile préfère éviter le combat. Toutefois, il se montre très féroce quand on l’agresse.",
+  "stats_base": {
+   "pv": 40,
+   "attaque": 45,
+   "defense": 40,
+   "atq_spe": 35,
+   "def_spe": 35,
+   "vitesse": 56
+  },
+  "evolutions": {
+   "id": 16,
+   "evolvesTo": [
+    {
+     "id": 17,
+     "evolvesTo": [
+      {
+       "id": 18,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "17": {
+  "id": 17,
+  "nom": "Roucoups",
+  "categorie": "Pokémon Oiseau",
+  "types": [
+   "Normal",
+   "Vol"
+  ],
+  "taille": 1.1,
+  "poids": 30,
+  "description": "Il survole son vaste territoire en quête d’une proie avant de fondre sur elle toutes griffes en avant.",
+  "stats_base": {
+   "pv": 63,
+   "attaque": 60,
+   "defense": 55,
+   "atq_spe": 50,
+   "def_spe": 50,
+   "vitesse": 71
+  },
+  "evolutions": {
+   "id": 16,
+   "evolvesTo": [
+    {
+     "id": 17,
+     "evolvesTo": [
+      {
+       "id": 18,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "18": {
+  "id": 18,
+  "nom": "Roucarnage",
+  "categorie": "Pokémon Oiseau",
+  "types": [
+   "Normal",
+   "Vol"
+  ],
+  "taille": 1.5,
+  "poids": 39.5,
+  "description": "En battant des ailes de toutes ses forces, Roucarnage génère une rafale à en déraciner les arbres.",
+  "stats_base": {
+   "pv": 83,
+   "attaque": 80,
+   "defense": 75,
+   "atq_spe": 70,
+   "def_spe": 70,
+   "vitesse": 101
+  },
+  "evolutions": {
+   "id": 16,
+   "evolvesTo": [
+    {
+     "id": 17,
+     "evolvesTo": [
+      {
+       "id": 18,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "19": {
+  "id": 19,
+  "nom": "Rattata",
+  "categorie": "Pokémon Souris",
+  "types": [
+   "Normal"
+  ],
+  "taille": 0.3,
+  "poids": 3.5,
+  "description": "D’une prudence extrême, sa nature robuste lui permet de s’adapter à tous les terrains.",
+  "stats_base": {
+   "pv": 30,
+   "attaque": 56,
+   "defense": 35,
+   "atq_spe": 25,
+   "def_spe": 35,
+   "vitesse": 72
+  },
+  "evolutions": {
+   "id": 19,
+   "evolvesTo": [
+    {
+     "id": 20,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "20": {
+  "id": 20,
+  "nom": "Rattatac",
+  "categorie": "Pokémon Souris",
+  "types": [
+   "Normal"
+  ],
+  "taille": 0.7,
+  "poids": 18.5,
+  "description": "Il grignote sans cesse pour apaiser la poussée de ses crocs. Il peut transpercer un mur de parpaings.",
+  "stats_base": {
+   "pv": 55,
+   "attaque": 81,
+   "defense": 60,
+   "atq_spe": 50,
+   "def_spe": 70,
+   "vitesse": 97
+  },
+  "evolutions": {
+   "id": 19,
+   "evolvesTo": [
+    {
+     "id": 20,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "21": {
+  "id": 21,
+  "nom": "Piafabec",
+  "categorie": "Pokémon Minoiseau",
+  "types": [
+   "Normal",
+   "Vol"
+  ],
+  "taille": 0.3,
+  "poids": 2,
+  "description": "Il fait battre vigoureusement ses petites ailes pour voler et cherche à manger dans l’herbe avec le bec.",
+  "stats_base": {
+   "pv": 40,
+   "attaque": 60,
+   "defense": 30,
+   "atq_spe": 31,
+   "def_spe": 31,
+   "vitesse": 70
+  },
+  "evolutions": {
+   "id": 21,
+   "evolvesTo": [
+    {
+     "id": 22,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "22": {
+  "id": 22,
+  "nom": "Rapasdepic",
+  "categorie": "Pokémon Bec-Oiseau",
+  "types": [
+   "Normal",
+   "Vol"
+  ],
+  "taille": 1.2,
+  "poids": 38,
+  "description": "Il a assez d’énergie pour voler toute la journée avec ses grandes ailes. Il frappe de son bec acéré.",
+  "stats_base": {
+   "pv": 65,
+   "attaque": 90,
+   "defense": 65,
+   "atq_spe": 61,
+   "def_spe": 61,
+   "vitesse": 100
+  },
+  "evolutions": {
+   "id": 21,
+   "evolvesTo": [
+    {
+     "id": 22,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "23": {
+  "id": 23,
+  "nom": "Abo",
+  "categorie": "Pokémon Serpent",
+  "types": [
+   "Poison"
+  ],
+  "taille": 2,
+  "poids": 6.9,
+  "description": "Il se faufile dans l’herbe sans un bruit et frappe dans le dos quand sa proie s’y attend le moins.",
+  "stats_base": {
+   "pv": 35,
+   "attaque": 60,
+   "defense": 44,
+   "atq_spe": 40,
+   "def_spe": 54,
+   "vitesse": 55
+  },
+  "evolutions": {
+   "id": 23,
+   "evolvesTo": [
+    {
+     "id": 24,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "24": {
+  "id": 24,
+  "nom": "Arbok",
+  "categorie": "Pokémon Cobra",
+  "types": [
+   "Poison"
+  ],
+  "taille": 3.5,
+  "poids": 65,
+  "description": "Il utilise la marque sur son ventre pour intimider l’ennemi. Il étouffe l’ennemi pétrifié par la peur.",
+  "stats_base": {
+   "pv": 60,
+   "attaque": 95,
+   "defense": 69,
+   "atq_spe": 65,
+   "def_spe": 79,
+   "vitesse": 80
+  },
+  "evolutions": {
+   "id": 23,
+   "evolvesTo": [
+    {
+     "id": 24,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "25": {
+  "id": 25,
+  "nom": "Pikachu",
+  "categorie": "Pokémon Souris",
+  "types": [
+   "Électrik"
+  ],
+  "taille": 0.4,
+  "poids": 6,
+  "description": "Il lui arrive de remettre d’aplomb un Pikachu allié en lui envoyant une décharge électrique.",
+  "stats_base": {
+   "pv": 35,
+   "attaque": 55,
+   "defense": 40,
+   "atq_spe": 50,
+   "def_spe": 50,
+   "vitesse": 90
+  },
+  "evolutions": {
+   "id": 172,
+   "evolvesTo": [
+    {
+     "id": 25,
+     "evolvesTo": [
+      {
+       "id": 26,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "26": {
+  "id": 26,
+  "nom": "Raichu",
+  "categorie": "Pokémon Souris",
+  "types": [
+   "Électrik"
+  ],
+  "taille": 0.8,
+  "poids": 30,
+  "description": "Il se protège des décharges grâce à sa queue qui dissipe l’électricité dans le sol.",
+  "stats_base": {
+   "pv": 60,
+   "attaque": 90,
+   "defense": 55,
+   "atq_spe": 90,
+   "def_spe": 80,
+   "vitesse": 110
+  },
+  "evolutions": {
+   "id": 172,
+   "evolvesTo": [
+    {
+     "id": 25,
+     "evolvesTo": [
+      {
+       "id": 26,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "27": {
+  "id": 27,
+  "nom": "Sabelette",
+  "categorie": "Pokémon Souris",
+  "types": [
+   "Sol"
+  ],
+  "taille": 0.6,
+  "poids": 12,
+  "description": "Il vit sur des terres arides épargnées par la pluie. Il se roule en boule pour se protéger.",
+  "stats_base": {
+   "pv": 50,
+   "attaque": 75,
+   "defense": 85,
+   "atq_spe": 20,
+   "def_spe": 30,
+   "vitesse": 40
+  },
+  "evolutions": {
+   "id": 27,
+   "evolvesTo": [
+    {
+     "id": 28,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "28": {
+  "id": 28,
+  "nom": "Sablaireau",
+  "categorie": "Pokémon Souris",
+  "types": [
+   "Sol"
+  ],
+  "taille": 1,
+  "poids": 29.5,
+  "description": "Il se met en boule pour percuter l’ennemi. Ses épines aiguisées font beaucoup de dégâts.",
+  "stats_base": {
+   "pv": 75,
+   "attaque": 100,
+   "defense": 110,
+   "atq_spe": 45,
+   "def_spe": 55,
+   "vitesse": 65
+  },
+  "evolutions": {
+   "id": 27,
+   "evolvesTo": [
+    {
+     "id": 28,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "29": {
+  "id": 29,
+  "nom": "Nidoran♀",
+  "categorie": "Pokémon Vénépic",
+  "types": [
+   "Poison"
+  ],
+  "taille": 0.4,
+  "poids": 7,
+  "description": "Bien qu’il rechigne à se battre, une goutte du poison sécrété par ses piquants peut s’avérer fatale.",
+  "stats_base": {
+   "pv": 55,
+   "attaque": 47,
+   "defense": 52,
+   "atq_spe": 40,
+   "def_spe": 40,
+   "vitesse": 41
+  },
+  "evolutions": {
+   "id": 29,
+   "evolvesTo": [
+    {
+     "id": 30,
+     "evolvesTo": [
+      {
+       "id": 31,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "30": {
+  "id": 30,
+  "nom": "Nidorina",
+  "categorie": "Pokémon Vénépic",
+  "types": [
+   "Poison"
+  ],
+  "taille": 0.8,
+  "poids": 20,
+  "description": "Ce Pokémon dresse ses piquants en cas de danger. Ils poussent moins vite que ceux de Nidorino.",
+  "stats_base": {
+   "pv": 70,
+   "attaque": 62,
+   "defense": 67,
+   "atq_spe": 55,
+   "def_spe": 55,
+   "vitesse": 56
+  },
+  "evolutions": {
+   "id": 29,
+   "evolvesTo": [
+    {
+     "id": 30,
+     "evolvesTo": [
+      {
+       "id": 31,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "31": {
+  "id": 31,
+  "nom": "Nidoqueen",
+  "categorie": "Pokémon Perceur",
+  "types": [
+   "Poison",
+   "Sol"
+  ],
+  "taille": 1.3,
+  "poids": 60,
+  "description": "Son corps est recouvert d’écailles solides. Il donnera sa vie pour secourir les petits de son terrier.",
+  "stats_base": {
+   "pv": 90,
+   "attaque": 92,
+   "defense": 87,
+   "atq_spe": 75,
+   "def_spe": 85,
+   "vitesse": 76
+  },
+  "evolutions": {
+   "id": 29,
+   "evolvesTo": [
+    {
+     "id": 30,
+     "evolvesTo": [
+      {
+       "id": 31,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "32": {
+  "id": 32,
+  "nom": "Nidoran♂",
+  "categorie": "Pokémon Vénépic",
+  "types": [
+   "Poison"
+  ],
+  "taille": 0.5,
+  "poids": 9,
+  "description": "Il jauge le terrain en laissant ses oreilles dépasser de l’herbe. Il se défend avec sa corne toxique.",
+  "stats_base": {
+   "pv": 46,
+   "attaque": 57,
+   "defense": 40,
+   "atq_spe": 40,
+   "def_spe": 40,
+   "vitesse": 50
+  },
+  "evolutions": {
+   "id": 32,
+   "evolvesTo": [
+    {
+     "id": 33,
+     "evolvesTo": [
+      {
+       "id": 34,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "33": {
+  "id": 33,
+  "nom": "Nidorino",
+  "categorie": "Pokémon Vénépic",
+  "types": [
+   "Poison"
+  ],
+  "taille": 0.9,
+  "poids": 19.5,
+  "description": "D’un tempérament violent, il empale l’ennemi sur sa corne qui distille un poison puissant.",
+  "stats_base": {
+   "pv": 61,
+   "attaque": 72,
+   "defense": 57,
+   "atq_spe": 55,
+   "def_spe": 55,
+   "vitesse": 65
+  },
+  "evolutions": {
+   "id": 32,
+   "evolvesTo": [
+    {
+     "id": 33,
+     "evolvesTo": [
+      {
+       "id": 34,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "34": {
+  "id": 34,
+  "nom": "Nidoking",
+  "categorie": "Pokémon Perceur",
+  "types": [
+   "Poison",
+   "Sol"
+  ],
+  "taille": 1.4,
+  "poids": 62,
+  "description": "Un coup de sa puissante queue peut briser un poteau téléphonique comme une allumette.",
+  "stats_base": {
+   "pv": 81,
+   "attaque": 102,
+   "defense": 77,
+   "atq_spe": 85,
+   "def_spe": 75,
+   "vitesse": 85
+  },
+  "evolutions": {
+   "id": 32,
+   "evolvesTo": [
+    {
+     "id": 33,
+     "evolvesTo": [
+      {
+       "id": 34,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "35": {
+  "id": 35,
+  "nom": "Mélofée",
+  "categorie": "Pokémon Fée",
+  "types": [
+   "Fée"
+  ],
+  "taille": 0.6,
+  "poids": 7.5,
+  "description": "On dit que ceux qui voient danser un groupe de Mélofée sous la pleine lune connaîtront un grand bonheur.",
+  "stats_base": {
+   "pv": 70,
+   "attaque": 45,
+   "defense": 48,
+   "atq_spe": 60,
+   "def_spe": 65,
+   "vitesse": 35
+  },
+  "evolutions": {
+   "id": 173,
+   "evolvesTo": [
+    {
+     "id": 35,
+     "evolvesTo": [
+      {
+       "id": 36,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "36": {
+  "id": 36,
+  "nom": "Mélodelfe",
+  "categorie": "Pokémon Fée",
+  "types": [
+   "Fée"
+  ],
+  "taille": 1.3,
+  "poids": 40,
+  "description": "Il est très farouche et se laisse rarement approcher. De plus, il détecte les sons à plus d’1 km.",
+  "stats_base": {
+   "pv": 95,
+   "attaque": 70,
+   "defense": 73,
+   "atq_spe": 95,
+   "def_spe": 90,
+   "vitesse": 60
+  },
+  "evolutions": {
+   "id": 173,
+   "evolvesTo": [
+    {
+     "id": 35,
+     "evolvesTo": [
+      {
+       "id": 36,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "37": {
+  "id": 37,
+  "nom": "Goupix",
+  "categorie": "Pokémon Renard",
+  "types": [
+   "Feu"
+  ],
+  "taille": 0.6,
+  "poids": 9.9,
+  "description": "Il envoie des boules de feu. Avec l’âge, ses six queues en forment de nouvelles.",
+  "stats_base": {
+   "pv": 38,
+   "attaque": 41,
+   "defense": 40,
+   "atq_spe": 50,
+   "def_spe": 65,
+   "vitesse": 65
+  },
+  "evolutions": {
+   "id": 37,
+   "evolvesTo": [
+    {
+     "id": 38,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "38": {
+  "id": 38,
+  "nom": "Feunard",
+  "categorie": "Pokémon Renard",
+  "types": [
+   "Feu"
+  ],
+  "taille": 1.1,
+  "poids": 19.9,
+  "description": "On raconte que ses neuf queues détiennent un pouvoir mystique. Il peut vivre pendant mille ans.",
+  "stats_base": {
+   "pv": 73,
+   "attaque": 76,
+   "defense": 75,
+   "atq_spe": 81,
+   "def_spe": 100,
+   "vitesse": 100
+  },
+  "evolutions": {
+   "id": 37,
+   "evolvesTo": [
+    {
+     "id": 38,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "39": {
+  "id": 39,
+  "nom": "Rondoudou",
+  "categorie": "Pokémon Bouboule",
+  "types": [
+   "Normal",
+   "Fée"
+  ],
+  "taille": 0.5,
+  "poids": 5.5,
+  "description": "Lorsqu’il roule ses grands yeux ronds, il entonne une berceuse qui endort son auditoire.",
+  "stats_base": {
+   "pv": 115,
+   "attaque": 45,
+   "defense": 20,
+   "atq_spe": 45,
+   "def_spe": 25,
+   "vitesse": 20
+  },
+  "evolutions": {
+   "id": 174,
+   "evolvesTo": [
+    {
+     "id": 39,
+     "evolvesTo": [
+      {
+       "id": 40,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "40": {
+  "id": 40,
+  "nom": "Grodoudou",
+  "categorie": "Pokémon Bouboule",
+  "types": [
+   "Normal",
+   "Fée"
+  ],
+  "taille": 1,
+  "poids": 12,
+  "description": "Sa fourrure est d’une douceur incomparable au toucher. Il peut gonfler en aspirant de l’air.",
+  "stats_base": {
+   "pv": 140,
+   "attaque": 70,
+   "defense": 45,
+   "atq_spe": 85,
+   "def_spe": 50,
+   "vitesse": 45
+  },
+  "evolutions": {
+   "id": 174,
+   "evolvesTo": [
+    {
+     "id": 39,
+     "evolvesTo": [
+      {
+       "id": 40,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "41": {
+  "id": 41,
+  "nom": "Nosferapti",
+  "categorie": "Pokémon Chovsouris",
+  "types": [
+   "Poison",
+   "Vol"
+  ],
+  "taille": 0.8,
+  "poids": 7.5,
+  "description": "Il se repère dans l’espace grâce aux ultrasons émis par sa gueule.",
+  "stats_base": {
+   "pv": 40,
+   "attaque": 45,
+   "defense": 35,
+   "atq_spe": 30,
+   "def_spe": 40,
+   "vitesse": 55
+  },
+  "evolutions": {
+   "id": 41,
+   "evolvesTo": [
+    {
+     "id": 42,
+     "evolvesTo": [
+      {
+       "id": 169,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "42": {
+  "id": 42,
+  "nom": "Nosferalto",
+  "categorie": "Pokémon Chovsouris",
+  "types": [
+   "Poison",
+   "Vol"
+  ],
+  "taille": 1.6,
+  "poids": 55,
+  "description": "Ses crocs acérés et creux peuvent pénétrer la plus épaisse des peaux et sucer le sang de la victime.",
+  "stats_base": {
+   "pv": 75,
+   "attaque": 80,
+   "defense": 70,
+   "atq_spe": 65,
+   "def_spe": 75,
+   "vitesse": 90
+  },
+  "evolutions": {
+   "id": 41,
+   "evolvesTo": [
+    {
+     "id": 42,
+     "evolvesTo": [
+      {
+       "id": 169,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "43": {
+  "id": 43,
+  "nom": "Mystherbe",
+  "categorie": "Pokémon Racine",
+  "types": [
+   "Plante",
+   "Poison"
+  ],
+  "taille": 0.5,
+  "poids": 5.4,
+  "description": "En journée, il plante ses pieds-racines dans le sol. La nuit, il se promène en semant des graines.",
+  "stats_base": {
+   "pv": 45,
+   "attaque": 50,
+   "defense": 55,
+   "atq_spe": 75,
+   "def_spe": 65,
+   "vitesse": 30
+  },
+  "evolutions": {
+   "id": 43,
+   "evolvesTo": [
+    {
+     "id": 44,
+     "evolvesTo": [
+      {
+       "id": 45,
+       "evolvesTo": []
+      },
+      {
+       "id": 182,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "44": {
+  "id": 44,
+  "nom": "Ortide",
+  "categorie": "Pokémon Racine",
+  "types": [
+   "Plante",
+   "Poison"
+  ],
+  "taille": 0.8,
+  "poids": 8.6,
+  "description": "L’odeur du nectar de sa bouche est si répugnante qu’elle agresse les narines à deux kilomètres.",
+  "stats_base": {
+   "pv": 60,
+   "attaque": 65,
+   "defense": 70,
+   "atq_spe": 85,
+   "def_spe": 75,
+   "vitesse": 40
+  },
+  "evolutions": {
+   "id": 43,
+   "evolvesTo": [
+    {
+     "id": 44,
+     "evolvesTo": [
+      {
+       "id": 45,
+       "evolvesTo": []
+      },
+      {
+       "id": 182,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "45": {
+  "id": 45,
+  "nom": "Rafflesia",
+  "categorie": "Pokémon Fleur",
+  "types": [
+   "Plante",
+   "Poison"
+  ],
+  "taille": 1.2,
+  "poids": 18.6,
+  "description": "Ses pétales sont les plus grands du monde. Il marche en répandant un pollen extrêmement allergène.",
+  "stats_base": {
+   "pv": 75,
+   "attaque": 80,
+   "defense": 85,
+   "atq_spe": 110,
+   "def_spe": 90,
+   "vitesse": 50
+  },
+  "evolutions": {
+   "id": 43,
+   "evolvesTo": [
+    {
+     "id": 44,
+     "evolvesTo": [
+      {
+       "id": 45,
+       "evolvesTo": []
+      },
+      {
+       "id": 182,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "46": {
+  "id": 46,
+  "nom": "Paras",
+  "categorie": "Pokémon Champignon",
+  "types": [
+   "Insecte",
+   "Plante"
+  ],
+  "taille": 0.3,
+  "poids": 5.4,
+  "description": "Des champignons appelés “tochukaso” poussent sur son dos. Ils évoluent avec le Paras hôte.",
+  "stats_base": {
+   "pv": 35,
+   "attaque": 70,
+   "defense": 55,
+   "atq_spe": 45,
+   "def_spe": 55,
+   "vitesse": 25
+  },
+  "evolutions": {
+   "id": 46,
+   "evolvesTo": [
+    {
+     "id": 47,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "47": {
+  "id": 47,
+  "nom": "Parasect",
+  "categorie": "Pokémon Champignon",
+  "types": [
+   "Insecte",
+   "Plante"
+  ],
+  "taille": 1,
+  "poids": 29.5,
+  "description": "Un champignon parasite plus gros que Parasect contrôle son corps. Il répand des spores empoisonnées.",
+  "stats_base": {
+   "pv": 60,
+   "attaque": 95,
+   "defense": 80,
+   "atq_spe": 60,
+   "def_spe": 80,
+   "vitesse": 30
+  },
+  "evolutions": {
+   "id": 46,
+   "evolvesTo": [
+    {
+     "id": 47,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "48": {
+  "id": 48,
+  "nom": "Mimitoss",
+  "categorie": "Pokémon Vermine",
+  "types": [
+   "Insecte",
+   "Poison"
+  ],
+  "taille": 1,
+  "poids": 30,
+  "description": "Ses grands yeux sont en fait des amas d’yeux minuscules. La nuit, il est attiré par la lumière.",
+  "stats_base": {
+   "pv": 60,
+   "attaque": 55,
+   "defense": 50,
+   "atq_spe": 40,
+   "def_spe": 55,
+   "vitesse": 45
+  },
+  "evolutions": {
+   "id": 48,
+   "evolvesTo": [
+    {
+     "id": 49,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "49": {
+  "id": 49,
+  "nom": "Aéromite",
+  "categorie": "Pokémon Papipoison",
+  "types": [
+   "Insecte",
+   "Poison"
+  ],
+  "taille": 1.5,
+  "poids": 12.5,
+  "description": "Il répand ses écailles poudreuses en battant des ailes. Elles sont toxiques au toucher.",
+  "stats_base": {
+   "pv": 70,
+   "attaque": 65,
+   "defense": 60,
+   "atq_spe": 90,
+   "def_spe": 75,
+   "vitesse": 90
+  },
+  "evolutions": {
+   "id": 48,
+   "evolvesTo": [
+    {
+     "id": 49,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "50": {
+  "id": 50,
+  "nom": "Taupiqueur",
+  "categorie": "Pokémon Taupe",
+  "types": [
+   "Sol"
+  ],
+  "taille": 0.2,
+  "poids": 0.8,
+  "description": "Un Pokémon qui vit sous terre. Habitué aux souterrains, il fuit la lumière du jour.",
+  "stats_base": {
+   "pv": 10,
+   "attaque": 55,
+   "defense": 25,
+   "atq_spe": 35,
+   "def_spe": 45,
+   "vitesse": 95
+  },
+  "evolutions": {
+   "id": 50,
+   "evolvesTo": [
+    {
+     "id": 51,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "51": {
+  "id": 51,
+  "nom": "Triopikeur",
+  "categorie": "Pokémon Taupe",
+  "types": [
+   "Sol"
+  ],
+  "taille": 0.7,
+  "poids": 33.3,
+  "description": "Ses trois têtes creusent le sol à tour de rôle. Il peut atteindre des profondeurs de 100 kilomètres.",
+  "stats_base": {
+   "pv": 35,
+   "attaque": 100,
+   "defense": 50,
+   "atq_spe": 50,
+   "def_spe": 70,
+   "vitesse": 120
+  },
+  "evolutions": {
+   "id": 50,
+   "evolvesTo": [
+    {
+     "id": 51,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "52": {
+  "id": 52,
+  "nom": "Miaouss",
+  "categorie": "Pokémon Chadégout",
+  "types": [
+   "Normal"
+  ],
+  "taille": 0.4,
+  "poids": 4.2,
+  "description": "Son regard s’anime à la vue d’un objet brillant. C’est un Pokémon nocturne.",
+  "stats_base": {
+   "pv": 40,
+   "attaque": 45,
+   "defense": 35,
+   "atq_spe": 40,
+   "def_spe": 40,
+   "vitesse": 90
+  },
+  "evolutions": {
+   "id": 52,
+   "evolvesTo": [
+    {
+     "id": 53,
+     "evolvesTo": []
+    },
+    {
+     "id": 863,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "53": {
+  "id": 53,
+  "nom": "Persian",
+  "categorie": "Pokémon Chadeville",
+  "types": [
+   "Normal"
+  ],
+  "taille": 1,
+  "poids": 32,
+  "description": "Un Pokémon très snob. La taille du joyau qui orne son front alimente bien des débats parmi ses fans.",
+  "stats_base": {
+   "pv": 65,
+   "attaque": 70,
+   "defense": 60,
+   "atq_spe": 65,
+   "def_spe": 65,
+   "vitesse": 115
+  },
+  "evolutions": {
+   "id": 52,
+   "evolvesTo": [
+    {
+     "id": 53,
+     "evolvesTo": []
+    },
+    {
+     "id": 863,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "54": {
+  "id": 54,
+  "nom": "Psykokwak",
+  "categorie": "Pokémon Canard",
+  "types": [
+   "Eau"
+  ],
+  "taille": 0.8,
+  "poids": 19.6,
+  "description": "Ses pouvoirs déconcertants et mystérieux lui font subir de constantes migraines.",
+  "stats_base": {
+   "pv": 50,
+   "attaque": 52,
+   "defense": 48,
+   "atq_spe": 65,
+   "def_spe": 50,
+   "vitesse": 55
+  },
+  "evolutions": {
+   "id": 54,
+   "evolvesTo": [
+    {
+     "id": 55,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "55": {
+  "id": 55,
+  "nom": "Akwakwak",
+  "categorie": "Pokémon Canard",
+  "types": [
+   "Eau"
+  ],
+  "taille": 1.7,
+  "poids": 76.6,
+  "description": "Ses membres palmés et son corps parfaitement adapté font de lui un nageur exceptionnel.",
+  "stats_base": {
+   "pv": 80,
+   "attaque": 82,
+   "defense": 78,
+   "atq_spe": 95,
+   "def_spe": 80,
+   "vitesse": 85
+  },
+  "evolutions": {
+   "id": 54,
+   "evolvesTo": [
+    {
+     "id": 55,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "56": {
+  "id": 56,
+  "nom": "Férosinge",
+  "categorie": "Pokémon Porsinge",
+  "types": [
+   "Combat"
+  ],
+  "taille": 0.5,
+  "poids": 28,
+  "description": "Ils vivent en colonies sylvestres. Quand un Férosinge s’énerve, toute la colonie suit son exemple.",
+  "stats_base": {
+   "pv": 40,
+   "attaque": 80,
+   "defense": 35,
+   "atq_spe": 35,
+   "def_spe": 45,
+   "vitesse": 70
+  },
+  "evolutions": {
+   "id": 56,
+   "evolvesTo": [
+    {
+     "id": 57,
+     "evolvesTo": [
+      {
+       "id": 979,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "57": {
+  "id": 57,
+  "nom": "Colossinge",
+  "categorie": "Pokémon Porsinge",
+  "types": [
+   "Combat"
+  ],
+  "taille": 1,
+  "poids": 32,
+  "description": "Il grogne quand on le toise, rugit quand on s’enfuit et devient fou de rage quand on le frappe.",
+  "stats_base": {
+   "pv": 65,
+   "attaque": 105,
+   "defense": 60,
+   "atq_spe": 60,
+   "def_spe": 70,
+   "vitesse": 95
+  },
+  "evolutions": {
+   "id": 56,
+   "evolvesTo": [
+    {
+     "id": 57,
+     "evolvesTo": [
+      {
+       "id": 979,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "58": {
+  "id": 58,
+  "nom": "Caninos",
+  "categorie": "Pokémon Chiot",
+  "types": [
+   "Feu"
+  ],
+  "taille": 0.7,
+  "poids": 19,
+  "description": "Un Pokémon très loyal. Il restera immobile jusqu’à ce que son Dresseur lui donne un ordre.",
+  "stats_base": {
+   "pv": 55,
+   "attaque": 70,
+   "defense": 45,
+   "atq_spe": 70,
+   "def_spe": 50,
+   "vitesse": 60
+  },
+  "evolutions": {
+   "id": 58,
+   "evolvesTo": [
+    {
+     "id": 59,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "59": {
+  "id": 59,
+  "nom": "Arcanin",
+  "categorie": "Pokémon Légendaire",
+  "types": [
+   "Feu"
+  ],
+  "taille": 1.9,
+  "poids": 155,
+  "description": "Son port altier et son attitude fière ont depuis longtemps conquis le cœur des hommes.",
+  "stats_base": {
+   "pv": 90,
+   "attaque": 110,
+   "defense": 80,
+   "atq_spe": 100,
+   "def_spe": 80,
+   "vitesse": 95
+  },
+  "evolutions": {
+   "id": 58,
+   "evolvesTo": [
+    {
+     "id": 59,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "60": {
+  "id": 60,
+  "nom": "Ptitard",
+  "categorie": "Pokémon Têtard",
+  "types": [
+   "Eau"
+  ],
+  "taille": 0.6,
+  "poids": 12.4,
+  "description": "Sa peau est si mince qu’on voit ses organes internes. Il tient à peine sur ses nouveaux pieds.",
+  "stats_base": {
+   "pv": 40,
+   "attaque": 50,
+   "defense": 40,
+   "atq_spe": 40,
+   "def_spe": 40,
+   "vitesse": 90
+  },
+  "evolutions": {
+   "id": 60,
+   "evolvesTo": [
+    {
+     "id": 61,
+     "evolvesTo": [
+      {
+       "id": 62,
+       "evolvesTo": []
+      },
+      {
+       "id": 186,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "61": {
+  "id": 61,
+  "nom": "Têtarte",
+  "categorie": "Pokémon Têtard",
+  "types": [
+   "Eau"
+  ],
+  "taille": 1,
+  "poids": 20,
+  "description": "La spirale qui orne son ventre ondule doucement. Celui qui la fixe est saisi d’une étrange torpeur.",
+  "stats_base": {
+   "pv": 65,
+   "attaque": 65,
+   "defense": 65,
+   "atq_spe": 50,
+   "def_spe": 50,
+   "vitesse": 90
+  },
+  "evolutions": {
+   "id": 60,
+   "evolvesTo": [
+    {
+     "id": 61,
+     "evolvesTo": [
+      {
+       "id": 62,
+       "evolvesTo": []
+      },
+      {
+       "id": 186,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "62": {
+  "id": 62,
+  "nom": "Tartard",
+  "categorie": "Pokémon Têtard",
+  "types": [
+   "Eau",
+   "Combat"
+  ],
+  "taille": 1.3,
+  "poids": 54,
+  "description": "Il possède de sacrés biscoteaux. Il peut parcourir sans relâche l’Océan Pacifique.",
+  "stats_base": {
+   "pv": 90,
+   "attaque": 95,
+   "defense": 95,
+   "atq_spe": 70,
+   "def_spe": 90,
+   "vitesse": 70
+  },
+  "evolutions": {
+   "id": 60,
+   "evolvesTo": [
+    {
+     "id": 61,
+     "evolvesTo": [
+      {
+       "id": 62,
+       "evolvesTo": []
+      },
+      {
+       "id": 186,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "63": {
+  "id": 63,
+  "nom": "Abra",
+  "categorie": "Pokémon Psy",
+  "types": [
+   "Psy"
+  ],
+  "taille": 0.9,
+  "poids": 19.5,
+  "description": "L’utilisation de ses pouvoirs mentaux le fatigue tellement qu’il dort 18 heures par jour.",
+  "stats_base": {
+   "pv": 25,
+   "attaque": 20,
+   "defense": 15,
+   "atq_spe": 105,
+   "def_spe": 55,
+   "vitesse": 90
+  },
+  "evolutions": {
+   "id": 63,
+   "evolvesTo": [
+    {
+     "id": 64,
+     "evolvesTo": [
+      {
+       "id": 65,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "64": {
+  "id": 64,
+  "nom": "Kadabra",
+  "categorie": "Pokémon Psy",
+  "types": [
+   "Psy"
+  ],
+  "taille": 1.3,
+  "poids": 56.5,
+  "description": "Il fixe sa cuillère d’argent afin de concentrer son esprit et d’émettre un maximum d’ondes alpha.",
+  "stats_base": {
+   "pv": 40,
+   "attaque": 35,
+   "defense": 30,
+   "atq_spe": 120,
+   "def_spe": 70,
+   "vitesse": 105
+  },
+  "evolutions": {
+   "id": 63,
+   "evolvesTo": [
+    {
+     "id": 64,
+     "evolvesTo": [
+      {
+       "id": 65,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "65": {
+  "id": 65,
+  "nom": "Alakazam",
+  "categorie": "Pokémon Psy",
+  "types": [
+   "Psy"
+  ],
+  "taille": 1.5,
+  "poids": 48,
+  "description": "On dit que les cuillères qu’il tient en permanence ont été créées par la puissance de son esprit.",
+  "stats_base": {
+   "pv": 55,
+   "attaque": 50,
+   "defense": 45,
+   "atq_spe": 135,
+   "def_spe": 95,
+   "vitesse": 120
+  },
+  "evolutions": {
+   "id": 63,
+   "evolvesTo": [
+    {
+     "id": 64,
+     "evolvesTo": [
+      {
+       "id": 65,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "66": {
+  "id": 66,
+  "nom": "Machoc",
+  "categorie": "Pokémon Colosse",
+  "types": [
+   "Combat"
+  ],
+  "taille": 0.8,
+  "poids": 19.5,
+  "description": "Malgré sa petite taille, sa force lui permet de soulever plusieurs Racaillou à la fois.",
+  "stats_base": {
+   "pv": 70,
+   "attaque": 80,
+   "defense": 50,
+   "atq_spe": 35,
+   "def_spe": 35,
+   "vitesse": 35
+  },
+  "evolutions": {
+   "id": 66,
+   "evolvesTo": [
+    {
+     "id": 67,
+     "evolvesTo": [
+      {
+       "id": 68,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "67": {
+  "id": 67,
+  "nom": "Machopeur",
+  "categorie": "Pokémon Colosse",
+  "types": [
+   "Combat"
+  ],
+  "taille": 1.5,
+  "poids": 70.5,
+  "description": "Il soulève les plus lourdes charges avec plaisir et facilité. Il donne un coup de main tout en s’entraînant!",
+  "stats_base": {
+   "pv": 80,
+   "attaque": 100,
+   "defense": 70,
+   "atq_spe": 50,
+   "def_spe": 60,
+   "vitesse": 45
+  },
+  "evolutions": {
+   "id": 66,
+   "evolvesTo": [
+    {
+     "id": 67,
+     "evolvesTo": [
+      {
+       "id": 68,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "68": {
+  "id": 68,
+  "nom": "Mackogneur",
+  "categorie": "Pokémon Colosse",
+  "types": [
+   "Combat"
+  ],
+  "taille": 1.6,
+  "poids": 130,
+  "description": "La puissance et la rapidité de ses quatre bras puissants font des ravages sur ses adversaires.",
+  "stats_base": {
+   "pv": 90,
+   "attaque": 130,
+   "defense": 80,
+   "atq_spe": 65,
+   "def_spe": 85,
+   "vitesse": 55
+  },
+  "evolutions": {
+   "id": 66,
+   "evolvesTo": [
+    {
+     "id": 67,
+     "evolvesTo": [
+      {
+       "id": 68,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "69": {
+  "id": 69,
+  "nom": "Chétiflor",
+  "categorie": "Pokémon Fleur",
+  "types": [
+   "Plante",
+   "Poison"
+  ],
+  "taille": 0.7,
+  "poids": 4,
+  "description": "Il préfère les climats chauds et humides. Ses lianes peuvent capturer une proie en un clin d’œil.",
+  "stats_base": {
+   "pv": 50,
+   "attaque": 75,
+   "defense": 35,
+   "atq_spe": 70,
+   "def_spe": 30,
+   "vitesse": 40
+  },
+  "evolutions": {
+   "id": 69,
+   "evolvesTo": [
+    {
+     "id": 70,
+     "evolvesTo": [
+      {
+       "id": 71,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "70": {
+  "id": 70,
+  "nom": "Boustiflor",
+  "categorie": "Pokémon Carnivore",
+  "types": [
+   "Plante",
+   "Poison"
+  ],
+  "taille": 1,
+  "poids": 6.4,
+  "description": "Un Pokémon végétal. Il capture les proies étourdies en les endormant à l’aide d’une poudre toxique.",
+  "stats_base": {
+   "pv": 65,
+   "attaque": 90,
+   "defense": 50,
+   "atq_spe": 85,
+   "def_spe": 45,
+   "vitesse": 55
+  },
+  "evolutions": {
+   "id": 69,
+   "evolvesTo": [
+    {
+     "id": 70,
+     "evolvesTo": [
+      {
+       "id": 71,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "71": {
+  "id": 71,
+  "nom": "Empiflor",
+  "categorie": "Pokémon Carnivore",
+  "types": [
+   "Plante",
+   "Poison"
+  ],
+  "taille": 1.7,
+  "poids": 15.5,
+  "description": "Sa bouche sécrète un fluide à l’odeur de miel, qui s’avère être un acide extrêmement corrosif.",
+  "stats_base": {
+   "pv": 80,
+   "attaque": 105,
+   "defense": 65,
+   "atq_spe": 100,
+   "def_spe": 70,
+   "vitesse": 70
+  },
+  "evolutions": {
+   "id": 69,
+   "evolvesTo": [
+    {
+     "id": 70,
+     "evolvesTo": [
+      {
+       "id": 71,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "72": {
+  "id": 72,
+  "nom": "Tentacool",
+  "categorie": "Pokémon Mollusque",
+  "types": [
+   "Eau",
+   "Poison"
+  ],
+  "taille": 0.9,
+  "poids": 45.5,
+  "description": "Presque entièrement composé d’eau, son corps a tendance à se dessécher sur la terre ferme.",
+  "stats_base": {
+   "pv": 40,
+   "attaque": 40,
+   "defense": 35,
+   "atq_spe": 50,
+   "def_spe": 100,
+   "vitesse": 70
+  },
+  "evolutions": {
+   "id": 72,
+   "evolvesTo": [
+    {
+     "id": 73,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "73": {
+  "id": 73,
+  "nom": "Tentacruel",
+  "categorie": "Pokémon Mollusque",
+  "types": [
+   "Eau",
+   "Poison"
+  ],
+  "taille": 1.6,
+  "poids": 55,
+  "description": "Ses 80 tentacules lui permettent d’emprisonner ses adversaires dans un redoutable filet venimeux.",
+  "stats_base": {
+   "pv": 80,
+   "attaque": 70,
+   "defense": 65,
+   "atq_spe": 80,
+   "def_spe": 120,
+   "vitesse": 100
+  },
+  "evolutions": {
+   "id": 72,
+   "evolvesTo": [
+    {
+     "id": 73,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "74": {
+  "id": 74,
+  "nom": "Racaillou",
+  "categorie": "Pokémon Roche",
+  "types": [
+   "Roche",
+   "Sol"
+  ],
+  "taille": 0.4,
+  "poids": 20,
+  "description": "Au repos, rien ne le distingue d’un vulgaire caillou. Malheur à ceux qui lui marchent dessus par mégarde!",
+  "stats_base": {
+   "pv": 40,
+   "attaque": 80,
+   "defense": 100,
+   "atq_spe": 30,
+   "def_spe": 30,
+   "vitesse": 20
+  },
+  "evolutions": {
+   "id": 74,
+   "evolvesTo": [
+    {
+     "id": 75,
+     "evolvesTo": [
+      {
+       "id": 76,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "75": {
+  "id": 75,
+  "nom": "Gravalanch",
+  "categorie": "Pokémon Roche",
+  "types": [
+   "Roche",
+   "Sol"
+  ],
+  "taille": 1,
+  "poids": 105,
+  "description": "Il dévale les montagnes pour se déplacer. Une fois qu’il a pris tout son élan, dur dur de l’arrêter!",
+  "stats_base": {
+   "pv": 55,
+   "attaque": 95,
+   "defense": 115,
+   "atq_spe": 45,
+   "def_spe": 45,
+   "vitesse": 35
+  },
+  "evolutions": {
+   "id": 74,
+   "evolvesTo": [
+    {
+     "id": 75,
+     "evolvesTo": [
+      {
+       "id": 76,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "76": {
+  "id": 76,
+  "nom": "Grolem",
+  "categorie": "Pokémon Titanesque",
+  "types": [
+   "Roche",
+   "Sol"
+  ],
+  "taille": 1.4,
+  "poids": 300,
+  "description": "Aucun explosif ne pourrait entamer sa carapace de pierre. Il mue une fois par an.",
+  "stats_base": {
+   "pv": 80,
+   "attaque": 120,
+   "defense": 130,
+   "atq_spe": 55,
+   "def_spe": 65,
+   "vitesse": 45
+  },
+  "evolutions": {
+   "id": 74,
+   "evolvesTo": [
+    {
+     "id": 75,
+     "evolvesTo": [
+      {
+       "id": 76,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "77": {
+  "id": 77,
+  "nom": "Ponyta",
+  "categorie": "Pokémon Cheval Feu",
+  "types": [
+   "Feu"
+  ],
+  "taille": 1,
+  "poids": 30,
+  "description": "Chancelantes à la naissance, ses pattes deviennent très vite sûres et solides à force de galoper.",
+  "stats_base": {
+   "pv": 50,
+   "attaque": 85,
+   "defense": 55,
+   "atq_spe": 65,
+   "def_spe": 65,
+   "vitesse": 90
+  },
+  "evolutions": {
+   "id": 77,
+   "evolvesTo": [
+    {
+     "id": 78,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "78": {
+  "id": 78,
+  "nom": "Galopa",
+  "categorie": "Pokémon Cheval Feu",
+  "types": [
+   "Feu"
+  ],
+  "taille": 1.7,
+  "poids": 95,
+  "description": "Au grand galop, sa crinière de feu disperse au vent une myriade d’étincelles ardentes.",
+  "stats_base": {
+   "pv": 65,
+   "attaque": 100,
+   "defense": 70,
+   "atq_spe": 80,
+   "def_spe": 80,
+   "vitesse": 105
+  },
+  "evolutions": {
+   "id": 77,
+   "evolvesTo": [
+    {
+     "id": 78,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "79": {
+  "id": 79,
+  "nom": "Ramoloss",
+  "categorie": "Pokémon Crétin",
+  "types": [
+   "Eau",
+   "Psy"
+  ],
+  "taille": 1.2,
+  "poids": 36,
+  "description": "Bien que lent, c’est un pêcheur adroit qui utilise sa queue. Elle est insensible aux morsures.",
+  "stats_base": {
+   "pv": 90,
+   "attaque": 65,
+   "defense": 65,
+   "atq_spe": 40,
+   "def_spe": 40,
+   "vitesse": 15
+  },
+  "evolutions": {
+   "id": 79,
+   "evolvesTo": [
+    {
+     "id": 80,
+     "evolvesTo": []
+    },
+    {
+     "id": 199,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "80": {
+  "id": 80,
+  "nom": "Flagadoss",
+  "categorie": "Pokémon Symbiose",
+  "types": [
+   "Eau",
+   "Psy"
+  ],
+  "taille": 1.6,
+  "poids": 78.5,
+  "description": "Ce grand benêt connaît des éclairs de lucidité lorsque le Kokiyas de sa queue se met à mordre.",
+  "stats_base": {
+   "pv": 95,
+   "attaque": 75,
+   "defense": 110,
+   "atq_spe": 100,
+   "def_spe": 80,
+   "vitesse": 30
+  },
+  "evolutions": {
+   "id": 79,
+   "evolvesTo": [
+    {
+     "id": 80,
+     "evolvesTo": []
+    },
+    {
+     "id": 199,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "81": {
+  "id": 81,
+  "nom": "Magnéti",
+  "categorie": "Pokémon Magnétique",
+  "types": [
+   "Électrik",
+   "Acier"
+  ],
+  "taille": 0.3,
+  "poids": 6,
+  "description": "Plus la rotation de ses extrémités est rapide, plus la force du champ magnétique qu’il génère est grande.",
+  "stats_base": {
+   "pv": 25,
+   "attaque": 35,
+   "defense": 70,
+   "atq_spe": 95,
+   "def_spe": 55,
+   "vitesse": 45
+  },
+  "evolutions": {
+   "id": 81,
+   "evolvesTo": [
+    {
+     "id": 82,
+     "evolvesTo": [
+      {
+       "id": 462,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "82": {
+  "id": 82,
+  "nom": "Magnéton",
+  "categorie": "Pokémon Magnétique",
+  "types": [
+   "Électrik",
+   "Acier"
+  ],
+  "taille": 1,
+  "poids": 60,
+  "description": "Des groupes apparaissent si des taches solaires couvrent le soleil. Ils brouillent les télévisions.",
+  "stats_base": {
+   "pv": 50,
+   "attaque": 60,
+   "defense": 95,
+   "atq_spe": 120,
+   "def_spe": 70,
+   "vitesse": 70
+  },
+  "evolutions": {
+   "id": 81,
+   "evolvesTo": [
+    {
+     "id": 82,
+     "evolvesTo": [
+      {
+       "id": 462,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "83": {
+  "id": 83,
+  "nom": "Canarticho",
+  "categorie": "Pokémon Canard Fou",
+  "types": [
+   "Normal",
+   "Vol"
+  ],
+  "taille": 0.8,
+  "poids": 15,
+  "description": "Il ne peut pas vivre sans son légume, c’est pourquoi il le protégera au péril de sa vie.",
+  "stats_base": {
+   "pv": 52,
+   "attaque": 90,
+   "defense": 55,
+   "atq_spe": 58,
+   "def_spe": 62,
+   "vitesse": 60
+  },
+  "evolutions": {
+   "id": 83,
+   "evolvesTo": [
+    {
+     "id": 865,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "84": {
+  "id": 84,
+  "nom": "Doduo",
+  "categorie": "Pokémon Duoiseau",
+  "types": [
+   "Normal",
+   "Vol"
+  ],
+  "taille": 1.4,
+  "poids": 39.2,
+  "description": "Ses deux cerveaux semblent communiquer leurs émotions grâce à un lien télépathique.",
+  "stats_base": {
+   "pv": 35,
+   "attaque": 85,
+   "defense": 45,
+   "atq_spe": 35,
+   "def_spe": 35,
+   "vitesse": 75
+  },
+  "evolutions": {
+   "id": 84,
+   "evolvesTo": [
+    {
+     "id": 85,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "85": {
+  "id": 85,
+  "nom": "Dodrio",
+  "categorie": "Pokémon Trioiseau",
+  "types": [
+   "Normal",
+   "Vol"
+  ],
+  "taille": 1.8,
+  "poids": 85.2,
+  "description": "Quand Doduo connaît cette étrange évolution, l’une de ses têtes se dédouble. Il atteint les 60 km/h.",
+  "stats_base": {
+   "pv": 60,
+   "attaque": 110,
+   "defense": 70,
+   "atq_spe": 60,
+   "def_spe": 60,
+   "vitesse": 110
+  },
+  "evolutions": {
+   "id": 84,
+   "evolvesTo": [
+    {
+     "id": 85,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "86": {
+  "id": 86,
+  "nom": "Otaria",
+  "categorie": "Pokémon Otarie",
+  "types": [
+   "Eau"
+  ],
+  "taille": 1.1,
+  "poids": 90,
+  "description": "Un habitant des icebergs. En mer, il utilise la corne sur sa tête pour briser la banquise.",
+  "stats_base": {
+   "pv": 65,
+   "attaque": 45,
+   "defense": 55,
+   "atq_spe": 45,
+   "def_spe": 70,
+   "vitesse": 45
+  },
+  "evolutions": {
+   "id": 86,
+   "evolvesTo": [
+    {
+     "id": 87,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "87": {
+  "id": 87,
+  "nom": "Lamantine",
+  "categorie": "Pokémon Otarie",
+  "types": [
+   "Eau",
+   "Glace"
+  ],
+  "taille": 1.7,
+  "poids": 120,
+  "description": "Son corps est couvert d’un grand manteau blanc qui, dans la neige, le dissimule aux yeux des prédateurs.",
+  "stats_base": {
+   "pv": 90,
+   "attaque": 70,
+   "defense": 80,
+   "atq_spe": 70,
+   "def_spe": 95,
+   "vitesse": 70
+  },
+  "evolutions": {
+   "id": 86,
+   "evolvesTo": [
+    {
+     "id": 87,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "88": {
+  "id": 88,
+  "nom": "Tadmorv",
+  "categorie": "Pokémon Dégueu",
+  "types": [
+   "Poison"
+  ],
+  "taille": 0.9,
+  "poids": 30,
+  "description": "Il est né d’un torrent de boue exposé aux rayons X de la lune. Il vit dans les ordures.",
+  "stats_base": {
+   "pv": 80,
+   "attaque": 80,
+   "defense": 50,
+   "atq_spe": 40,
+   "def_spe": 50,
+   "vitesse": 25
+  },
+  "evolutions": {
+   "id": 88,
+   "evolvesTo": [
+    {
+     "id": 89,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "89": {
+  "id": 89,
+  "nom": "Grotadmorv",
+  "categorie": "Pokémon Dégueu",
+  "types": [
+   "Poison"
+  ],
+  "taille": 1.2,
+  "poids": 30,
+  "description": "Son corps exsude un fluide toxique qui tue instantanément les plantes et les arbres au contact.",
+  "stats_base": {
+   "pv": 105,
+   "attaque": 105,
+   "defense": 75,
+   "atq_spe": 65,
+   "def_spe": 100,
+   "vitesse": 50
+  },
+  "evolutions": {
+   "id": 88,
+   "evolvesTo": [
+    {
+     "id": 89,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "90": {
+  "id": 90,
+  "nom": "Kokiyas",
+  "categorie": "Pokémon Bivalve",
+  "types": [
+   "Eau"
+  ],
+  "taille": 0.3,
+  "poids": 4,
+  "description": "Il nage à reculons en ouvrant et en refermant ses deux coquilles. Il laisse traîner sa large langue.",
+  "stats_base": {
+   "pv": 30,
+   "attaque": 65,
+   "defense": 100,
+   "atq_spe": 45,
+   "def_spe": 25,
+   "vitesse": 40
+  },
+  "evolutions": {
+   "id": 90,
+   "evolvesTo": [
+    {
+     "id": 91,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "91": {
+  "id": 91,
+  "nom": "Crustabri",
+  "categorie": "Pokémon Bivalve",
+  "types": [
+   "Eau",
+   "Glace"
+  ],
+  "taille": 1.5,
+  "poids": 132.5,
+  "description": "Il se défend en fermant sa coquille et projette des piquants qui repoussent ses agresseurs.",
+  "stats_base": {
+   "pv": 50,
+   "attaque": 95,
+   "defense": 180,
+   "atq_spe": 85,
+   "def_spe": 45,
+   "vitesse": 70
+  },
+  "evolutions": {
+   "id": 90,
+   "evolvesTo": [
+    {
+     "id": 91,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "92": {
+  "id": 92,
+  "nom": "Fantominus",
+  "categorie": "Pokémon Gaz",
+  "types": [
+   "Spectre",
+   "Poison"
+  ],
+  "taille": 1.3,
+  "poids": 0.1,
+  "description": "Son corps composé de gaz toxique pourrait asphyxier n’importe qui en quelques secondes.",
+  "stats_base": {
+   "pv": 30,
+   "attaque": 35,
+   "defense": 30,
+   "atq_spe": 100,
+   "def_spe": 35,
+   "vitesse": 80
+  },
+  "evolutions": {
+   "id": 92,
+   "evolvesTo": [
+    {
+     "id": 93,
+     "evolvesTo": [
+      {
+       "id": 94,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "93": {
+  "id": 93,
+  "nom": "Spectrum",
+  "categorie": "Pokémon Gaz",
+  "types": [
+   "Spectre",
+   "Poison"
+  ],
+  "taille": 1.6,
+  "poids": 0.1,
+  "description": "Il adore se tapir dans l’ombre et faire frissonner ses proies en leur touchant l’épaule.",
+  "stats_base": {
+   "pv": 45,
+   "attaque": 50,
+   "defense": 45,
+   "atq_spe": 115,
+   "def_spe": 55,
+   "vitesse": 95
+  },
+  "evolutions": {
+   "id": 92,
+   "evolvesTo": [
+    {
+     "id": 93,
+     "evolvesTo": [
+      {
+       "id": 94,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "94": {
+  "id": 94,
+  "nom": "Ectoplasma",
+  "categorie": "Pokémon Ombre",
+  "types": [
+   "Spectre",
+   "Poison"
+  ],
+  "taille": 1.5,
+  "poids": 40.5,
+  "description": "Si vous croisez un regard inquiétant qui perce la nuit, c’est sûrement un Ectoplasma.",
+  "stats_base": {
+   "pv": 60,
+   "attaque": 65,
+   "defense": 60,
+   "atq_spe": 130,
+   "def_spe": 75,
+   "vitesse": 110
+  },
+  "evolutions": {
+   "id": 92,
+   "evolvesTo": [
+    {
+     "id": 93,
+     "evolvesTo": [
+      {
+       "id": 94,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "95": {
+  "id": 95,
+  "nom": "Onix",
+  "categorie": "Pokémon Serpenroc",
+  "types": [
+   "Roche",
+   "Sol"
+  ],
+  "taille": 8.8,
+  "poids": 210,
+  "description": "Il se nourrit des pierres qu’il rencontre en creusant le sol. Il peut creuser à 80 km/h!",
+  "stats_base": {
+   "pv": 35,
+   "attaque": 45,
+   "defense": 160,
+   "atq_spe": 30,
+   "def_spe": 45,
+   "vitesse": 70
+  },
+  "evolutions": {
+   "id": 95,
+   "evolvesTo": [
+    {
+     "id": 208,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "96": {
+  "id": 96,
+  "nom": "Soporifik",
+  "categorie": "Pokémon Hypnose",
+  "types": [
+   "Psy"
+  ],
+  "taille": 1,
+  "poids": 32.4,
+  "description": "Son grand nez lui permet de lire les rêves d’autrui. Il adore les songes amusants.",
+  "stats_base": {
+   "pv": 60,
+   "attaque": 48,
+   "defense": 45,
+   "atq_spe": 43,
+   "def_spe": 90,
+   "vitesse": 42
+  },
+  "evolutions": {
+   "id": 96,
+   "evolvesTo": [
+    {
+     "id": 97,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "97": {
+  "id": 97,
+  "nom": "Hypnomade",
+  "categorie": "Pokémon Hypnose",
+  "types": [
+   "Psy"
+  ],
+  "taille": 1.6,
+  "poids": 75.6,
+  "description": "La vue de son pendule oscillant endort en trois secondes, même quand on vient de se réveiller.",
+  "stats_base": {
+   "pv": 85,
+   "attaque": 73,
+   "defense": 70,
+   "atq_spe": 73,
+   "def_spe": 115,
+   "vitesse": 67
+  },
+  "evolutions": {
+   "id": 96,
+   "evolvesTo": [
+    {
+     "id": 97,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "98": {
+  "id": 98,
+  "nom": "Krabby",
+  "categorie": "Pokémon Doux Crabe",
+  "types": [
+   "Eau"
+  ],
+  "taille": 0.4,
+  "poids": 6.5,
+  "description": "Il creuse son terrier sur des plages sablonneuses. Ses pinces repoussent si on les brise.",
+  "stats_base": {
+   "pv": 30,
+   "attaque": 105,
+   "defense": 90,
+   "atq_spe": 25,
+   "def_spe": 25,
+   "vitesse": 50
+  },
+  "evolutions": {
+   "id": 98,
+   "evolvesTo": [
+    {
+     "id": 99,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "99": {
+  "id": 99,
+  "nom": "Krabboss",
+  "categorie": "Pokémon Pince",
+  "types": [
+   "Eau"
+  ],
+  "taille": 1.3,
+  "poids": 60,
+  "description": "Sa grande pince possède une puissance de 10 000 chevaux. Son poids la rend difficile à manier.",
+  "stats_base": {
+   "pv": 55,
+   "attaque": 130,
+   "defense": 115,
+   "atq_spe": 50,
+   "def_spe": 50,
+   "vitesse": 75
+  },
+  "evolutions": {
+   "id": 98,
+   "evolvesTo": [
+    {
+     "id": 99,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "100": {
+  "id": 100,
+  "nom": "Voltorbe",
+  "categorie": "Pokémon Balle",
+  "types": [
+   "Électrik"
+  ],
+  "taille": 0.5,
+  "poids": 10.4,
+  "description": "Il ressemble à une Poké Ball. Ce Pokémon dangereux peut exploser ou s’électrifier au toucher.",
+  "stats_base": {
+   "pv": 40,
+   "attaque": 30,
+   "defense": 50,
+   "atq_spe": 55,
+   "def_spe": 55,
+   "vitesse": 100
+  },
+  "evolutions": {
+   "id": 100,
+   "evolvesTo": [
+    {
+     "id": 101,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "101": {
+  "id": 101,
+  "nom": "Électrode",
+  "categorie": "Pokémon Balle",
+  "types": [
+   "Électrik"
+  ],
+  "taille": 1.2,
+  "poids": 66.6,
+  "description": "Il se laisse porter par les vents lorsque son corps est gonflé d’électricité à en éclater.",
+  "stats_base": {
+   "pv": 60,
+   "attaque": 50,
+   "defense": 70,
+   "atq_spe": 80,
+   "def_spe": 80,
+   "vitesse": 150
+  },
+  "evolutions": {
+   "id": 100,
+   "evolvesTo": [
+    {
+     "id": 101,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "102": {
+  "id": 102,
+  "nom": "Noeunoeuf",
+  "categorie": "Pokémon Œuf",
+  "types": [
+   "Plante",
+   "Psy"
+  ],
+  "taille": 0.4,
+  "poids": 2.5,
+  "description": "Ces six œufs communiquent par télépathie. Ils peuvent se réunir rapidement si on les sépare.",
+  "stats_base": {
+   "pv": 60,
+   "attaque": 40,
+   "defense": 80,
+   "atq_spe": 60,
+   "def_spe": 45,
+   "vitesse": 40
+  },
+  "evolutions": {
+   "id": 102,
+   "evolvesTo": [
+    {
+     "id": 103,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "103": {
+  "id": 103,
+  "nom": "Noadkoko",
+  "categorie": "Pokémon Fruitpalme",
+  "types": [
+   "Plante",
+   "Psy"
+  ],
+  "taille": 2,
+  "poids": 120,
+  "description": "On l’appelle “jungle sur pattes”. Si une tête devient trop grosse, elle tombe et produit un Noeunoeuf.",
+  "stats_base": {
+   "pv": 95,
+   "attaque": 95,
+   "defense": 85,
+   "atq_spe": 125,
+   "def_spe": 75,
+   "vitesse": 55
+  },
+  "evolutions": {
+   "id": 102,
+   "evolvesTo": [
+    {
+     "id": 103,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "104": {
+  "id": 104,
+  "nom": "Osselait",
+  "categorie": "Pokémon Solitaire",
+  "types": [
+   "Sol"
+  ],
+  "taille": 0.4,
+  "poids": 6.5,
+  "description": "Il pleure en pensant à sa mère disparue, et ses larmes résonnent dans son crâne creux.",
+  "stats_base": {
+   "pv": 50,
+   "attaque": 50,
+   "defense": 95,
+   "atq_spe": 40,
+   "def_spe": 50,
+   "vitesse": 35
+  },
+  "evolutions": {
+   "id": 104,
+   "evolvesTo": [
+    {
+     "id": 105,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "105": {
+  "id": 105,
+  "nom": "Ossatueur",
+  "categorie": "Pokémon Gard’Os",
+  "types": [
+   "Sol"
+  ],
+  "taille": 1,
+  "poids": 45,
+  "description": "Ce Pokémon sauvage possède des os depuis sa naissance. Il s’en sert pour combattre avec dextérité.",
+  "stats_base": {
+   "pv": 60,
+   "attaque": 80,
+   "defense": 110,
+   "atq_spe": 50,
+   "def_spe": 80,
+   "vitesse": 45
+  },
+  "evolutions": {
+   "id": 104,
+   "evolvesTo": [
+    {
+     "id": 105,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "106": {
+  "id": 106,
+  "nom": "Kicklee",
+  "categorie": "Pokémon Latteur",
+  "types": [
+   "Combat"
+  ],
+  "taille": 1.5,
+  "poids": 49.8,
+  "description": "Ses pattes élastiques s’allongent, ce qui ne manque jamais de surprendre au premier combat.",
+  "stats_base": {
+   "pv": 50,
+   "attaque": 120,
+   "defense": 53,
+   "atq_spe": 35,
+   "def_spe": 110,
+   "vitesse": 87
+  },
+  "evolutions": {
+   "id": 236,
+   "evolvesTo": [
+    {
+     "id": 106,
+     "evolvesTo": []
+    },
+    {
+     "id": 107,
+     "evolvesTo": []
+    },
+    {
+     "id": 237,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "107": {
+  "id": 107,
+  "nom": "Tygnon",
+  "categorie": "Pokémon Puncheur",
+  "types": [
+   "Combat"
+  ],
+  "taille": 1.4,
+  "poids": 50.2,
+  "description": "Même le béton cède sous ses poings dévastateurs. Au combat, il s’essouffle au bout de 3 minutes.",
+  "stats_base": {
+   "pv": 50,
+   "attaque": 105,
+   "defense": 79,
+   "atq_spe": 35,
+   "def_spe": 110,
+   "vitesse": 76
+  },
+  "evolutions": {
+   "id": 236,
+   "evolvesTo": [
+    {
+     "id": 106,
+     "evolvesTo": []
+    },
+    {
+     "id": 107,
+     "evolvesTo": []
+    },
+    {
+     "id": 237,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "108": {
+  "id": 108,
+  "nom": "Excelangue",
+  "categorie": "Pokémon Lécheur",
+  "types": [
+   "Normal"
+  ],
+  "taille": 1.2,
+  "poids": 65.5,
+  "description": "Quand il déploie sa langue de près de deux mètres, sa queue s’agite. Elles seraient reliées entre elles.",
+  "stats_base": {
+   "pv": 90,
+   "attaque": 55,
+   "defense": 75,
+   "atq_spe": 60,
+   "def_spe": 75,
+   "vitesse": 30
+  },
+  "evolutions": {
+   "id": 108,
+   "evolvesTo": [
+    {
+     "id": 463,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "109": {
+  "id": 109,
+  "nom": "Smogo",
+  "categorie": "Pokémon Gaz Mortel",
+  "types": [
+   "Poison"
+  ],
+  "taille": 0.6,
+  "poids": 1,
+  "description": "Il flotte en retenant des gaz plus légers que l’air. Ceux-ci sont explosifs, en plus d’être fétides.",
+  "stats_base": {
+   "pv": 40,
+   "attaque": 65,
+   "defense": 95,
+   "atq_spe": 60,
+   "def_spe": 45,
+   "vitesse": 35
+  },
+  "evolutions": {
+   "id": 109,
+   "evolvesTo": [
+    {
+     "id": 110,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "110": {
+  "id": 110,
+  "nom": "Smogogo",
+  "categorie": "Pokémon Gaz Mortel",
+  "types": [
+   "Poison"
+  ],
+  "taille": 1.2,
+  "poids": 9.5,
+  "description": "Il grandit en absorbant les gaz des détritus. Des triplés existent, bien qu’ils soient fort rares.",
+  "stats_base": {
+   "pv": 65,
+   "attaque": 90,
+   "defense": 120,
+   "atq_spe": 85,
+   "def_spe": 70,
+   "vitesse": 60
+  },
+  "evolutions": {
+   "id": 109,
+   "evolvesTo": [
+    {
+     "id": 110,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "111": {
+  "id": 111,
+  "nom": "Rhinocorne",
+  "categorie": "Pokémon Piquant",
+  "types": [
+   "Sol",
+   "Roche"
+  ],
+  "taille": 1,
+  "poids": 115,
+  "description": "Ses puissantes charges pourraient démolir n’importe quel bâtiment. Dommage qu’il soit stupide.",
+  "stats_base": {
+   "pv": 80,
+   "attaque": 85,
+   "defense": 95,
+   "atq_spe": 30,
+   "def_spe": 30,
+   "vitesse": 25
+  },
+  "evolutions": {
+   "id": 111,
+   "evolvesTo": [
+    {
+     "id": 112,
+     "evolvesTo": [
+      {
+       "id": 464,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "112": {
+  "id": 112,
+  "nom": "Rhinoféros",
+  "categorie": "Pokémon Perceur",
+  "types": [
+   "Sol",
+   "Roche"
+  ],
+  "taille": 1.9,
+  "poids": 120,
+  "description": "La station debout a libéré ses pattes avant et l’a rendu plus intelligent, mais il est distrait.",
+  "stats_base": {
+   "pv": 105,
+   "attaque": 130,
+   "defense": 120,
+   "atq_spe": 45,
+   "def_spe": 45,
+   "vitesse": 40
+  },
+  "evolutions": {
+   "id": 111,
+   "evolvesTo": [
+    {
+     "id": 112,
+     "evolvesTo": [
+      {
+       "id": 464,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "113": {
+  "id": 113,
+  "nom": "Leveinard",
+  "categorie": "Pokémon Œuf",
+  "types": [
+   "Normal"
+  ],
+  "taille": 1.1,
+  "poids": 34.6,
+  "description": "Ce Pokémon très serviable distribue ses œufs hautement nutritifs aux humains et Pokémon blessés.",
+  "stats_base": {
+   "pv": 250,
+   "attaque": 5,
+   "defense": 5,
+   "atq_spe": 35,
+   "def_spe": 105,
+   "vitesse": 50
+  },
+  "evolutions": {
+   "id": 440,
+   "evolvesTo": [
+    {
+     "id": 113,
+     "evolvesTo": [
+      {
+       "id": 242,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "114": {
+  "id": 114,
+  "nom": "Saquedeneu",
+  "categorie": "Pokémon Vigne",
+  "types": [
+   "Plante"
+  ],
+  "taille": 1,
+  "poids": 35,
+  "description": "Il se cache derrière des lianes bleues recouvertes d’un fin duvet. Il est chatouilleux.",
+  "stats_base": {
+   "pv": 65,
+   "attaque": 55,
+   "defense": 115,
+   "atq_spe": 100,
+   "def_spe": 40,
+   "vitesse": 60
+  },
+  "evolutions": {
+   "id": 114,
+   "evolvesTo": [
+    {
+     "id": 465,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "115": {
+  "id": 115,
+  "nom": "Kangourex",
+  "categorie": "Pokémon Maternel",
+  "types": [
+   "Normal"
+  ],
+  "taille": 2.2,
+  "poids": 80,
+  "description": "Il élève ses petits dans sa poche ventrale. Il attend d’être en lieu sûr pour les laisser jouer dehors.",
+  "stats_base": {
+   "pv": 105,
+   "attaque": 95,
+   "defense": 80,
+   "atq_spe": 40,
+   "def_spe": 80,
+   "vitesse": 90
+  },
+  "evolutions": {
+   "id": 115,
+   "evolvesTo": []
+  }
+ },
+ "116": {
+  "id": 116,
+  "nom": "Hypotrempe",
+  "categorie": "Pokémon Dragon",
+  "types": [
+   "Eau"
+  ],
+  "taille": 0.4,
+  "poids": 8,
+  "description": "Il niche à l’ombre du corail. Quand il se sent menacé, il disparaît dans un nuage d’encre opaque.",
+  "stats_base": {
+   "pv": 30,
+   "attaque": 40,
+   "defense": 70,
+   "atq_spe": 70,
+   "def_spe": 25,
+   "vitesse": 60
+  },
+  "evolutions": {
+   "id": 116,
+   "evolvesTo": [
+    {
+     "id": 117,
+     "evolvesTo": [
+      {
+       "id": 230,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "117": {
+  "id": 117,
+  "nom": "Hypocéan",
+  "categorie": "Pokémon Dragon",
+  "types": [
+   "Eau"
+  ],
+  "taille": 1.2,
+  "poids": 25,
+  "description": "Son épine dorsale le protège. Ses os et ses nageoires sont très prisés en médecine traditionnelle.",
+  "stats_base": {
+   "pv": 55,
+   "attaque": 65,
+   "defense": 95,
+   "atq_spe": 95,
+   "def_spe": 45,
+   "vitesse": 85
+  },
+  "evolutions": {
+   "id": 116,
+   "evolvesTo": [
+    {
+     "id": 117,
+     "evolvesTo": [
+      {
+       "id": 230,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "118": {
+  "id": 118,
+  "nom": "Poissirène",
+  "categorie": "Pokémon Poisson",
+  "types": [
+   "Eau"
+  ],
+  "taille": 0.6,
+  "poids": 15,
+  "description": "Malgré son élégance quand il nage, ses coups de corne sont redoutables.",
+  "stats_base": {
+   "pv": 45,
+   "attaque": 67,
+   "defense": 60,
+   "atq_spe": 35,
+   "def_spe": 50,
+   "vitesse": 63
+  },
+  "evolutions": {
+   "id": 118,
+   "evolvesTo": [
+    {
+     "id": 119,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "119": {
+  "id": 119,
+  "nom": "Poissoroy",
+  "categorie": "Pokémon Poisson",
+  "types": [
+   "Eau"
+  ],
+  "taille": 1.3,
+  "poids": 39,
+  "description": "En automne, à la saison des amours, il fait des réserves de graisse et arbore des couleurs chatoyantes.",
+  "stats_base": {
+   "pv": 80,
+   "attaque": 92,
+   "defense": 65,
+   "atq_spe": 65,
+   "def_spe": 80,
+   "vitesse": 68
+  },
+  "evolutions": {
+   "id": 118,
+   "evolvesTo": [
+    {
+     "id": 119,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "120": {
+  "id": 120,
+  "nom": "Stari",
+  "categorie": "Pokémon Étoile",
+  "types": [
+   "Eau"
+  ],
+  "taille": 0.8,
+  "poids": 34.5,
+  "description": "Même amoché, son corps se régénère tant que le noyau rouge est intact. Le noyau s’illumine à minuit.",
+  "stats_base": {
+   "pv": 30,
+   "attaque": 45,
+   "defense": 55,
+   "atq_spe": 70,
+   "def_spe": 55,
+   "vitesse": 85
+  },
+  "evolutions": {
+   "id": 120,
+   "evolvesTo": [
+    {
+     "id": 121,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "121": {
+  "id": 121,
+  "nom": "Staross",
+  "categorie": "Pokémon Mystérieux",
+  "types": [
+   "Eau",
+   "Psy"
+  ],
+  "taille": 1.1,
+  "poids": 80,
+  "description": "Un noyau rouge trône en son centre. Il envoie des signaux radio mystérieux vers le ciel nocturne.",
+  "stats_base": {
+   "pv": 60,
+   "attaque": 75,
+   "defense": 85,
+   "atq_spe": 100,
+   "def_spe": 85,
+   "vitesse": 115
+  },
+  "evolutions": {
+   "id": 120,
+   "evolvesTo": [
+    {
+     "id": 121,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "122": {
+  "id": 122,
+  "nom": "M. Mime",
+  "categorie": "Pokémon Bloqueur",
+  "types": [
+   "Psy",
+   "Fée"
+  ],
+  "taille": 1.3,
+  "poids": 54.5,
+  "description": "En modifiant les molécules de l’air du bout de ses doigts, il parvient à créer un mur invisible devant lui.",
+  "stats_base": {
+   "pv": 40,
+   "attaque": 45,
+   "defense": 65,
+   "atq_spe": 100,
+   "def_spe": 120,
+   "vitesse": 90
+  },
+  "evolutions": {
+   "id": 439,
+   "evolvesTo": [
+    {
+     "id": 122,
+     "evolvesTo": [
+      {
+       "id": 866,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "123": {
+  "id": 123,
+  "nom": "Insécateur",
+  "categorie": "Pokémon Mante",
+  "types": [
+   "Insecte",
+   "Vol"
+  ],
+  "taille": 1.5,
+  "poids": 56,
+  "description": "À force de trancher des objets solides, les faux de ses bras sont très aiguisées.",
+  "stats_base": {
+   "pv": 70,
+   "attaque": 110,
+   "defense": 80,
+   "atq_spe": 55,
+   "def_spe": 80,
+   "vitesse": 105
+  },
+  "evolutions": {
+   "id": 123,
+   "evolvesTo": [
+    {
+     "id": 212,
+     "evolvesTo": []
+    },
+    {
+     "id": 900,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "124": {
+  "id": 124,
+  "nom": "Lippoutou",
+  "categorie": "Pokémon Humanoïde",
+  "types": [
+   "Glace",
+   "Psy"
+  ],
+  "taille": 1.4,
+  "poids": 40.6,
+  "description": "Son cri ressemble à des paroles humaines. Mais nul n’est jamais parvenu à les comprendre.",
+  "stats_base": {
+   "pv": 65,
+   "attaque": 50,
+   "defense": 35,
+   "atq_spe": 115,
+   "def_spe": 95,
+   "vitesse": 95
+  },
+  "evolutions": {
+   "id": 238,
+   "evolvesTo": [
+    {
+     "id": 124,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "125": {
+  "id": 125,
+  "nom": "Élektek",
+  "categorie": "Pokémon Électrique",
+  "types": [
+   "Électrik"
+  ],
+  "taille": 1.1,
+  "poids": 30,
+  "description": "Il fait tournoyer ses bras pour donner de la force à ses coups. Profitez-en pour filer!",
+  "stats_base": {
+   "pv": 65,
+   "attaque": 83,
+   "defense": 57,
+   "atq_spe": 95,
+   "def_spe": 85,
+   "vitesse": 105
+  },
+  "evolutions": {
+   "id": 239,
+   "evolvesTo": [
+    {
+     "id": 125,
+     "evolvesTo": [
+      {
+       "id": 466,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "126": {
+  "id": 126,
+  "nom": "Magmar",
+  "categorie": "Pokémon Crache-Feu",
+  "types": [
+   "Feu"
+  ],
+  "taille": 1.3,
+  "poids": 44.5,
+  "description": "Quand il respire profondément, des vagues de chaleur émanent de son corps et le rendent difficile à voir.",
+  "stats_base": {
+   "pv": 65,
+   "attaque": 95,
+   "defense": 57,
+   "atq_spe": 100,
+   "def_spe": 85,
+   "vitesse": 93
+  },
+  "evolutions": {
+   "id": 240,
+   "evolvesTo": [
+    {
+     "id": 126,
+     "evolvesTo": [
+      {
+       "id": 467,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "127": {
+  "id": 127,
+  "nom": "Scarabrute",
+  "categorie": "Pokémon Scarabée",
+  "types": [
+   "Insecte"
+  ],
+  "taille": 1.5,
+  "poids": 55,
+  "description": "Il serre les proies dans ses pinces pour les trancher en deux. S’il n’y arrive pas, il les jette au loin.",
+  "stats_base": {
+   "pv": 65,
+   "attaque": 125,
+   "defense": 100,
+   "atq_spe": 55,
+   "def_spe": 70,
+   "vitesse": 85
+  },
+  "evolutions": {
+   "id": 127,
+   "evolvesTo": []
+  }
+ },
+ "128": {
+  "id": 128,
+  "nom": "Tauros",
+  "categorie": "Pokémon Buffle",
+  "types": [
+   "Normal"
+  ],
+  "taille": 1.4,
+  "poids": 88.4,
+  "description": "Après avoir choisi sa cible, il fonce dessus tête baissée. Il est réputé pour sa nature violente.",
+  "stats_base": {
+   "pv": 75,
+   "attaque": 100,
+   "defense": 95,
+   "atq_spe": 40,
+   "def_spe": 70,
+   "vitesse": 110
+  },
+  "evolutions": {
+   "id": 128,
+   "evolvesTo": []
+  }
+ },
+ "129": {
+  "id": 129,
+  "nom": "Magicarpe",
+  "categorie": "Pokémon Poisson",
+  "types": [
+   "Eau"
+  ],
+  "taille": 0.9,
+  "poids": 10,
+  "description": "Un vénérable Magicarpe peut franchir une montagne en utilisant Trempette. Mais c’est tout...",
+  "stats_base": {
+   "pv": 20,
+   "attaque": 10,
+   "defense": 55,
+   "atq_spe": 15,
+   "def_spe": 20,
+   "vitesse": 80
+  },
+  "evolutions": {
+   "id": 129,
+   "evolvesTo": [
+    {
+     "id": 130,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "130": {
+  "id": 130,
+  "nom": "Léviator",
+  "categorie": "Pokémon Terrifiant",
+  "types": [
+   "Eau",
+   "Vol"
+  ],
+  "taille": 6.5,
+  "poids": 235,
+  "description": "Quand il se laisse emporter par la rage, il ne se calme qu’après avoir détruit tout ce qui l’entoure.",
+  "stats_base": {
+   "pv": 95,
+   "attaque": 125,
+   "defense": 79,
+   "atq_spe": 60,
+   "def_spe": 100,
+   "vitesse": 81
+  },
+  "evolutions": {
+   "id": 129,
+   "evolvesTo": [
+    {
+     "id": 130,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "131": {
+  "id": 131,
+  "nom": "Lokhlass",
+  "categorie": "Pokémon Transport",
+  "types": [
+   "Eau",
+   "Glace"
+  ],
+  "taille": 2.5,
+  "poids": 220,
+  "description": "Il aime naviguer en portant des humains et des Pokémon sur son dos. Il comprend le langage humain.",
+  "stats_base": {
+   "pv": 130,
+   "attaque": 85,
+   "defense": 80,
+   "atq_spe": 85,
+   "def_spe": 95,
+   "vitesse": 60
+  },
+  "evolutions": {
+   "id": 131,
+   "evolvesTo": []
+  }
+ },
+ "132": {
+  "id": 132,
+  "nom": "Métamorph",
+  "categorie": "Pokémon Morphing",
+  "types": [
+   "Normal"
+  ],
+  "taille": 0.3,
+  "poids": 4,
+  "description": "Il a la capacité de modifier sa structure cellulaire pour prendre l’apparence de ce qu’il voit.",
+  "stats_base": {
+   "pv": 48,
+   "attaque": 48,
+   "defense": 48,
+   "atq_spe": 48,
+   "def_spe": 48,
+   "vitesse": 48
+  },
+  "evolutions": {
+   "id": 132,
+   "evolvesTo": []
+  }
+ },
+ "133": {
+  "id": 133,
+  "nom": "Évoli",
+  "categorie": "Pokémon Évolutif",
+  "types": [
+   "Normal"
+  ],
+  "taille": 0.3,
+  "poids": 6.5,
+  "description": "Son ADN particulier lui permet de s’adapter très rapidement à son environnement.",
+  "stats_base": {
+   "pv": 55,
+   "attaque": 55,
+   "defense": 50,
+   "atq_spe": 45,
+   "def_spe": 65,
+   "vitesse": 55
+  },
+  "evolutions": {
+   "id": 133,
+   "evolvesTo": [
+    {
+     "id": 134,
+     "evolvesTo": []
+    },
+    {
+     "id": 135,
+     "evolvesTo": []
+    },
+    {
+     "id": 136,
+     "evolvesTo": []
+    },
+    {
+     "id": 196,
+     "evolvesTo": []
+    },
+    {
+     "id": 197,
+     "evolvesTo": []
+    },
+    {
+     "id": 470,
+     "evolvesTo": []
+    },
+    {
+     "id": 471,
+     "evolvesTo": []
+    },
+    {
+     "id": 700,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "134": {
+  "id": 134,
+  "nom": "Aquali",
+  "categorie": "Pokémon Bulleur",
+  "types": [
+   "Eau"
+  ],
+  "taille": 1,
+  "poids": 29,
+  "description": "Sa composition moléculaire est proche de celle de l’eau, ce qui lui permet de se liquéfier.",
+  "stats_base": {
+   "pv": 130,
+   "attaque": 65,
+   "defense": 60,
+   "atq_spe": 110,
+   "def_spe": 95,
+   "vitesse": 65
+  },
+  "evolutions": {
+   "id": 133,
+   "evolvesTo": [
+    {
+     "id": 134,
+     "evolvesTo": []
+    },
+    {
+     "id": 135,
+     "evolvesTo": []
+    },
+    {
+     "id": 136,
+     "evolvesTo": []
+    },
+    {
+     "id": 196,
+     "evolvesTo": []
+    },
+    {
+     "id": 197,
+     "evolvesTo": []
+    },
+    {
+     "id": 470,
+     "evolvesTo": []
+    },
+    {
+     "id": 471,
+     "evolvesTo": []
+    },
+    {
+     "id": 700,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "135": {
+  "id": 135,
+  "nom": "Voltali",
+  "categorie": "Pokémon Orage",
+  "types": [
+   "Électrik"
+  ],
+  "taille": 0.8,
+  "poids": 24.5,
+  "description": "Face au danger, il fait appel à l’électricité pour dresser ses poils et lancer des décharges.",
+  "stats_base": {
+   "pv": 65,
+   "attaque": 65,
+   "defense": 60,
+   "atq_spe": 110,
+   "def_spe": 95,
+   "vitesse": 130
+  },
+  "evolutions": {
+   "id": 133,
+   "evolvesTo": [
+    {
+     "id": 134,
+     "evolvesTo": []
+    },
+    {
+     "id": 135,
+     "evolvesTo": []
+    },
+    {
+     "id": 136,
+     "evolvesTo": []
+    },
+    {
+     "id": 196,
+     "evolvesTo": []
+    },
+    {
+     "id": 197,
+     "evolvesTo": []
+    },
+    {
+     "id": 470,
+     "evolvesTo": []
+    },
+    {
+     "id": 471,
+     "evolvesTo": []
+    },
+    {
+     "id": 700,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "136": {
+  "id": 136,
+  "nom": "Pyroli",
+  "categorie": "Pokémon Flamme",
+  "types": [
+   "Feu"
+  ],
+  "taille": 0.9,
+  "poids": 25,
+  "description": "L’air qu’il inspire est chauffé par la glande enflammée de son corps, atteignant les 1 700 °C.",
+  "stats_base": {
+   "pv": 65,
+   "attaque": 130,
+   "defense": 60,
+   "atq_spe": 95,
+   "def_spe": 110,
+   "vitesse": 65
+  },
+  "evolutions": {
+   "id": 133,
+   "evolvesTo": [
+    {
+     "id": 134,
+     "evolvesTo": []
+    },
+    {
+     "id": 135,
+     "evolvesTo": []
+    },
+    {
+     "id": 136,
+     "evolvesTo": []
+    },
+    {
+     "id": 196,
+     "evolvesTo": []
+    },
+    {
+     "id": 197,
+     "evolvesTo": []
+    },
+    {
+     "id": 470,
+     "evolvesTo": []
+    },
+    {
+     "id": 471,
+     "evolvesTo": []
+    },
+    {
+     "id": 700,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "137": {
+  "id": 137,
+  "nom": "Porygon",
+  "categorie": "Pokémon Virtuel",
+  "types": [
+   "Normal"
+  ],
+  "taille": 0.8,
+  "poids": 36.5,
+  "description": "Ce Pokémon créé par des scientifiques peut arpenter librement le cyberespace.",
+  "stats_base": {
+   "pv": 65,
+   "attaque": 60,
+   "defense": 70,
+   "atq_spe": 85,
+   "def_spe": 75,
+   "vitesse": 40
+  },
+  "evolutions": {
+   "id": 137,
+   "evolvesTo": [
+    {
+     "id": 233,
+     "evolvesTo": [
+      {
+       "id": 474,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "138": {
+  "id": 138,
+  "nom": "Amonita",
+  "categorie": "Pokémon Spirale",
+  "types": [
+   "Roche",
+   "Eau"
+  ],
+  "taille": 0.4,
+  "poids": 7.5,
+  "description": "Un Pokémon ramené à la vie par la science à partir d’un fossile. Il peuplait autrefois les mers.",
+  "stats_base": {
+   "pv": 35,
+   "attaque": 40,
+   "defense": 100,
+   "atq_spe": 90,
+   "def_spe": 55,
+   "vitesse": 35
+  },
+  "evolutions": {
+   "id": 138,
+   "evolvesTo": [
+    {
+     "id": 139,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "139": {
+  "id": 139,
+  "nom": "Amonistar",
+  "categorie": "Pokémon Spirale",
+  "types": [
+   "Roche",
+   "Eau"
+  ],
+  "taille": 1,
+  "poids": 35,
+  "description": "On pense que ce Pokémon a disparu parce que sa coquille en spirale était devenue trop grosse.",
+  "stats_base": {
+   "pv": 70,
+   "attaque": 60,
+   "defense": 125,
+   "atq_spe": 115,
+   "def_spe": 70,
+   "vitesse": 55
+  },
+  "evolutions": {
+   "id": 138,
+   "evolvesTo": [
+    {
+     "id": 139,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "140": {
+  "id": 140,
+  "nom": "Kabuto",
+  "categorie": "Pokémon Carapace",
+  "types": [
+   "Roche",
+   "Eau"
+  ],
+  "taille": 0.5,
+  "poids": 11.5,
+  "description": "On pense qu’il peuplait les plages il y a 300 millions d’années. Il est protégé par une coquille robuste.",
+  "stats_base": {
+   "pv": 30,
+   "attaque": 80,
+   "defense": 90,
+   "atq_spe": 55,
+   "def_spe": 45,
+   "vitesse": 55
+  },
+  "evolutions": {
+   "id": 140,
+   "evolvesTo": [
+    {
+     "id": 141,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "141": {
+  "id": 141,
+  "nom": "Kabutops",
+  "categorie": "Pokémon Carapace",
+  "types": [
+   "Roche",
+   "Eau"
+  ],
+  "taille": 1.3,
+  "poids": 40.5,
+  "description": "On pense que ce Pokémon est venu sur la terre ferme pour suivre l’évolution de ses proies.",
+  "stats_base": {
+   "pv": 60,
+   "attaque": 115,
+   "defense": 105,
+   "atq_spe": 65,
+   "def_spe": 70,
+   "vitesse": 80
+  },
+  "evolutions": {
+   "id": 140,
+   "evolvesTo": [
+    {
+     "id": 141,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "142": {
+  "id": 142,
+  "nom": "Ptéra",
+  "categorie": "Pokémon Fossile",
+  "types": [
+   "Roche",
+   "Vol"
+  ],
+  "taille": 1.8,
+  "poids": 59,
+  "description": "Un Pokémon qui arpentait le ciel au temps des dinosaures. Ses crocs sont pareils à des scies.",
+  "stats_base": {
+   "pv": 80,
+   "attaque": 105,
+   "defense": 65,
+   "atq_spe": 60,
+   "def_spe": 75,
+   "vitesse": 130
+  },
+  "evolutions": {
+   "id": 142,
+   "evolvesTo": []
+  }
+ },
+ "143": {
+  "id": 143,
+  "nom": "Ronflex",
+  "categorie": "Pokémon Pionceur",
+  "types": [
+   "Normal"
+  ],
+  "taille": 2.1,
+  "poids": 460,
+  "description": "Une fois le ventre plein, il est trop amorphe pour lever le petit doigt. Sautez sur son ventre!",
+  "stats_base": {
+   "pv": 160,
+   "attaque": 110,
+   "defense": 65,
+   "atq_spe": 65,
+   "def_spe": 110,
+   "vitesse": 30
+  },
+  "evolutions": {
+   "id": 446,
+   "evolvesTo": [
+    {
+     "id": 143,
+     "evolvesTo": []
+    }
+   ]
+  }
+ },
+ "144": {
+  "id": 144,
+  "nom": "Artikodin",
+  "categorie": "Pokémon Glaciaire",
+  "types": [
+   "Glace",
+   "Vol"
+  ],
+  "taille": 1.7,
+  "poids": 55.4,
+  "description": "Un Pokémon Oiseau légendaire. Il peut provoquer des blizzards en gelant l’humidité de l’air.",
+  "stats_base": {
+   "pv": 90,
+   "attaque": 85,
+   "defense": 100,
+   "atq_spe": 95,
+   "def_spe": 125,
+   "vitesse": 85
+  },
+  "evolutions": {
+   "id": 144,
+   "evolvesTo": []
+  }
+ },
+ "145": {
+  "id": 145,
+  "nom": "Électhor",
+  "categorie": "Pokémon Électrique",
+  "types": [
+   "Électrik",
+   "Vol"
+  ],
+  "taille": 1.6,
+  "poids": 52.6,
+  "description": "Un Pokémon Oiseau légendaire dont on dit qu’il vit dans les nuages d’orage. Il contrôle la foudre.",
+  "stats_base": {
+   "pv": 90,
+   "attaque": 90,
+   "defense": 85,
+   "atq_spe": 125,
+   "def_spe": 90,
+   "vitesse": 100
+  },
+  "evolutions": {
+   "id": 145,
+   "evolvesTo": []
+  }
+ },
+ "146": {
+  "id": 146,
+  "nom": "Sulfura",
+  "categorie": "Pokémon Flamme",
+  "types": [
+   "Feu",
+   "Vol"
+  ],
+  "taille": 2,
+  "poids": 60,
+  "description": "L’un des Pokémon Oiseaux légendaires. On dit que sa venue annonce l’arrivée du printemps.",
+  "stats_base": {
+   "pv": 90,
+   "attaque": 100,
+   "defense": 90,
+   "atq_spe": 125,
+   "def_spe": 85,
+   "vitesse": 90
+  },
+  "evolutions": {
+   "id": 146,
+   "evolvesTo": []
+  }
+ },
+ "147": {
+  "id": 147,
+  "nom": "Minidraco",
+  "categorie": "Pokémon Dragon",
+  "types": [
+   "Dragon"
+  ],
+  "taille": 1.8,
+  "poids": 3.3,
+  "description": "On l’appelle “Pokémon mirage” en raison de sa rareté. On a découvert sa mue.",
+  "stats_base": {
+   "pv": 41,
+   "attaque": 64,
+   "defense": 45,
+   "atq_spe": 50,
+   "def_spe": 50,
+   "vitesse": 50
+  },
+  "evolutions": {
+   "id": 147,
+   "evolvesTo": [
+    {
+     "id": 148,
+     "evolvesTo": [
+      {
+       "id": 149,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "148": {
+  "id": 148,
+  "nom": "Draco",
+  "categorie": "Pokémon Dragon",
+  "types": [
+   "Dragon"
+  ],
+  "taille": 4,
+  "poids": 16.5,
+  "description": "La météo change brusquement quand il est entouré d’une aura. On dit qu’il peuple les mers et les lacs.",
+  "stats_base": {
+   "pv": 61,
+   "attaque": 84,
+   "defense": 65,
+   "atq_spe": 70,
+   "def_spe": 70,
+   "vitesse": 70
+  },
+  "evolutions": {
+   "id": 147,
+   "evolvesTo": [
+    {
+     "id": 148,
+     "evolvesTo": [
+      {
+       "id": 149,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "149": {
+  "id": 149,
+  "nom": "Dracolosse",
+  "categorie": "Pokémon Dragon",
+  "types": [
+   "Dragon",
+   "Vol"
+  ],
+  "taille": 2.2,
+  "poids": 210,
+  "description": "On raconte qu’il vit quelque part en mer. Il guide les équipages naufragés jusqu’à la terre ferme.",
+  "stats_base": {
+   "pv": 91,
+   "attaque": 134,
+   "defense": 95,
+   "atq_spe": 100,
+   "def_spe": 100,
+   "vitesse": 80
+  },
+  "evolutions": {
+   "id": 147,
+   "evolvesTo": [
+    {
+     "id": 148,
+     "evolvesTo": [
+      {
+       "id": 149,
+       "evolvesTo": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "150": {
+  "id": 150,
+  "nom": "Mewtwo",
+  "categorie": "Pokémon Génétique",
+  "types": [
+   "Psy"
+  ],
+  "taille": 2,
+  "poids": 122,
+  "description": "Un Pokémon conçu en réorganisant les gènes de Mew. On raconte qu’il s’agit du Pokémon le plus féroce.",
+  "stats_base": {
+   "pv": 106,
+   "attaque": 110,
+   "defense": 90,
+   "atq_spe": 154,
+   "def_spe": 90,
+   "vitesse": 130
+  },
+  "evolutions": {
+   "id": 150,
+   "evolvesTo": []
+  }
+ },
+ "151": {
+  "id": 151,
+  "nom": "Mew",
+  "categorie": "Pokémon Nouveau",
+  "types": [
+   "Psy"
+  ],
+  "taille": 0.4,
+  "poids": 4,
+  "description": "Nombre de scientifiques voient en lui l’ancêtre des Pokémon car il maîtrise toutes leurs capacités.",
+  "stats_base": {
+   "pv": 100,
+   "attaque": 100,
+   "defense": 100,
+   "atq_spe": 100,
+   "def_spe": 100,
+   "vitesse": 100
+  },
+  "evolutions": {
+   "id": 151,
+   "evolvesTo": []
+  }
+ }
+}

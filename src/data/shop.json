@@ -1,5 +1,982 @@
 {
-  "balls": {
-    "pokeball": { "name": "Pokéball", "baseCost": 20, "catchMult": 1 }
+ "categories": [
+  {
+   "id": "all",
+   "label": "Tout"
+  },
+  {
+   "id": "battle",
+   "label": "Objets de combat"
+  },
+  {
+   "id": "berries",
+   "label": "Baies"
+  },
+  {
+   "id": "general",
+   "label": "Objets généraux"
+  },
+  {
+   "id": "held",
+   "label": "Objets tenus"
+  },
+  {
+   "id": "machines",
+   "label": "Machines (CT/CS)"
+  },
+  {
+   "id": "medicine",
+   "label": "Soins"
+  },
+  {
+   "id": "balls",
+   "label": "Poké Balls"
+  },
+  {
+   "id": "unknown",
+   "label": "Inconnu"
   }
+ ],
+ "items": {
+  "pokeball": {
+   "name": "Poké Ball",
+   "category": "balls",
+   "price": 200,
+   "unlock": null,
+   "unlockLabel": "Début",
+   "effect": "Capture ×1",
+   "image": "items/pokeball.png",
+   "ball": {
+    "mult": 1
+   }
+  },
+  "great-ball": {
+   "name": "Super Ball",
+   "category": "balls",
+   "price": 1000,
+   "unlock": {
+    "type": "badges",
+    "value": 1
+   },
+   "unlockLabel": "Badge 1",
+   "effect": "Capture ×1,5",
+   "image": "items/great-ball.png",
+   "ball": {
+    "mult": 1.5
+   }
+  },
+  "nest-ball": {
+   "name": "Faiblo Ball",
+   "category": "balls",
+   "price": 1000,
+   "unlock": {
+    "type": "badges",
+    "value": 1
+   },
+   "unlockLabel": "Badge 1",
+   "effect": "Capture ×3 sur les Pokémon sous le niveau 20",
+   "image": "items/nest-ball.png",
+   "ball": {
+    "mult": 3,
+    "cond": {
+     "levelBelow": 20
+    }
+   }
+  },
+  "dusk-ball": {
+   "name": "Sombre Ball",
+   "category": "balls",
+   "price": 1500,
+   "unlock": {
+    "type": "badges",
+    "value": 1
+   },
+   "unlockLabel": "Badge 1",
+   "effect": "Capture ×3 dans les grottes",
+   "image": "items/dusk-ball.png",
+   "ball": {
+    "mult": 3,
+    "cond": {
+     "habitat": "caves"
+    }
+   }
+  },
+  "net-ball": {
+   "name": "Filet Ball",
+   "category": "balls",
+   "price": 1500,
+   "unlock": {
+    "type": "badges",
+    "value": 2
+   },
+   "unlockLabel": "Badge 2",
+   "effect": "Capture ×3 sur Eau et Insecte",
+   "image": "items/net-ball.png",
+   "ball": {
+    "mult": 3,
+    "cond": {
+     "types": [
+      "water",
+      "bug"
+     ]
+    }
+   }
+  },
+  "repeat-ball": {
+   "name": "Bis Ball",
+   "category": "balls",
+   "price": 2000,
+   "unlock": {
+    "type": "badges",
+    "value": 3
+   },
+   "unlockLabel": "Badge 3",
+   "effect": "Capture ×3 sur une espèce déjà capturée",
+   "image": "items/repeat-ball.png",
+   "ball": {
+    "mult": 3,
+    "cond": {
+     "caught": true
+    }
+   }
+  },
+  "ultra-ball": {
+   "name": "Hyper Ball",
+   "category": "balls",
+   "price": 5000,
+   "unlock": {
+    "type": "badges",
+    "value": 4
+   },
+   "unlockLabel": "Badge 4",
+   "effect": "Capture ×2",
+   "image": "items/ultra-ball.png",
+   "ball": {
+    "mult": 2
+   }
+  },
+  "quick-ball": {
+   "name": "Rapide Ball",
+   "category": "balls",
+   "price": 2500,
+   "unlock": {
+    "type": "badges",
+    "value": 4
+   },
+   "unlockLabel": "Badge 4",
+   "effect": "Capture ×5 si lancée dans les 5 premières secondes",
+   "image": "items/quick-ball.png",
+   "ball": {
+    "mult": 5,
+    "cond": {
+     "withinSeconds": 5
+    }
+   }
+  },
+  "timer-ball": {
+   "name": "Chrono Ball",
+   "category": "balls",
+   "price": 2500,
+   "unlock": {
+    "type": "badges",
+    "value": 5
+   },
+   "unlockLabel": "Badge 5",
+   "effect": "Capture ×1 à ×4, augmente avec la durée du combat",
+   "image": "items/timer-ball.png",
+   "ball": {
+    "timer": {
+     "max": 4,
+     "seconds": 30
+    }
+   }
+  },
+  "safari-ball": {
+   "name": "Safari Ball",
+   "category": "balls",
+   "price": 500,
+   "unlock": {
+    "type": "safari"
+   },
+   "unlockLabel": "Arrivée au Parc Safari",
+   "effect": "Capture ×1,5, uniquement au Parc Safari (lot de 30)",
+   "image": "items/safari-ball.png",
+   "lot": 30,
+   "ball": {
+    "mult": 1.5,
+    "cond": {
+     "habitat": "safari"
+    },
+    "only": true
+   }
+  },
+  "master-ball": {
+   "name": "Master Ball",
+   "category": "balls",
+   "price": null,
+   "unlock": {
+    "type": "league"
+   },
+   "unlockLabel": "Récompense de la Ligue",
+   "effect": "Capture garantie",
+   "image": "items/master-ball.png",
+   "ball": {
+    "guaranteed": true
+   }
+  },
+  "x-attack": {
+   "name": "Attaque +",
+   "category": "battle",
+   "price": 3000,
+   "unlock": {
+    "type": "badges",
+    "value": 1
+   },
+   "unlockLabel": "Badge 1",
+   "effect": "Dégâts de clic +50 % pendant 60 s",
+   "image": "items/x-attack.png",
+   "boost": {
+    "kind": "click",
+    "mult": 1.5,
+    "seconds": 60
+   }
+  },
+  "x-sp-atk": {
+   "name": "Atq. Spé. +",
+   "category": "battle",
+   "price": 3000,
+   "unlock": {
+    "type": "badges",
+    "value": 1
+   },
+   "unlockLabel": "Badge 1",
+   "effect": "DPS de l'équipe +50 % pendant 60 s",
+   "image": "items/x-sp-atk.png",
+   "boost": {
+    "kind": "team",
+    "mult": 1.5,
+    "seconds": 60
+   }
+  },
+  "x-speed": {
+   "name": "Vitesse +",
+   "category": "battle",
+   "price": 5000,
+   "unlock": {
+    "type": "badges",
+    "value": 2
+   },
+   "unlockLabel": "Badge 2",
+   "effect": "L'équipe attaque 2× plus vite pendant 60 s",
+   "image": "items/x-speed.png",
+   "boost": {
+    "kind": "speed",
+    "mult": 2,
+    "seconds": 60
+   }
+  },
+  "dire-hit": {
+   "name": "Muscle +",
+   "category": "battle",
+   "price": 8000,
+   "unlock": {
+    "type": "badges",
+    "value": 3
+   },
+   "unlockLabel": "Badge 3",
+   "effect": "Coups critiques garantis pendant 30 s",
+   "image": "items/dire-hit.png",
+   "boost": {
+    "kind": "crit",
+    "seconds": 30
+   }
+  },
+  "repel": {
+   "name": "Repousse",
+   "category": "general",
+   "price": 1000,
+   "unlock": {
+    "type": "badges",
+    "value": 1
+   },
+   "unlockLabel": "Badge 1",
+   "effect": "Plus de Pokémon communs pendant 2 min",
+   "image": "items/repel.png",
+   "spawn": {
+    "kind": "repel",
+    "seconds": 120
+   }
+  },
+  "lure": {
+   "name": "Parfum",
+   "category": "general",
+   "price": 1500,
+   "unlock": {
+    "type": "badges",
+    "value": 1
+   },
+   "unlockLabel": "Badge 1",
+   "effect": "Chances de rares ×2 pendant 2 min",
+   "image": "items/lure.png",
+   "spawn": {
+    "kind": "lure",
+    "seconds": 120
+   }
+  },
+  "honey": {
+   "name": "Miel",
+   "category": "general",
+   "price": 2500,
+   "unlock": {
+    "type": "badges",
+    "value": 2
+   },
+   "unlockLabel": "Badge 2",
+   "effect": "Le prochain Pokémon est rare ou mieux",
+   "image": "items/honey.png",
+   "spawn": {
+    "kind": "honey"
+   }
+  },
+  "super-repel": {
+   "name": "Super Repousse",
+   "category": "general",
+   "price": 3000,
+   "unlock": {
+    "type": "badges",
+    "value": 3
+   },
+   "unlockLabel": "Badge 3",
+   "effect": "Plus de communs pendant 5 min",
+   "image": "items/super-repel.png",
+   "spawn": {
+    "kind": "repel",
+    "seconds": 300
+   }
+  },
+  "super-lure": {
+   "name": "Super Parfum",
+   "category": "general",
+   "price": 4000,
+   "unlock": {
+    "type": "badges",
+    "value": 3
+   },
+   "unlockLabel": "Badge 3",
+   "effect": "Chances de rares ×2 pendant 5 min",
+   "image": "items/super-lure.png",
+   "spawn": {
+    "kind": "lure",
+    "seconds": 300
+   }
+  },
+  "max-repel": {
+   "name": "Max Repousse",
+   "category": "general",
+   "price": 8000,
+   "unlock": {
+    "type": "badges",
+    "value": 5
+   },
+   "unlockLabel": "Badge 5",
+   "effect": "Plus de communs pendant 10 min",
+   "image": "items/max-repel.png",
+   "spawn": {
+    "kind": "repel",
+    "seconds": 600
+   }
+  },
+  "max-lure": {
+   "name": "Max Parfum",
+   "category": "general",
+   "price": 10000,
+   "unlock": {
+    "type": "badges",
+    "value": 5
+   },
+   "unlockLabel": "Badge 5",
+   "effect": "Chances de rares ×2 pendant 10 min",
+   "image": "items/max-lure.png",
+   "spawn": {
+    "kind": "lure",
+    "seconds": 600
+   }
+  },
+  "shiny-charm": {
+   "name": "Charme Chroma",
+   "category": "general",
+   "price": null,
+   "unlock": {
+    "type": "dex",
+    "value": 151
+   },
+   "unlockLabel": "Pokédex Gen 1 complet",
+   "effect": "Chances de shiny ×3 (shinies à venir)",
+   "image": "items/shiny-charm.png",
+   "soon": true
+  },
+  "exp-candy-s": {
+   "name": "Bonbon Exp S",
+   "category": "medicine",
+   "price": 500,
+   "unlock": {
+    "type": "captures",
+    "value": 1
+   },
+   "unlockLabel": "1re capture",
+   "effect": "+800 EXP",
+   "image": "items/exp-candy-s.png",
+   "candy": {
+    "exp": 800
+   }
+  },
+  "exp-candy-m": {
+   "name": "Bonbon Exp M",
+   "category": "medicine",
+   "price": 2000,
+   "unlock": {
+    "type": "badges",
+    "value": 2
+   },
+   "unlockLabel": "Badge 2",
+   "effect": "+3 000 EXP",
+   "image": "items/exp-candy-m.png",
+   "candy": {
+    "exp": 3000
+   }
+  },
+  "exp-candy-l": {
+   "name": "Bonbon Exp L",
+   "category": "medicine",
+   "price": 8000,
+   "unlock": {
+    "type": "badges",
+    "value": 4
+   },
+   "unlockLabel": "Badge 4",
+   "effect": "+10 000 EXP",
+   "image": "items/exp-candy-l.png",
+   "candy": {
+    "exp": 10000
+   }
+  },
+  "exp-candy-xl": {
+   "name": "Bonbon Exp XL",
+   "category": "medicine",
+   "price": 30000,
+   "unlock": {
+    "type": "badges",
+    "value": 6
+   },
+   "unlockLabel": "Badge 6",
+   "effect": "+30 000 EXP",
+   "image": "items/exp-candy-xl.png",
+   "candy": {
+    "exp": 30000
+   }
+  },
+  "rare-candy": {
+   "name": "Super Bonbon",
+   "category": "medicine",
+   "price": 15000,
+   "unlock": {
+    "type": "badges",
+    "value": 3
+   },
+   "unlockLabel": "Badge 3",
+   "effect": "+1 niveau",
+   "image": "items/rare-candy.png",
+   "candy": {
+    "levels": 1
+   }
+  },
+  "exp-share": {
+   "name": "Multi Exp",
+   "category": "general",
+   "price": 50000,
+   "unlock": {
+    "type": "badges",
+    "value": 3
+   },
+   "unlockLabel": "Badge 3",
+   "effect": "Les Pokémon hors équipe gagnent 30 % de l'EXP (achat unique)",
+   "image": "items/exp-share.png",
+   "unique": true
+  },
+  "lucky-egg": {
+   "name": "Œuf Chance",
+   "category": "held",
+   "price": 25000,
+   "unlock": {
+    "type": "badges",
+    "value": 4
+   },
+   "unlockLabel": "Badge 4",
+   "effect": "Objet tenu : EXP ×1,5 pour ce Pokémon",
+   "image": "items/lucky-egg.png",
+   "held": true
+  },
+  "amulet-coin": {
+   "name": "Pièce Rune",
+   "category": "held",
+   "price": 30000,
+   "unlock": {
+    "type": "badges",
+    "value": 2
+   },
+   "unlockLabel": "Badge 2",
+   "effect": "Objet tenu : ₽ ×2 sur les Pokémon vaincus",
+   "image": "items/amulet-coin.png",
+   "held": true
+  },
+  "pearl": {
+   "name": "Perle",
+   "category": "general",
+   "price": null,
+   "unlock": {
+    "type": "zone",
+    "value": 3
+   },
+   "unlockLabel": "Zone 3",
+   "effect": "0,3 % de drop dans les paliers aquatiques. Se revend 1 000 ₽",
+   "image": "items/pearl.png",
+   "resale": 1000,
+   "drop": {
+    "chance": 0.003,
+    "where": "aquatic",
+    "zone": 3
+   }
+  },
+  "big-pearl": {
+   "name": "Grosse Perle",
+   "category": "general",
+   "price": null,
+   "unlock": {
+    "type": "zone",
+    "value": 3
+   },
+   "unlockLabel": "Zone 3",
+   "effect": "0,05 % de drop dans les paliers aquatiques. Se revend 4 000 ₽",
+   "image": "items/big-pearl.png",
+   "resale": 4000,
+   "drop": {
+    "chance": 0.0005,
+    "where": "aquatic",
+    "zone": 3
+   }
+  },
+  "stardust": {
+   "name": "Poussière Étoile",
+   "category": "general",
+   "price": null,
+   "unlock": {
+    "type": "zone",
+    "value": 2
+   },
+   "unlockLabel": "Zone 2",
+   "effect": "0,3 % de drop dans les grottes. Se revend 1 000 ₽",
+   "image": "items/stardust.png",
+   "resale": 1000,
+   "drop": {
+    "chance": 0.003,
+    "where": "caves",
+    "zone": 2
+   }
+  },
+  "star-piece": {
+   "name": "Morceau d'Étoile",
+   "category": "general",
+   "price": null,
+   "unlock": {
+    "type": "zone",
+    "value": 2
+   },
+   "unlockLabel": "Zone 2",
+   "effect": "0,05 % de drop dans les grottes. Se revend 6 000 ₽",
+   "image": "items/star-piece.png",
+   "resale": 6000,
+   "drop": {
+    "chance": 0.0005,
+    "where": "caves",
+    "zone": 2
+   }
+  },
+  "nugget": {
+   "name": "Pépite",
+   "category": "general",
+   "price": null,
+   "unlock": {
+    "type": "zone",
+    "value": 1
+   },
+   "unlockLabel": "Zone 1",
+   "effect": "0,1 % de drop partout. Se revend 5 000 ₽",
+   "image": "items/nugget.png",
+   "resale": 5000,
+   "drop": {
+    "chance": 0.001,
+    "where": "anywhere",
+    "zone": 1
+   }
+  },
+  "big-nugget": {
+   "name": "Maxi Pépite",
+   "category": "general",
+   "price": null,
+   "unlock": {
+    "type": "zone",
+    "value": 6
+   },
+   "unlockLabel": "Zone 6",
+   "effect": "0,02 % de drop partout. Se revend 20 000 ₽",
+   "image": "items/big-nugget.png",
+   "resale": 20000,
+   "drop": {
+    "chance": 0.0002,
+    "where": "anywhere",
+    "zone": 6
+   }
+  },
+  "moon-stone": {
+   "name": "Pierre Lune",
+   "category": "general",
+   "price": 8000,
+   "unlock": {
+    "type": "badges",
+    "value": 1
+   },
+   "unlockLabel": "Badge 1",
+   "effect": "Évolution : Nidorina, Nidorino, Mélofée, Rondoudou (évolutions à venir)",
+   "image": "items/moon-stone.png",
+   "soon": true
+  },
+  "fire-stone": {
+   "name": "Pierre Feu",
+   "category": "general",
+   "price": 15000,
+   "unlock": {
+    "type": "badges",
+    "value": 4
+   },
+   "unlockLabel": "Badge 4",
+   "effect": "Évolution : Goupix, Caninos, Évoli → Pyroli (évolutions à venir)",
+   "image": "items/fire-stone.png",
+   "soon": true
+  },
+  "water-stone": {
+   "name": "Pierre Eau",
+   "category": "general",
+   "price": 15000,
+   "unlock": {
+    "type": "badges",
+    "value": 4
+   },
+   "unlockLabel": "Badge 4",
+   "effect": "Évolution : Têtarte, Kokiyas, Stari, Évoli → Aquali (évolutions à venir)",
+   "image": "items/water-stone.png",
+   "soon": true
+  },
+  "thunder-stone": {
+   "name": "Pierre Foudre",
+   "category": "general",
+   "price": 15000,
+   "unlock": {
+    "type": "badges",
+    "value": 4
+   },
+   "unlockLabel": "Badge 4",
+   "effect": "Évolution : Pikachu, Évoli → Voltali (évolutions à venir)",
+   "image": "items/thunder-stone.png",
+   "soon": true
+  },
+  "leaf-stone": {
+   "name": "Pierre Plante",
+   "category": "general",
+   "price": 15000,
+   "unlock": {
+    "type": "badges",
+    "value": 4
+   },
+   "unlockLabel": "Badge 4",
+   "effect": "Évolution : Ortide, Boustiflor, Noeunoeuf (évolutions à venir)",
+   "image": "items/leaf-stone.png",
+   "soon": true
+  },
+  "linking-cord": {
+   "name": "Fil de Liaison",
+   "category": "general",
+   "price": 30000,
+   "unlock": {
+    "type": "badges",
+    "value": 6
+   },
+   "unlockLabel": "Badge 6",
+   "effect": "Évolution : Kadabra, Machopeur, Gravalanch, Spectrum (évolutions à venir)",
+   "image": "items/linking-cord.png",
+   "soon": true
+  },
+  "helix-fossil": {
+   "name": "Fossile Nautile",
+   "category": "general",
+   "price": null,
+   "unlock": {
+    "type": "zone",
+    "value": 2
+   },
+   "unlockLabel": "Zone 2",
+   "effect": "Drop 1 % au Mont Sélénite : Amonita niveau 30 (laboratoire à venir)",
+   "image": "items/helix-fossil.png",
+   "drop": {
+    "chance": 0.01,
+    "lieux": [
+     "Mont Sélénite"
+    ],
+    "zone": 2
+   },
+   "soon": true
+  },
+  "dome-fossil": {
+   "name": "Fossile Dôme",
+   "category": "general",
+   "price": null,
+   "unlock": {
+    "type": "zone",
+    "value": 2
+   },
+   "unlockLabel": "Zone 2",
+   "effect": "Drop 1 % au Mont Sélénite : Kabuto niveau 30 (laboratoire à venir)",
+   "image": "items/dome-fossil.png",
+   "drop": {
+    "chance": 0.01,
+    "lieux": [
+     "Mont Sélénite"
+    ],
+    "zone": 2
+   },
+   "soon": true
+  },
+  "old-amber": {
+   "name": "Vieil Ambre",
+   "category": "general",
+   "price": 50000,
+   "unlock": {
+    "type": "badges",
+    "value": 7
+   },
+   "unlockLabel": "Badge 7",
+   "effect": "Ptéra niveau 30 (laboratoire à venir)",
+   "image": "items/old-amber.png",
+   "soon": true
+  },
+  "silk-scarf": {
+   "name": "Mouchoir Soie",
+   "category": "held",
+   "price": 20000,
+   "unlock": {
+    "type": "badges",
+    "value": 1
+   },
+   "unlockLabel": "Badge 1",
+   "effect": "Objet tenu : +20 % de dégâts au Pokémon de type Normal qui le tient",
+   "image": "items/silk-scarf.png",
+   "held": true,
+   "heldType": "normal"
+  },
+  "sharp-beak": {
+   "name": "Bec Pointu",
+   "category": "held",
+   "price": 20000,
+   "unlock": {
+    "type": "badges",
+    "value": 1
+   },
+   "unlockLabel": "Badge 1",
+   "effect": "Objet tenu : +20 % de dégâts au Pokémon de type Vol qui le tient",
+   "image": "items/sharp-beak.png",
+   "held": true,
+   "heldType": "flying"
+  },
+  "silver-powder": {
+   "name": "Poudre Argentée",
+   "category": "held",
+   "price": 20000,
+   "unlock": {
+    "type": "badges",
+    "value": 1
+   },
+   "unlockLabel": "Badge 1",
+   "effect": "Objet tenu : +20 % de dégâts au Pokémon de type Insecte qui le tient",
+   "image": "items/silver-powder.png",
+   "held": true,
+   "heldType": "bug"
+  },
+  "hard-stone": {
+   "name": "Pierre Dure",
+   "category": "held",
+   "price": 20000,
+   "unlock": {
+    "type": "badges",
+    "value": 1
+   },
+   "unlockLabel": "Badge 1",
+   "effect": "Objet tenu : +20 % de dégâts au Pokémon de type Roche qui le tient",
+   "image": "items/hard-stone.png",
+   "held": true,
+   "heldType": "rock"
+  },
+  "mystic-water": {
+   "name": "Eau Mystique",
+   "category": "held",
+   "price": 20000,
+   "unlock": {
+    "type": "badges",
+    "value": 2
+   },
+   "unlockLabel": "Badge 2",
+   "effect": "Objet tenu : +20 % de dégâts au Pokémon de type Eau qui le tient",
+   "image": "items/mystic-water.png",
+   "held": true,
+   "heldType": "water"
+  },
+  "magnet": {
+   "name": "Aimant",
+   "category": "held",
+   "price": 20000,
+   "unlock": {
+    "type": "badges",
+    "value": 3
+   },
+   "unlockLabel": "Badge 3",
+   "effect": "Objet tenu : +20 % de dégâts au Pokémon de type Électrik qui le tient",
+   "image": "items/magnet.png",
+   "held": true,
+   "heldType": "electric"
+  },
+  "miracle-seed": {
+   "name": "Grain Miracle",
+   "category": "held",
+   "price": 20000,
+   "unlock": {
+    "type": "badges",
+    "value": 4
+   },
+   "unlockLabel": "Badge 4",
+   "effect": "Objet tenu : +20 % de dégâts au Pokémon de type Plante qui le tient",
+   "image": "items/miracle-seed.png",
+   "held": true,
+   "heldType": "grass"
+  },
+  "poison-barb": {
+   "name": "Pic Venin",
+   "category": "held",
+   "price": 20000,
+   "unlock": {
+    "type": "badges",
+    "value": 5
+   },
+   "unlockLabel": "Badge 5",
+   "effect": "Objet tenu : +20 % de dégâts au Pokémon de type Poison qui le tient",
+   "image": "items/poison-barb.png",
+   "held": true,
+   "heldType": "poison"
+  },
+  "spell-tag": {
+   "name": "Rune Sort",
+   "category": "held",
+   "price": 20000,
+   "unlock": {
+    "type": "badges",
+    "value": 5
+   },
+   "unlockLabel": "Badge 5",
+   "effect": "Objet tenu : +20 % de dégâts au Pokémon de type Spectre qui le tient",
+   "image": "items/spell-tag.png",
+   "held": true,
+   "heldType": "ghost"
+  },
+  "twisted-spoon": {
+   "name": "Cuiller Tordue",
+   "category": "held",
+   "price": 20000,
+   "unlock": {
+    "type": "badges",
+    "value": 6
+   },
+   "unlockLabel": "Badge 6",
+   "effect": "Objet tenu : +20 % de dégâts au Pokémon de type Psy qui le tient",
+   "image": "items/twisted-spoon.png",
+   "held": true,
+   "heldType": "psychic"
+  },
+  "black-belt": {
+   "name": "Ceinture Noire",
+   "category": "held",
+   "price": 20000,
+   "unlock": {
+    "type": "badges",
+    "value": 6
+   },
+   "unlockLabel": "Badge 6",
+   "effect": "Objet tenu : +20 % de dégâts au Pokémon de type Combat qui le tient",
+   "image": "items/black-belt.png",
+   "held": true,
+   "heldType": "fighting"
+  },
+  "charcoal": {
+   "name": "Charbon",
+   "category": "held",
+   "price": 20000,
+   "unlock": {
+    "type": "badges",
+    "value": 7
+   },
+   "unlockLabel": "Badge 7",
+   "effect": "Objet tenu : +20 % de dégâts au Pokémon de type Feu qui le tient",
+   "image": "items/charcoal.png",
+   "held": true,
+   "heldType": "fire"
+  },
+  "never-melt-ice": {
+   "name": "Glace Éternelle",
+   "category": "held",
+   "price": 30000,
+   "unlock": {
+    "type": "badges",
+    "value": 7
+   },
+   "unlockLabel": "Badge 7",
+   "effect": "Objet tenu : +20 % de dégâts au Pokémon de type Glace qui le tient",
+   "image": "items/never-melt-ice.png",
+   "held": true,
+   "heldType": "ice"
+  },
+  "soft-sand": {
+   "name": "Sable Doux",
+   "category": "held",
+   "price": 20000,
+   "unlock": {
+    "type": "badges",
+    "value": 8
+   },
+   "unlockLabel": "Badge 8",
+   "effect": "Objet tenu : +20 % de dégâts au Pokémon de type Sol qui le tient",
+   "image": "items/soft-sand.png",
+   "held": true,
+   "heldType": "ground"
+  },
+  "dragon-fang": {
+   "name": "Croc Dragon",
+   "category": "held",
+   "price": 50000,
+   "unlock": {
+    "type": "badges",
+    "value": 8
+   },
+   "unlockLabel": "Badge 8",
+   "effect": "Objet tenu : +20 % de dégâts au Pokémon de type Dragon qui le tient",
+   "image": "items/dragon-fang.png",
+   "held": true,
+   "heldType": "dragon"
+  }
+ }
 }

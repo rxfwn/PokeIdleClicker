@@ -1,8 +1,10 @@
 import { state, replaceState } from "./state.js";
 
 const KEY = "pokeclicker-save-v2";
+let resetting = false; // évite que la sauvegarde de fermeture recrée la partie effacée
 
 export function save() {
+  if (resetting) return;
   try {
     state.lastSeen = Date.now();
     localStorage.setItem(KEY, JSON.stringify(state));
@@ -23,6 +25,7 @@ export function load() {
 }
 
 export function reset() {
+  resetting = true;
   try {
     localStorage.removeItem(KEY);
   } catch {}
